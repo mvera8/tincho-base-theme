@@ -1,0 +1,44 @@
+$primary: #1c34ff;
+$secondary: #8ecef4;
+$success: #00fed3;
+$info: #b4b4b4;
+$gray-900: #333;
+
+// Accordion
+$accordion-bg: transparent;
+$accordion-color: $gray-900;
+$accordion-border-width: 0;
+$accordion-border-radius: 0;
+
+$accordion-button-color: $gray-900;
+$accordion-button-active-bg: transparent;
+$accordion-button-active-color: $gray-900;
+
+// Buttons
+$btn-padding-x: 20px;
+$btn-border-radius: 100px;
+
+$btn-padding-x-lg: 30px;
+$btn-border-radius-lg: $btn-border-radius;
+
+$btn-padding-x-sm: 20px;
+$btn-border-radius-sm: $btn-border-radius;
+
+// Components
+// $border-color: $secondary;
+$box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -2px rgba(0, 0, 0, .1) !important;
+$border-radius: 8px;
+$border-radius-lg: 12px;
+
+// Fonts
+$font-family-base: "Montserrat", sans-serif;
+$font-weight-base: 300;
+
+$headings-font-family: "Poppins", sans-serif;
+$headings-font-weight: 700;
+
+// $transition-duration: 0.15s !default;
+// $transition-timing-function: ease-in-out !default;
+// $grid-gutter-width: 1.5rem !default;
+// $grid-columns: 12 !default;
+// $grid-column-width: calc(100% / $grid-columns) !default;

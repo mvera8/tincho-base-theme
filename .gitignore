@@ -1,0 +1,18 @@
+# Build files
+/build/
+.vite/
+
+# Node
+node_modules/
+package-lock.json
+
+# WordPress
+wp/
+db/
+
+# OS/IDE
+.DS_Store
+*.log
+*.env
+.idea/
+.vscode/

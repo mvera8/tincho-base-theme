@@ -1,0 +1,189 @@
+// @import "bootstrap/scss/bootstrap";
+
+// 0) SIEMPRE primero functions
+@import "bootstrap/scss/functions";
+
+// 1) Tus overrides PRIMITIVOS (sin !default)
+@import "./fonts";
+@import "./custom-variables";
+
+// 2) Ahora sí, Bootstrap variables y compañía
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+
+// 2. Layout / básicos (agregá más si querés)
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+
+// 3. Componentes (agregá los que vayas a usar)
+@import "bootstrap/scss/accordion";
+@import "bootstrap/scss/alert";
+@import "bootstrap/scss/badge";
+@import "bootstrap/scss/breadcrumb";
+@import "bootstrap/scss/button-group";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/card";
+@import "bootstrap/scss/carousel";
+@import "bootstrap/scss/close";
+@import "bootstrap/scss/dropdown";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/list-group";
+@import "bootstrap/scss/modal";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/offcanvas";
+@import "bootstrap/scss/pagination";
+@import "bootstrap/scss/placeholders";
+@import "bootstrap/scss/popover";
+@import "bootstrap/scss/progress";
+@import "bootstrap/scss/tables";
+@import "bootstrap/scss/toasts";
+@import "bootstrap/scss/tooltip";
+@import "bootstrap/scss/transitions";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/spinners";
+
+// 4. Utilidades
+@import "bootstrap/scss/helpers";
+@import "bootstrap/scss/utilities/api";
+
+// 5. Tus estilos
+.custom-logo {
+  height: 40px;
+
+  @at-root .navbar.bg-primary & {
+    filter: brightness(0) invert(1);
+  }
+
+  @at-root footer & {
+    height: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.navbar-nav {
+  .nav-link {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+  }
+}
+
+.hero {
+  z-index: 1;
+
+  &-home {
+    background:
+      linear-gradient(0deg, transparent 0%, rgba(255, 255, 255, 1) 50%),
+      linear-gradient(50deg, rgba($secondary, 0.6) 0%, transparent 70%),
+      linear-gradient(310deg, rgba($primary, 0.3) 0%, rgba(255, 255, 255, 1) 40%);
+  }
+
+  &-home-2 {
+    background: $primary;
+    background:
+      linear-gradient(0deg, transparent 0%, $primary 90%),
+      linear-gradient(50deg, rgba($primary, 1) 0%, transparent 30%),
+      linear-gradient(310deg, rgba($secondary, 1) 0%, $primary 70%);
+  }
+
+  &-test {
+    background:
+      linear-gradient(0deg, transparent 0%, rgba(255, 255, 255, 1) 50%),
+      linear-gradient(50deg, transparent 0%, transparent 70%),
+      linear-gradient(310deg, rgba($primary, 0.3) 0%, rgba($secondary, 0.3) 30%, rgba(255, 255, 255, 1) 60%);
+  }
+}
+
+#steps-section {
+  z-index: 5;
+
+  .steps-section-inner {
+    top: -50px;
+  }
+}
+
+.icon-stack {
+  height: 3rem;
+  width: 3rem;
+
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+
+  svg {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  &-lg {
+    height: 5rem;
+    width: 5rem;
+
+    svg {
+      height: 2rem;
+      width: 2rem;
+    }
+  }
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.bg {
+  &-primary {
+    &-light {
+      background-color: rgba($primary, 0.1);
+    }
+  }
+
+  &-secondary {
+    &-light {
+      background-color: rgba($secondary, 0.3);
+    }
+  }
+
+  &-success {
+    &-light {
+      background-color: rgba($success, 0.1);
+    }
+
+    &-btn {
+      background-color: rgba($success, 0.3);
+    }
+  }
+
+  &-info {
+    &-light {
+      background-color: rgba($info, 0.3);
+    }
+  }
+}
+
+.degradado {
+  &-bg {
+    background: #fff;
+    background:
+      linear-gradient(0deg, transparent 0%, rgba($info, 0.2) 50%),
+      linear-gradient(50deg, rgba($secondary, 0.6) 0%, transparent 70%),
+      linear-gradient(310deg, rgba($primary, 0.3) 0%, rgba(255, 255, 255, 1) 40%);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  &-text {
+    background: linear-gradient(120deg,$primary, $secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &-footer {
+    background: rgba($secondary, 0.5);
+  }
+}
