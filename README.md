@@ -1,12 +1,12 @@
-# Freemium Base Theme
+# Tincho Base Theme
 
-Tema custom WordPress con Vite + Alpine.js + SCSS.
+Tema custom WordPress con Bootstrap 5 + Vite + SCSS.
 
 ---
 
 ## 🚀 Instalación
 
-1. Clonar este repo en `/wp-content/themes/freemium-base-theme`
+1. Clonar este repo en `/wp-content/themes/tincho-base-theme`
 2. Instalar dependencias:
 
 ```bash
@@ -61,7 +61,7 @@ Y WordPress los encola automáticamente usando `enqueue.php`.
 ## 📁 Estructura
 
 ```
-freemium-base-theme/
+tincho-base-theme/
 ├── assets/
 │   ├── js/main.js         # Punto de entrada JS
 │   └── css/style.scss     # Estilos SCSS

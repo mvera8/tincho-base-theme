@@ -18,7 +18,7 @@ defined( 'ABSPATH' ) || exit;
 					array( 'text' => 'Servicios' )
 				);
 				?>
-				<h2 class="fw-bold mb-5">Nuestros servicios profesionales de limpieza</h2>
+				<h2 class="mb-5">Nuestros servicios profesionales de limpieza</h2>
 			</div>
 		</div>
 

@@ -1,23 +1,8 @@
-
-<div class="degradado p-4 pt-5">
+<footer class="footer py-4">
 	<div class="container">
-		<div class="row mb-5">
-			<div class="col-md-5 mx-auto text-center">
-				<h2 class="display-4 fw-bold mb-5">Listo para tener un espacio máx limpio?</h2>
-				<p class="mb-4 lead">Tu aliado en limpieza y mantenimiento. Descubre nuestros servicios y productos diseñados para hacer tu vida más fácil y limpia.</p>
-				<a class="btn btn-primary me-2" href="#!">
-					Pedir Presupuesto
-					<?php echo cleanmax_icon_selector( 'arrow-right' ); ?>
-				</a>
-				<a class="btn btn btn-light" href="#!">¿Cómo funciona?</a>
-			</div>
-		</div>
-
-
-		<footer class="degradado-footer px-3 py-4 rounded-3">
+		<div class="bg-info-light p-5 rounded">
 			<div class="row">
 
-			
 				<div class="col-md-3 align-items-center">
 					<?php
 					get_template_part( 'template-parts/logo' );
@@ -26,12 +11,12 @@
 				</div>
 
 				<div class="col-md-3 align-items-center">
-					<h5>Section</h5>
+					<h5 class="ps-3 text-info">Empresa</h5>
 					<?php
 					wp_nav_menu(
 						array(
 							'theme_location'  => 'footer-nav',
-							'menu_class'      => 'nav flex-column',
+							'menu_class'      => 'nav footer-nav flex-column',
 							'fallback_cb'     => '',
 							'depth'           => 1,
 							'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
@@ -41,8 +26,8 @@
 				</div>
 
 				<div class="col-md-3 align-items-center">
-					<h5>Section</h5>
-					<ul class="list-unstyled">
+					<h5 class="ps-3 text-info">Servicios</h5>
+					<ul class="nav footer-nav flex-column">
 					<?php
 						$args = [
 							'post_type'              => 'servicios',
@@ -63,7 +48,7 @@
 								$servicios_q->the_post();
 
 								printf(
-									'<li><a href="%s" class="text-decoration-none">%s</a></li>',
+									'<li class="menu-item nav-item"><a href="%s" class="text-decoration-none nav-link">%s</a></li>',
 									esc_url( get_permalink() ),
 									esc_html( get_the_title() )
 								);
@@ -80,26 +65,48 @@
 				</div>
 
 				<div class="col-md-3">
-					<ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+					<ul class="col-md-4 justify-content-end list-unstyled d-flex w-100">
 						<li class="ms-3">
 							<a class="text-body-secondary" href="#" aria-label="Instagram">
-								<?php echo cleanmax_icon_selector( 'instagram' ); ?>
+								<?php
+								get_template_part(
+									'template-parts/icon',
+									'stack',
+									array(
+										'icon_stack' => 'instagram',
+										'icon_color' => 'text-dark border-info',
+									)
+								);
+								?>
 							</a>
 						</li>
 						<li class="ms-3">
 							<a class="text-body-secondary" href="#" aria-label="Facebook">
-								<?php echo cleanmax_icon_selector( 'facebook' ); ?>
+								<?php
+								get_template_part(
+									'template-parts/icon',
+									'stack',
+									array(
+										'icon_stack' => 'facebook',
+										'icon_color' => 'text-dark border-info',
+									)
+								);
+								?>
 							</a>
 						</li>
 					</ul>
 				</div>
 
-			</div>
-			
-			
-		</footer>
-	</div>
 </div>
+
+</div>
+
+
+
+		</div>
+	
+	
+</footer>
 
 <?php wp_footer(); ?>
 </body>

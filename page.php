@@ -2,9 +2,6 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-
-$site_name = get_bloginfo( 'name' );
-
 get_header();
 get_template_part( 'template-parts/navbar' );
 ?>

@@ -41,7 +41,7 @@ defined( 'ABSPATH' ) || exit;
 
         <!-- Texto sobre la imagen -->
         <div class="position-absolute top-0 start-0 text-white p-3 h-100 d-flex flex-column justify-content-between w-100">
-          <h4 class="fw-bold mb-1"><?php the_title(); ?></h4>
+          <h4 class="mb-1"><?php the_title(); ?></h4>
           <button class="btn btn-light btn-sm mt-2 rounded-pill px-3">Ver Más</button>
         </div>
       </div> <!-- /.position-relative -->

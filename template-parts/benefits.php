@@ -42,7 +42,7 @@ $args = isset($args) ? wp_parse_args($args, $defaults) : $defaults;
 							)
 						);
 						?>
-						<h2 class="fw-bold mb-4">Porque tenemos los mejor de lo mejor</h2>
+						<h2 class="mb-4">Porque tenemos los mejor de lo mejor</h2>
 					</div>
 					<?php foreach ( $benefits as $benefit ) : ?>
 						<div class="col-md-6">

@@ -37,7 +37,7 @@ $faqs = array(
 					array( 'text' => 'Preguntas Frecuentes' )
 				);
 				?>
-				<h2 class="fw-bold mb-5">Tu tienes preguntas y nosotros respuestas</h2>
+				<h2 class="mb-5">Tu tienes preguntas y nosotros respuestas</h2>
 			</div>
 		</div>
 		<div class="row justify-content-center">

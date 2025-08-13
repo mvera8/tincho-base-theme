@@ -3,8 +3,16 @@ get_header();
 get_template_part( 'template-parts/navbar' );
 ?>
 
-<div class="container py-5">
-  <?php if ( have_posts() ) : ?>
+<section class="py-5">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-8">
+        <h1 class="mb-5 h2 text-center">Blog</h1>
+			</div>
+      <div class="col-12 col-md-8">
+				
+        
+      <?php if ( have_posts() ) : ?>
     <div class="row g-4">
       <?php
       while ( have_posts() ) :
@@ -39,7 +47,12 @@ get_template_part( 'template-parts/navbar' );
   <?php else : ?>
     <p>No hay publicaciones.</p>
   <?php endif; ?>
-</div>
+
+
+			</div>
+		</div>
+	</div>
+</section>
 
 <?php
 get_footer();

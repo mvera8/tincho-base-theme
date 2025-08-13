@@ -37,7 +37,7 @@ add_action('wp_enqueue_scripts', function () {
 
     $base_uri = get_template_directory_uri() . '/build';
 
-    wp_enqueue_style('freemium-style', "$base_uri/$css_file", [], null);
-    wp_enqueue_script('freemium-script', "$base_uri/$js_file", [], null, true);
+    wp_enqueue_style('tincho-style', "$base_uri/$css_file", [], null);
+    wp_enqueue_script('tincho-script', "$base_uri/$js_file", [], null, true);
   }  
 });

@@ -19,7 +19,7 @@ $args = isset($args) ? wp_parse_args($args, $defaults) : $defaults;
 			<div class="col-lg-6 mb-4 mb-lg-0 text-center text-lg-start text-dark">
 				<div class="row">
 					<div class="col-lg-11">
-						<h1 class="fw-bold display-3 mb-4">
+						<h1 class="display-3 mb-4">
 							<?php echo wp_kses_post( $args['hero_title'] ); ?>
 						</h1>
 					</div>

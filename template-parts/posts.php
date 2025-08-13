@@ -18,7 +18,7 @@ defined( 'ABSPATH' ) || exit;
 					array( 'text' => 'Novedades' )
 				);
 				?>
-				<h2 class="fw-bold mb-5">Últimas del blog</h2>
+				<h2 class="mb-5">Últimas del blog</h2>
 			</div>
 		</div>
 

@@ -25,7 +25,7 @@ $defaults = [
 $args = isset($args) ? wp_parse_args($args, $defaults) : $defaults;
 ?>
 
-<div class="col-lg-3 col-md-6">
+<div class="col-lg-4 col-md-6">
   <div class="card card-blog border-0">
     <div class="position-relative">
       <a class="d-block" href="<?php the_permalink(); ?>">
