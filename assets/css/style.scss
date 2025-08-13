@@ -74,6 +74,16 @@
   }
 }
 
+.footer-nav {
+  .nav-link {
+    color: $dark;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
 .hero {
   z-index: 1;
 
@@ -97,14 +107,6 @@
       linear-gradient(0deg, transparent 0%, rgba(255, 255, 255, 1) 50%),
       linear-gradient(50deg, transparent 0%, transparent 70%),
       linear-gradient(310deg, rgba($primary, 0.3) 0%, rgba($secondary, 0.3) 30%, rgba(255, 255, 255, 1) 60%);
-  }
-}
-
-#steps-section {
-  z-index: 5;
-
-  .steps-section-inner {
-    top: -50px;
   }
 }
 
@@ -167,23 +169,9 @@
 }
 
 .degradado {
-  &-bg {
-    background: #fff;
-    background:
-      linear-gradient(0deg, transparent 0%, rgba($info, 0.2) 50%),
-      linear-gradient(50deg, rgba($secondary, 0.6) 0%, transparent 70%),
-      linear-gradient(310deg, rgba($primary, 0.3) 0%, rgba(255, 255, 255, 1) 40%);
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-  }
-
   &-text {
     background: linear-gradient(120deg,$primary, $secondary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
-
-  &-footer {
-    background: rgba($secondary, 0.5);
   }
 }

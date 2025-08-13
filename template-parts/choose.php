@@ -33,7 +33,7 @@ $choose = array(
 				<img src="https://placehold.co/800x700" alt="Persona limpiando" class="img-fluid mb-4">
 			</div>
 			<div class="col-md-6 offset-md-1">
-				<h2 class="fw-bold mb-4 text-white">Porqué Elegirnos</h2>
+				<h2 class="mb-4 text-white">Porqué Elegirnos</h2>
 
 				<div class="row align-items-stretch">
 					<?php foreach ( $choose as $index => $item ) : ?>

@@ -14,5 +14,6 @@ db/
 .DS_Store
 *.log
 *.env
+*.env.local
 .idea/
 .vscode/

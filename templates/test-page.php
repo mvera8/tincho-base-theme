@@ -52,7 +52,7 @@ get_template_part( 'template-parts/navbar' );
 			<div class="col-lg-6 mb-4 mb-lg-0 text-center text-lg-start text-dark">
 				<div class="row">
 					<div class="col-lg-11">
-						<h1 class="fw-bold display-3 mb-4">
+						<h1 class="display-3 mb-4">
 							Tu casa <span class="degradado-text">impecable</span>, sin mover un dedo
 						</h1>
 					</div>
@@ -91,8 +91,9 @@ get_template_part( 'template-parts/navbar' );
 			<div class="col-md-5 text-white">
 				<img src="https://placehold.co/800x700" alt="Persona limpiando" class="img-fluid mb-4">
 			</div>
-			<div class="col-md-6 offset-md-1">
-				<h2 class="fw-bold mb-4 text-white">Porqué Elegirnos</h2>
+			<div class="col-md-6 offset-md-1 text-white">
+				<h2 class="mb-4">Porqué Elegirnos</h2>
+				<p> Descubre nuestros servicios y productos diseñados para hacer tu vida más fácil y limpia.</p>
 
 				<div class="row align-items-stretch">
 					<?php foreach ( $choose as $index => $item ) : ?>
@@ -154,7 +155,7 @@ get_template_part( 'template-parts/navbar' );
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4 mx-auto text-center">
-				<h2 class="fw-bold mb-5">Why Realtime Colors?</h2>
+				<h2 class="mb-5">Why Realtime Colors?</h2>
 			</div>
 		</div>
 		<div class="row align-items-start">
@@ -218,12 +219,12 @@ get_template_part( 'template-parts/navbar' );
 		<div class="bg-success-light p-5 rounded">
 			<div class="row">
 				<div class="col-lg-4 mx-auto">
-					<h2 class="fw-bold mb-4">How Does it Work?</h2>
+					<h2 class="mb-4">How Does it Work?</h2>
 					<p class="lead mb-0">Get your personalized color palette in 4 steps.</p>
 				</div>
 
 				<div class="col-lg-8 mx-auto">
-					<h1 class="fw-bold mb-4">Probando</h1>
+					<h1 class="mb-4">Probando</h1>
 					<p class="lead mb-0">Probando</p>
 				</div>
 
@@ -233,4 +234,5 @@ get_template_part( 'template-parts/navbar' );
 </section>
 
 <?php
+get_template_part( 'template-parts/last-cta' );
 get_footer();
