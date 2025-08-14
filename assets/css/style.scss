@@ -111,16 +111,16 @@
 }
 
 .icon-stack {
-  height: 3rem;
-  width: 3rem;
+  height: 1.8rem;
+  width: 1.8rem;
 
   justify-content: center;
   align-items: center;
   border-radius: 100%;
 
   svg {
-    height: 2rem;
-    width: 2rem;
+    height: 1.5rem;
+    width: 1.5rem;
   }
 
   &-lg {
@@ -141,29 +141,33 @@
 .bg {
   &-primary {
     &-light {
-      background-color: rgba($primary, 0.1);
+      background-color: $primary-light;
     }
   }
 
   &-secondary {
     &-light {
-      background-color: rgba($secondary, 0.3);
-    }
-  }
-
-  &-success {
-    &-light {
-      background-color: rgba($success, 0.1);
-    }
-
-    &-btn {
-      background-color: rgba($success, 0.3);
+      background-color: $secondary-light;
     }
   }
 
   &-info {
     &-light {
-      background-color: rgba($info, 0.3);
+      background-color: $gray-300;
+    }
+  }
+}
+
+.text {
+  &-primary {
+    &-light {
+      color: $primary-light;
+    }
+  }
+
+  &-secondary {
+    &-light {
+      color: $secondary-light;
     }
   }
 }
