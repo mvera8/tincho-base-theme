@@ -7,6 +7,7 @@ $includes = array(
   '/excerpt-length.php',
 	'/preload.php',
   '/svg.php',
+  '/theme-options.php',
   '/theme-setup.php',
   '/cleanmax-servicios.php',
   '/cleanmax-icon-selector.php',

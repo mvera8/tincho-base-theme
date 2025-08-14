@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Home Page
+ * Template Name: About Us Page
  *
  * @package tincho-base-theme
  */
@@ -10,9 +10,5 @@ defined( 'ABSPATH' ) || exit;
 
 get_header();
 get_template_part( 'template-parts/navbar' );
-get_template_part( 'template-parts/home-hero' );
 get_template_part( 'template-parts/steps' );
-get_template_part( 'template-parts/servicios' );
-get_template_part( 'template-parts/posts' );
-get_template_part( 'template-parts/faqs' );
 get_footer();

@@ -40,7 +40,7 @@ $args = isset($args) ? wp_parse_args($args, $defaults) : $defaults;
         <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/house.jpg" alt="img-blur-shadow" class="img-fluid shadow rounded" loading="lazy" />
       </a>
     </div>
-    <div class="card-body px-1 pt-3">
+    <div class="card-body px-4 pt-3">
       <h5 class="card-title mb-2">
         <a class="text-decoration-none text-dark" href="<?php the_permalink(); ?>">
           <?php the_title(); ?>
@@ -51,10 +51,7 @@ $args = isset($args) ? wp_parse_args($args, $defaults) : $defaults;
           <?php echo esc_html( wp_trim_words( get_the_excerpt(), (int) $args['excerpt_length'] ) ); ?>
         </p>
       <?php endif; ?>
-      <a href="<?php the_permalink(); ?>"class="btn btn-outline-primary btn-sm">
-        Ver Más
-        <?php echo cleanmax_icon_selector( 'arrow-right' ); ?>
-      </a>
+      <a href="<?php the_permalink(); ?>"class="btn btn-outline-dark w-100">Leer Más</a>
     </div>
   </div>
 </div>

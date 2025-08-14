@@ -7,53 +7,44 @@
 defined( 'ABSPATH' ) || exit;
 
 $steps = array(
-	array(
-		'text' => 'Elegí día y hora del servicio',
-		'icon' => 'calendar',
-	),
-	array(
-		'text' => 'Te asignamos un/a profesional verificado/a',
-		'icon' => 'profesional',
-	),
-	array(
-		'text' => 'Disfrutá tu casa super limpia',
-		'icon' => 'house',
-	),
+	'Elegí día y hora del servicio',
+	'Te asignamos un/a profesional verificado/a',
+	'Disfrutá tu casa super limpia',
 );
-
-$defaults = [
-  'section_bg'  => '',
-];
-
-$args = isset($args) ? wp_parse_args($args, $defaults) : $defaults;
 ?>
 
-<section id="steps-section" class="position-relative <?php echo esc_attr( $args['section_bg'] ); ?>">
+<section id="section-steps" class="py-5">
 	<div class="container">
-		<div class="bg-light rounded-3 overflow-hidden steps-section-inner position-relative">
-			<div class="bg-dark p-4">
-				<div class="row align-items-start">
-					<?php foreach ( $steps as $index => $step ) : ?>
-						<div class="col-lg-4 mb-4 mb-lg-0">
-							<div class="row align-items-center">
-								<div class="col-3">
-									<?php
-									get_template_part(
-										'template-parts/icon',
-										'stack',
-										array(
-											'icon_stack' => $step['icon'],
-										)
-									);
-									?>
-								</div>
-								<div class="col-9">
-									<h5 class="text-light mb-0"><?php echo esc_html( $step['text'] ); ?></h5>
-								</div>
-							</div>
+		<?php
+		get_template_part(
+			'template-parts/section',
+			'title',
+			array(
+				'section_title' => '¿Cómo funciona?',
+			)
+		);
+		?>
+		<div class="row align-items-stretch">
+			<?php foreach ( $steps as $step ) : ?>
+				<div class="col-md-4 mb-4 d-flex">
+					<div class="card px-2 pt-2 pb-0 border-0 bg-secondary-light h-100 w-100">
+						<div class="card-body d-flex flex-column">
+							<?php
+							get_template_part(
+								'template-parts/icon',
+								'stack',
+								array(
+									'icon_stack'  => 'check',
+									'icon_color'  => 'text-secondary-light bg-dark',
+									'icon_margin' => 'mb-5',
+								)
+							);
+							?>
+							<p class="lead mb-0"><?php echo esc_html( $step ); ?></p>
 						</div>
-					<?php endforeach; ?>
-			</div>
+					</div>
+				</div>
+			<?php endforeach; ?>
 		</div>
 	</div>
 </section>

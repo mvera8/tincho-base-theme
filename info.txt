@@ -7,6 +7,8 @@ Preguntas:
 Referencias
 - https://block.codescandy.com/blocks/testimonails.html
 - https://exponent-webflow-ecommerce-template.webflow.io/ (ver)
+- https://preview.themeforest.net/item/qleenie-cleaning-service-company-fse-wordpress-theme/full_screen_preview/58606101 (ver)
+- https://struktura.framer.website/ (ver)
 
 Cleaning
 - https://preview.themeforest.net/item/clenix-cleaning-services-wordpress-theme/full_screen_preview/25009704
@@ -19,3 +21,4 @@ Empresas
 
 COlores
 - https://www.realtimecolors.com/?colors=08010f-ffffff-1c34ff-00fed3-0ba5fb&fonts=Poppins-Montserrat
+- https://www.realtimecolors.com/?colors=08010f-ffffff-1c34ff-00fed3-1c34ff&fonts=Poppins-Montserrat

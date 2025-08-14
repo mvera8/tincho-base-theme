@@ -13,12 +13,11 @@
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
-
 ?>
 
-<div class="col-12 col-md-4">
+<div class="col-12 col-md-3">
   <a href="<?php the_permalink(); ?>">
-    <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+    <div class="card border-0 shadow-lg rounded-4 overflow-hidden mb-4">
       <div class="position-relative">
         <!-- Imagen -->
         <?php if ( has_post_thumbnail() ) : ?>
@@ -40,11 +39,16 @@ defined( 'ABSPATH' ) || exit;
             style="background: linear-gradient(90deg, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0) 100%);"></div>
 
         <!-- Texto sobre la imagen -->
-        <div class="position-absolute top-0 start-0 text-white p-3 h-100 d-flex flex-column justify-content-between w-100">
+        <div class="position-absolute top-0 start-0 text-white p-3 h-100 d-flex flex-column justify-content-end align-items-start w-100">
+
           <h4 class="mb-1"><?php the_title(); ?></h4>
-          <button class="btn btn-light btn-sm mt-2 rounded-pill px-3">Ver Más</button>
+          <button class="ps-0 btn bg-transparent text-light border-0 mt-2 rounded-pill px-3 d-inline-flex align-items-center w-auto">
+            Ver Más
+            <?php echo cleanmax_icon_selector('arrow-right'); ?>
+          </button>
+
         </div>
       </div> <!-- /.position-relative -->
     </div>
   </a>
-</div>     <!-- /.col -->
+</div>

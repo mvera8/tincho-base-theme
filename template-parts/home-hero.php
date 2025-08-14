@@ -13,7 +13,7 @@ $defaults = [
 $args = isset($args) ? wp_parse_args($args, $defaults) : $defaults;
 ?>
 
-<section id="home-hero" class="pt-5 position-relative hero-test">
+<section id="home-hero" class="pt-5 position-relative hero-test mb-5">
 	<div class="container pt-3 pb-5">
 		<div class="row align-items-center justify-content-center">
 			<div class="col-lg-6 mb-4 mb-lg-0 text-center text-lg-start text-dark">
@@ -27,11 +27,11 @@ $args = isset($args) ? wp_parse_args($args, $defaults) : $defaults;
 						<p class="lead mb-0"><?php bloginfo( 'description' ); ?></p>
 					</div>
 					<div class="col-lg-12 pb-5">
-						<a class="btn btn-success bg-success-btn btn-lg border-0 me-2" href="#!">
+						<a class="btn btn-primary btn-lg border-0 me-2" href="#!">
 							Pedir Presupuesto
 							<?php echo cleanmax_icon_selector( 'arrow-up-right' ); ?>
 						</a>
-						<a class="btn btn btn-primary btn-lg" href="#!">
+						<a class="btn btn btn-outline-dark btn-lg border-0" href="#!">
 							¿Cómo funciona?
 						</a>
 					</div>

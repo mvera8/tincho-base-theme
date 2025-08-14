@@ -7,27 +7,24 @@
 defined( 'ABSPATH' ) || exit;
 ?>
 
-<section class="py-5">
+<section id="section-servicios" class="py-5">
 	<div class="container">
-		<div class="row">
-			<div class="col-md-4 mx-auto text-center">
-				<?php
-				get_template_part(
-					'template-parts/badge',
-					null,
-					array( 'text' => 'Servicios' )
-				);
-				?>
-				<h2 class="mb-5">Nuestros servicios profesionales de limpieza</h2>
-			</div>
-		</div>
+		<?php
+		get_template_part(
+			'template-parts/section',
+			'title',
+			array(
+				'section_title' => 'Servicios',
+			)
+		);
+		?>
 
 		<div class="row">
 			<?php
 			$args = [
 				'post_type'              => 'servicios',
 				'post_status'            => 'publish',
-				'posts_per_page'         => 3,
+				'posts_per_page'         => 4,
 				'order'                  => 'ASC',
 				'no_found_rows'          => true,
 				'ignore_sticky_posts'    => true,

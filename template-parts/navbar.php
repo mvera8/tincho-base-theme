@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 ?>
 
 <header>
-	<nav id="component-navbar" class="navbar navbar-expand-lg AAAfixed-top py-2 bg-white navbar-light">
+	<nav id="component-navbar" class="navbar navbar-expand-lg AAAfixed-top py-4 bg-white navbar-light">
 		<div class="container">
 			<?php
 			get_template_part( 'template-parts/logo' );
