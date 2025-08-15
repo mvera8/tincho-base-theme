@@ -23,7 +23,7 @@ $cfg = tincho_get_settings();
               'template-parts/icon',
               'stack',
               array(
-                'icon_stack' => 'house',
+                'icon_stack' => 'email',
               )
             );
             echo '<span class="ms-2">' . esc_html($cfg['email']) . '</span></a></li>';
@@ -34,7 +34,7 @@ $cfg = tincho_get_settings();
               'template-parts/icon',
               'stack',
               array(
-                'icon_stack' => 'house',
+                'icon_stack' => 'phone',
               )
             );
             echo '<span class="ms-2">' . esc_html($cfg['phone']) . '</span></a></li>';

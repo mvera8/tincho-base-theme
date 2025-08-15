@@ -2,66 +2,61 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-$criticals = array(
-	'navbar',
-);
-set_query_var( 'portfolio_critical', $criticals );
-
-$site_name = get_bloginfo( 'name' );
+$q = get_queried_object();
+$title = is_category() ? $q->name : $q->labels->name;
 
 get_header();
-get_component(
-	'navbar',
-	array(
-		'brand' => $site_name,
-	)
+get_template_part( 'template-parts/navbar' );
+get_template_part(
+  'template-parts/page',
+  'title',
+  ['page_title'  => $title  ]
 );
 ?>
 
-<div id="primary" class="content-area">
-    <main id="main" class="site-main" role="main">
+<section class="pt-5">
+	<div class="container">
+		<div class="row justify-content-center">
+				
+				<?php
+				if ( have_posts() ) :
+					while ( have_posts() ) :
+						the_post();
 
-        <?php if ( have_posts() ) : ?>
-            <header class="page-header">
-                <h1 class="page-title">
-                    <?php
-                    if ( is_category() ) {
-                        single_cat_title();
-                    } elseif ( is_tag() ) {
-                        single_tag_title();
-                    } elseif ( is_author() ) {
-                        the_post();
-                        echo 'Author Archives: ' . get_the_author();
-                        rewind_posts();
-                    } elseif ( is_day() ) {
-                        echo 'Daily Archives: ' . get_the_date();
-                    } elseif ( is_month() ) {
-                        echo 'Monthly Archives: ' . get_the_date( _x( 'F Y', 'monthly archives date format', 'your-theme' ) );
-                    } elseif ( is_year() ) {
-                        echo 'Yearly Archives: ' . get_the_date( _x( 'Y', 'yearly archives date format', 'your-theme' ) );
-                    } else {
-                        echo 'Archives';
-                    }
-                    ?>
-                </h1>
-            </header>
+						get_template_part(
+							'template-parts/card',
+							'servicio',
+							[
+								'thumbnail_size'  => 'medium',
+								'show_excerpt'    => true,
+								'show_date'       => true,
+								'card_classes'    => 'h-100',
+							]
+						);
+				?>
+	
+				<?php
+			endwhile;
+			?>
 
-            <?php
-            while ( have_posts() ) :
-                the_post();
-                get_template_part( 'template-parts/content', get_post_format() );
-            endwhile;
 
-            the_posts_pagination();
+	<?php else : ?>
 
-        else :
-            get_template_part( 'template-parts/content', 'none' );
+		<header class="page-header mb-4">
+			<h1 class="page-title h2 m-0">No encontramos resultados</h1>
+		</header>
+		<p>Probá con otra categoría, etiqueta o fecha.</p>
 
-        endif;
-        ?>
+	<?php endif; ?>
 
-    </main>
-</div>
+
+
+
+
+
+		</div>
+	</div>
+</section>
 
 <?php
 get_footer();

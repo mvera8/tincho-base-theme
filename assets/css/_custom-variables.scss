@@ -11,6 +11,14 @@ $gray-500: #d4d4d4;
 $gray-400: #e3e3e3;
 $gray-300: #f0f0f0;
 $dark: $gray-900;
+$white: #fff;
+
+// Fonts
+$font-family-base: "Montserrat", sans-serif;
+$font-weight-base: 300;
+
+$headings-font-family: "Poppins", sans-serif;
+$headings-font-weight: 700;
 
 // Accordion
 $accordion-bg: transparent;
@@ -23,6 +31,8 @@ $accordion-button-active-bg: transparent;
 $accordion-button-active-color: $gray-900;
 
 // Buttons
+$btn-font-family: $headings-font-family;
+$btn-font-weight: $headings-font-weight;
 $btn-padding-x: 20px;
 $btn-border-radius: 100px;
 
@@ -35,18 +45,21 @@ $btn-border-radius-sm: $btn-border-radius;
 // Cards
 $card-color: $gray-900;
 
+// Carousel
+$carousel-caption-width: 100%;
+$carousel-caption-padding-y: 20px;
+$carousel-caption-spacer: 0;
+
 // Components
 $box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -2px rgba(0, 0, 0, .1) !important;
 $border-radius: 8px;
 $border-radius-lg: 12px;
 $border-color: $gray-300;
 
-// Fonts
-$font-family-base: "Montserrat", sans-serif;
-$font-weight-base: 300;
-
-$headings-font-family: "Poppins", sans-serif;
-$headings-font-weight: 700;
+// Navs
+$navbar-light-color: $white;
+$navbar-light-hover-color: $secondary;
+$navbar-light-active-color: $secondary;
 
 // $transition-duration: 0.15s !default;
 // $transition-timing-function: ease-in-out !default;

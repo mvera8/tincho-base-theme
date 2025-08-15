@@ -29,7 +29,7 @@ defined( 'ABSPATH' ) || exit;
         </a>
       <?php endif; ?>
         <img
-          src="https://images.unsplash.com/photo-1580137189272-c9379f8864fd?auto=format&fit=crop&w=800&q=80"
+          src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/card_servicio.webp' ); ?>"
           class="w-100"
           loading="lazy"
           alt="House in Lauterbrunnen" />
@@ -41,7 +41,12 @@ defined( 'ABSPATH' ) || exit;
         <!-- Texto sobre la imagen -->
         <div class="position-absolute top-0 start-0 text-white p-3 h-100 d-flex flex-column justify-content-end align-items-start w-100">
 
-          <h4 class="mb-1"><?php the_title(); ?></h4>
+          <div class="">
+            <?php
+            the_title( '<h4 class="mb-1">Limpieza de ', '</h4>' );
+            the_excerpt();
+            ?>
+          </div>
           <button class="ps-0 btn bg-transparent text-light border-0 mt-2 rounded-pill px-3 d-inline-flex align-items-center w-auto">
             Ver Más
             <?php echo cleanmax_icon_selector('arrow-right'); ?>

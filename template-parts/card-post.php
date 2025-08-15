@@ -32,12 +32,11 @@ $args = isset($args) ? wp_parse_args($args, $defaults) : $defaults;
       <?php if ( has_post_thumbnail() ) : ?>
         <a href="<?php the_permalink(); ?>">
           <?php the_post_thumbnail( $args['thumbnail_size'], [
-            'class' => 'card-img-top',
+            'class' => 'card-img-top img-fluid shadow rounded',
             'alt'   => the_title_attribute(['echo' => false]),
           ] ); ?>
         </a>
       <?php endif; ?>
-        <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/house.jpg" alt="img-blur-shadow" class="img-fluid shadow rounded" loading="lazy" />
       </a>
     </div>
     <div class="card-body px-4 pt-3">

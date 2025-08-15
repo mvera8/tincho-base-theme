@@ -9,7 +9,7 @@ get_template_part( 'template-parts/navbar' );
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-12 col-md-8">
-					<?php the_title( '<h1 class="mb-01 text-capitalize text-center">', '</h1>' ); ?>
+					<?php the_title( '<h1 class="mb-01 text-capitalize border-bottom pb-4">', '</h1>' ); ?>
 			</div>
 		</div>
 	</div>
@@ -25,6 +25,25 @@ get_template_part( 'template-parts/navbar' );
 				<?php
 				the_content();
 				?>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="py-5">
+	<div class="container">
+		<div class="bg-secondary-light p-5 rounded">
+			<div class="row">
+				<div class="col-lg-4 mx-auto">
+					<h2 class="mb-4">How Does it Work?</h2>
+					<p class="lead mb-0"></p>
+				</div>
+
+				<div class="col-lg-8 mx-auto">
+					<h2 class="mb-4">Solicita tu cotización</h2>
+					<p class="lead mb-0">Formulario</p>
+				</div>
+
 			</div>
 		</div>
 	</div>

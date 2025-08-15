@@ -11,7 +11,7 @@
 defined( 'ABSPATH' ) || exit;
 
 $badge_text = isset($args['text']) ? esc_html($args['text']) : '';
-$badge_class = isset($args['class']) ? esc_html($args['class']) : 'primary-light';
+$badge_class = isset($args['class']) ? esc_html($args['class']) : 'secondary-light text-dark';
 
 if ( ! empty( $badge_text ) ) :
 	printf(

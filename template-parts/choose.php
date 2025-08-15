@@ -46,7 +46,8 @@ $choose = array(
 										'stack',
 										array(
 											'icon_stack' => 'check',
-											'icon_color' => 'text-success border-success',
+											'icon_color' => 'text-primary bg-secondary-light',
+											'icon_margin' => 'mb-4',
 										)
 									);
 									?>

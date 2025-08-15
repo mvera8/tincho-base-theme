@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 ?>
 
 <header>
-	<nav id="component-navbar" class="navbar navbar-expand-lg AAAfixed-top py-4 bg-white navbar-light">
+	<nav id="component-navbar" class="navbar navbar-expand-lg py-4 bg-primary navbar-light">
 		<div class="container">
 			<?php
 			get_template_part( 'template-parts/logo' );
@@ -36,7 +36,7 @@ defined( 'ABSPATH' ) || exit;
 			);
 			?>
 
-			<a class="btn btn btn-primary px-4 fw-500 border-0 text-decoration-none" href="#!">
+			<a class="btn btn-outline-light px-4 text-decoration-none" href="#!">
 				Presupuestar
 			</a>
 		</div>

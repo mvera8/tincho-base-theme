@@ -4,7 +4,7 @@ $includes = array(
   '/cleanup.php',
   '/comments.php',
 	'/enqueue.php',
-  '/excerpt-length.php',
+  '/excerpt.php',
 	'/preload.php',
   '/svg.php',
   '/theme-options.php',
