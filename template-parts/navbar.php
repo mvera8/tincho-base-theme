@@ -7,10 +7,13 @@
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
+
+$is_home = is_front_page() || is_home();
+$border = $is_home ? 'border-bottom border-white' : '';
 ?>
 
 <header>
-	<nav id="component-navbar" class="navbar navbar-expand-lg py-4 bg-primary navbar-light">
+	<nav id="component-navbar" class="navbar navbar-expand-lg py-4 bg-primary navbar-light <?php echo esc_attr( $border ); ?>">
 		<div class="container">
 			<?php
 			get_template_part( 'template-parts/logo' );
@@ -36,9 +39,7 @@ defined( 'ABSPATH' ) || exit;
 			);
 			?>
 
-			<a class="btn btn-outline-light px-4 text-decoration-none" href="#!">
-				Presupuestar
-			</a>
+			<a class="btn btn-primary bg-primary-dark px-4 text-decoration-none" href="#!">Solicitá Presupuesto</a>
 		</div>
 	</nav>
 </header>

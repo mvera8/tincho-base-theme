@@ -14,7 +14,8 @@ defined( 'ABSPATH' ) || exit;
 			'template-parts/section',
 			'title',
 			array(
-				'section_title' => 'Servicios',
+				'title' => 'Servicios',
+				'lead'  => 'Limpieza profesional para cada espacio'
 			)
 		);
 		?>

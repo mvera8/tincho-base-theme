@@ -108,6 +108,9 @@
 	
 </footer>
 
-<?php wp_footer(); ?>
+<?php
+get_template_part('template-parts/affix');
+wp_footer();
+?>
 </body>
 </html>

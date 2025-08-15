@@ -11,6 +11,7 @@ $includes = array(
   '/theme-setup.php',
   '/cleanmax-servicios.php',
   '/cleanmax-icon-selector.php',
+  '/cleanmax-image.php',
 );
 
 foreach ( $includes as $file ) {

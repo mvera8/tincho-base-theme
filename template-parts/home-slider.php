@@ -30,7 +30,7 @@ $carousel_id = 'carouselHomeFade';
   <div class="carousel-inner">
     <?php foreach ($slider as $i => $item):
       $is_active = ($i===0) ? ' active' : '';
-      $img_url   = get_stylesheet_directory_uri() . '/assets/images/' . $item['image'] . '.webp';
+      $img_url   = get_cleanmax_image( $item['image'] );
       $loading   = ($i===0) ? '' : ' loading="lazy"';
     ?>
       <div class="carousel-item<?php echo esc_attr($is_active); ?>">
@@ -41,15 +41,28 @@ $carousel_id = 'carouselHomeFade';
           <div class="container py-5">
             <div class="row">
               <div class="col-lg-6 text-center text-lg-start">
-								<h1 class="display-1 mb-2">
+                <?php
+                get_template_part(
+                  'template-parts/badge',
+                  null,
+                  array( 'text' => get_bloginfo('description') )
+                );
+                ?>
+								<h1 class="display-1 mb-4">
 									<?php bloginfo('name'); ?> <?php echo esc_html( $item['title'] ); ?>
 								</h1>
-                <p class="lead mb-5"><?php bloginfo('description'); ?></p>
                 <div class="d-flex gap-2 justify-content-center justify-content-lg-start">
-                  <a class="btn btn-primary btn-lg border-0" href="#!">
-                    Pedir Presupuesto <?php echo cleanmax_icon_selector('arrow-up-right'); ?>
-                  </a>
-                  <a class="btn btn-outline-light btn-lg border-0" href="#section-steps">¿Cómo funciona?</a>
+                  <?php
+                  get_template_part( 'template-parts/btn-solicita-presupuesto' );
+                  get_template_part(
+                    'template-parts/btn',
+                    'multiuso',
+                    [
+                      'text' => '¿Cómo funciona?',
+                      'link' => '#section-steps'
+                    ]
+                  );
+                  ?>
                 </div>
 
                 <div class="row text-center mt-5">

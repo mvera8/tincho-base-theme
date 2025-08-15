@@ -33,7 +33,17 @@ $choose = array(
 				<img src="https://placehold.co/800x700" alt="Persona limpiando" class="img-fluid mb-4">
 			</div>
 			<div class="col-md-6 offset-md-1">
-				<h2 class="mb-4 text-white">Porqué Elegirnos</h2>
+				<?php
+				get_template_part(
+					'template-parts/section',
+					'title',
+					array(
+						'title' => 'Porqué Elegirnos',
+						'color' => 'white',
+						'align' => 'left',
+					)
+				);
+				?>
 
 				<div class="row align-items-stretch">
 					<?php foreach ( $choose as $index => $item ) : ?>
