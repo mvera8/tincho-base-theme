@@ -6,6 +6,10 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
+if ( is_page_template( 'templates/solicita-presupuesto.php' ) || is_singular( 'servicios' ) ) {
+	return;
+}
+
 $cfg = tincho_get_settings();
 ?>
 

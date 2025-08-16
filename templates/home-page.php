@@ -16,6 +16,6 @@ get_template_part( 'template-parts/servicios' );
 get_template_part( 'template-parts/choose' );
 get_template_part( 'template-parts/posts' );
 get_template_part( 'template-parts/faqs' );
-get_template_part( 'template-parts/trabaja-con-nosotros' );
+// get_template_part( 'template-parts/trabaja-con-nosotros' );
 get_template_part( 'template-parts/last-cta' );
 get_footer();

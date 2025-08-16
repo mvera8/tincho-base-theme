@@ -28,18 +28,16 @@ $faqs = array(
 
 <section class="py-5">
 	<div class="container">
-		<div class="row">
-			<div class="col-md-4 mx-auto text-center">
-				<?php
-				get_template_part(
-					'template-parts/badge',
-					null,
-					array( 'text' => 'Preguntas Frecuentes' )
-				);
-				?>
-				<h2 class="mb-5">Tu tienes preguntas y nosotros respuestas</h2>
-			</div>
-		</div>
+		<?php
+		get_template_part(
+			'template-parts/section',
+			'title',
+			array(
+				'title' => 'Preguntas frecuentes',
+			)
+		);
+		?>
+
 		<div class="row justify-content-center">
 			<div class="col-12 col-md-8">
 				<div class="accordion" id="accordionRental">
@@ -49,7 +47,7 @@ $faqs = array(
 						$collapse_id = 'collapse' . $index;
 						$is_first    = ( $index === 0 );
 						?>
-						<div class="accordion-item mb-3">
+						<div class="accordion-item mb-3 rounded overflow-hidden">
 							<h5 class="accordion-header" id="<?php echo esc_attr( $heading_id ); ?>">
 									<button class="accordion-button border-bottom fw-semibold <?php echo $is_first ? '' : 'collapsed'; ?>" 
 													type="button" 
@@ -73,6 +71,33 @@ $faqs = array(
 					</div>
 					<?php endforeach; ?>
 				</div>
+
+				<div class="card bg-secondary-light border-0 rounded my-5 overflow-hidden">
+					<div class="row align-items-center justify-content-center">
+						<div class="col-md-8">
+							<div class="card-body py-4">
+								<h4 class="card-title mb-0">
+									Todavia Tenes Preguntas?
+								</h4>
+							</div>
+						</div>
+						<div class="col-md-4 text-end pe-4">
+							<?php
+							get_template_part(
+								'template-parts/btn',
+								'multiuso',
+								[
+									'text' => 'Contactanos',
+									'link' => esc_url( home_url( '/contacto/' ) ),
+									'class' => 'btn-dark',
+								]
+							);
+							?>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			</div>
 		</div>
 	</div>

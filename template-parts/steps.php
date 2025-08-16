@@ -28,9 +28,9 @@ $steps = array(
 		<div class="row align-items-stretch">
 			<?php foreach ( $steps as $step ) : ?>
 				<div class="col-md-4 mb-4 d-flex">
-					<div class="card px-2 pt-2 pb-0 bg-white border-0 shadow rounded h-100 w-100">
+					<div class="card px-2 pt-2 pb-0 bg-white border rounded h-100 w-100 text-center">
 						<div class="card-body d-flex flex-column">
-							<div class="mb-4">
+							<div class="mb-4 border rounded-circle icon-stack icon-stack-lg">
 								<img
 									src="<?php the_cleanmax_image( 'clean' ); ?>"
 									alt="<?php echo esc_attr( $step ); ?>"
@@ -52,9 +52,9 @@ $steps = array(
 			'template-parts/btn',
 			'multiuso',
 			[
-				'text' => '¿Cómo funciona?',
-				'link' => '#section-steps',
-				'style' => 'btn-outline-primary'
+				'text'  => 'Ver Servicios',
+				'link'  => '#section-servicios',
+				'class' => 'btn-outline-primary'
 			]
 		);
 		?>

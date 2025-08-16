@@ -37,7 +37,7 @@ defined( 'ABSPATH' ) || exit;
 						[
 							'text' => '¿Cómo funciona?',
 							'link' => '#section-steps',
-							'style' => 'btn-outline-primary'
+							'class' => 'btn-outline-primary'
 						]
 					);
 					?>

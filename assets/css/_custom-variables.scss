@@ -12,7 +12,7 @@ $gray-600: #b6b6b6;
 $gray-500: #d4d4d4;
 $gray-400: #e3e3e3;
 $gray-300: #f0f0f0;
-$dark: $gray-900;
+$dark: #333;
 $white: #fff;
 
 // Fonts
@@ -23,14 +23,14 @@ $headings-font-family: "Poppins", sans-serif;
 $headings-font-weight: 700;
 
 // Accordion
-$accordion-bg: transparent;
-$accordion-color: $gray-900;
+$accordion-bg: $gray-300;
 $accordion-border-width: 0;
 $accordion-border-radius: 0;
 
-$accordion-button-color: $gray-900;
-$accordion-button-active-bg: transparent;
+$accordion-button-active-bg: $gray-300;
 $accordion-button-active-color: $gray-900;
+
+$accordion-button-focus-box-shadow: none;
 
 // Badge
 $badge-color: $accent;
