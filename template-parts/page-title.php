@@ -7,7 +7,7 @@ defined('ABSPATH') || exit;
 $page_title = $args['page_title'] ?? '';
 ?>
 
-<header class="py-4 hero-title bg-primary">
+<header class="py-4 bg-degradado-blue-bottom">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-12 col-md-8">

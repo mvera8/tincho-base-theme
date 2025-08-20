@@ -15,7 +15,7 @@
 defined( 'ABSPATH' ) || exit;
 ?>
 
-<div class="col-12 col-md-3">
+<div class="col-12 col-sm-6 col-lg-3">
   <a href="<?php the_permalink(); ?>">
     <div class="card border-0 shadow-lg rounded-4 overflow-hidden mb-4">
       <div class="position-relative">

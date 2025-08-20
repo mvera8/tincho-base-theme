@@ -9,7 +9,7 @@ defined( 'ABSPATH' ) || exit;
 $slider = [
   [
 		'title'=>'Hogares',
-		'image'=>'slider_hogares',
+		'image'=>'front',
 	],
   [
 		'title'=>'Oficinas',

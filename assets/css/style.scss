@@ -130,43 +130,10 @@
   }
 }
 
-// hero
-.hero {
-  z-index: 1;
-
-  &-home {
-    background:
-      linear-gradient(0deg, transparent 0%, rgba(255, 255, 255, 1) 50%),
-      linear-gradient(50deg, rgba($secondary, 0.6) 0%, transparent 70%),
-      linear-gradient(310deg, rgba($primary, 0.3) 0%, rgba(255, 255, 255, 1) 40%);
-  }
-
-  &-home-2 {
-    background: $primary;
-    background:
-      linear-gradient(0deg, transparent 0%, $primary 90%),
-      linear-gradient(50deg, rgba($primary, 1) 0%, transparent 30%),
-      linear-gradient(310deg, rgba($secondary, 1) 0%, $primary 70%);
-  }
-
-  &-test {
-    background:
-      linear-gradient(0deg, transparent 0%, rgba(255, 255, 255, 1) 50%),
-      linear-gradient(50deg, transparent 0%, transparent 70%),
-      linear-gradient(310deg, rgba($primary, 0.3) 0%, rgba($secondary, 0.3) 30%, rgba(255, 255, 255, 1) 60%);
-  }
-
-  &-title {
-    background: linear-gradient(15deg, $secondary-light 0%, transparent 15%);
-  }
-}
-
 // slider
 /* El slide se ajusta al contenido; opcional: darle altura mínima "hero" */
 .carousel.hero .carousel-item {
   position: relative;
-  min-height: clamp(380px, 60vh, 720px);
-  /* opcional: sacalo si no querés mínimo */
 }
 
 /* Imagen de fondo que rellena detrás del contenido */
@@ -250,6 +217,27 @@
   &-info {
     &-light {
       background-color: $gray-300;
+    }
+  }
+
+  &-degradado {
+    background: linear-gradient(0deg, $primary 0%, $primary 90%);
+    z-index: 1;
+
+    &-blue {
+      background: $primary;
+      background:
+        linear-gradient(0deg, transparent 0%, $primary 90%),
+        linear-gradient(50deg, rgba($primary, 1) 0%, transparent 30%),
+        linear-gradient(310deg, rgba($secondary, 1) 0%, $primary 70%);
+    }
+
+    &-white-top {
+      background: linear-gradient(150deg, $secondary-light 0%, transparent 120px);
+    }
+
+    &-blue-bottom {
+      background: linear-gradient(15deg, $secondary-light 0%, transparent 15%), $primary;
     }
   }
 }

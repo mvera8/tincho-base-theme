@@ -76,9 +76,9 @@ $faqs = array(
 					<div class="row align-items-center justify-content-center">
 						<div class="col-md-8">
 							<div class="card-body py-4">
-								<h4 class="card-title mb-0">
+								<h5 class="card-title mb-0">
 									Todavia Tenes Preguntas?
-								</h4>
+								</h5>
 							</div>
 						</div>
 						<div class="col-md-4 text-end pe-4">

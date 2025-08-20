@@ -12,7 +12,7 @@ get_header();
 get_template_part( 'template-parts/navbar' );
 ?>
 
-<header class="py-4">
+<header class="py-4 bg-degradado-white-top">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-12 col-md-8">

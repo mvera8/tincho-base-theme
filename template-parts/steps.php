@@ -11,6 +11,22 @@ $steps = array(
 	'Te asignamos un/a profesional verificado/a',
 	'Disfrutá tu casa super limpia',
 );
+
+$steps = array(
+	array(
+		'title' => 'Solicitá un presupuesto',
+		'text'  => 'Ya sea por Whatsapp o por nuestro formulario online.',
+		'link'  => '/solicita-tu-presupuesto/',
+	),
+	array(
+		'title' => 'La Limpieza',
+		'text'  => 'Te asignamos un/a profesional verificado/a con productos de alta calidad.',
+	),
+	array(
+		'title' => 'Disfrutá tu casa super limpia',
+		'text'  => 'Nos adaptamos a tu disponibilidad, incluso fines de semana y feriados.',
+	),
+);
 ?>
 
 <section id="section-steps" class="py-5">
@@ -25,20 +41,43 @@ $steps = array(
 		);
 		?>
 
-		<div class="row align-items-stretch">
-			<?php foreach ( $steps as $step ) : ?>
+		<div class="row align-items-stretch mb-4">
+			<?php foreach ( $steps as $index => $step ) :
+				$number_step = $index + 1;
+				?>
 				<div class="col-md-4 mb-4 d-flex">
-					<div class="card px-2 pt-2 pb-0 bg-white border rounded h-100 w-100 text-center">
-						<div class="card-body d-flex flex-column">
-							<div class="mb-4 border rounded-circle icon-stack icon-stack-lg">
+					<div class="card px-2 pt-2 pb-0 border rounded h-100 w-100 text-center">
+						<div class="card-body d-flex flex-column align-items-center">
+							<div class="mb-4 position-relative d-flex">
+								<?php
+								get_template_part(
+									'template-parts/badge',
+									null,
+									array(
+										'text'  => 'Paso ' . $number_step,
+										'class' => 'position-absolute top-0 start-0 translate-middle'
+									)
+								);
+								?>
 								<img
 									src="<?php the_cleanmax_image( 'clean' ); ?>"
-									alt="<?php echo esc_attr( $step ); ?>"
+									alt="<?php echo esc_attr( $step['title'] ); ?>"
 									class="img-fluid"
 									loading="lazy"
 								/>
 							</div>
-							<p class="lead mb-0"><?php echo esc_html( $step ); ?></p>
+							<div class="px-4">
+								<h5 class="mb-2"><?php echo esc_html( $step['title'] ); ?></h5>
+								<p class="mb-0"><?php echo esc_html( $step['text'] ); ?></p>
+								<?php
+								if ( isset( $step['link'] ) ) {
+									printf(
+										'<a href="%s" class="btn btn-link text-decoration-none">Ver Más</a>',
+										esc_url( home_url( $step['link'] ) ),
+									);
+								}
+								?>
+							</div>
 						</div>
 					</div>
 				</div>
