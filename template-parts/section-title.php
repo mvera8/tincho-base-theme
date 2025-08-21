@@ -7,7 +7,7 @@ defined('ABSPATH') || exit;
 $section_title = $args['title'] ?? '';
 $section_lead  = $args['lead']  ?? '';
 $section_color = $args['color'] ?? 'default';
-$section_align = $args['align']  ?? 'center col-md-4';
+$section_align = $args['align']  ?? 'center col-md-5';
 ?>
 
 <div class="row">

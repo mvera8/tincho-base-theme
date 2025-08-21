@@ -48,7 +48,7 @@ defined( 'ABSPATH' ) || exit;
             ?>
           </div>
           <button class="ps-0 btn bg-transparent text-light border-0 mt-2 rounded-pill px-3 d-inline-flex align-items-center w-auto">
-            Ver Más
+            Qué incluye
             <?php echo cleanmax_icon_selector('arrow-right'); ?>
           </button>
 

@@ -7,12 +7,14 @@ get_template_part( 'template-parts/navbar' );
 $servicio_title = 'Limpieza de ' . get_the_title();
 ?>
 
-<section id="servicio-hero" class="position-relative border-bottom hero-test">
+<section id="servicio-hero" class="position-relative border-bottom bg-degradado-white-top">
 	<div class="container-fluid">
 		<div class="row align-items-center justify-content-center">
 			<div class="col-12 col-md-4 offset-md-2">
 				<h1 class="display-3 mb-4"><?php echo esc_html( $servicio_title ); ?></h1>
-				<a class="btn btn-primary btn-lg border-0 me-2" href="#!">Pedir Presupuesto</a>
+				<?php
+				get_template_part( 'template-parts/btn-solicita-presupuesto' );
+				?>
 			</div>
 			<div class="col-12 col-md-6 px-0">
 				<img

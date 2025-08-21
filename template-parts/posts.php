@@ -25,8 +25,6 @@ defined( 'ABSPATH' ) || exit;
 				'post_type'      => 'post',
 				'posts_per_page' => 3,
 				'post_status'    => 'publish',
-				'orderby'        => 'date',
-				'order'          => 'DESC',
 			];
 
 			$latest_posts = new WP_Query($args);

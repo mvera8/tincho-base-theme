@@ -17,46 +17,34 @@ get_template_part(
 <section class="pt-5">
 	<div class="container">
 		<div class="row justify-content-center">
-				
-				<?php
-				if ( have_posts() ) :
-					while ( have_posts() ) :
-						the_post();
+			<?php
+			if ( have_posts() ) :
+				while ( have_posts() ) :
+					the_post();
 
-						get_template_part(
-							'template-parts/card',
-							'servicio',
-							[
-								'thumbnail_size'  => 'medium',
-								'show_excerpt'    => true,
-								'show_date'       => true,
-								'card_classes'    => 'h-100',
-							]
-						);
-				?>
-	
-				<?php
-			endwhile;
+					get_template_part(
+						'template-parts/card',
+						'servicio',
+						[
+							'thumbnail_size'  => 'medium',
+							'show_excerpt'    => true,
+							'show_date'       => true,
+							'card_classes'    => 'h-100',
+						]
+					);
+				endwhile;
+			else :
 			?>
-
-
-	<?php else : ?>
-
-		<header class="page-header mb-4">
-			<h1 class="page-title h2 m-0">No encontramos resultados</h1>
-		</header>
-		<p>Probá con otra categoría, etiqueta o fecha.</p>
-
-	<?php endif; ?>
-
-
-
-
-
-
+			<header class="page-header mb-4">
+				<h1 class="page-title h2 m-0">No encontramos resultados</h1>
+			</header>
+			<p>Probá con otra categoría, etiqueta o fecha.</p>
+			<?php endif; ?>
 		</div>
 	</div>
 </section>
 
 <?php
+get_template_part( 'template-parts/steps' );
+get_template_part( 'template-parts/trabaja-con-nosotros' );
 get_footer();

@@ -7,7 +7,7 @@
 defined( 'ABSPATH' ) || exit;
 ?>
 
-<div class="p-5 rounded border bg-white">
+<div id="formulario" class="p-5 rounded border bg-white">
 	<h3 class="mb-4 text-capitalize">Completar el formulario</h3>
 	<form action="">
 		<div class="row mb-3">

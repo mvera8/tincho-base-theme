@@ -35,4 +35,5 @@ get_template_part( 'template-parts/navbar' );
 <?php
 get_template_part( 'template-parts/steps' );
 get_template_part( 'template-parts/trabaja-con-nosotros' );
+get_template_part( 'template-parts/last-cta' );
 get_footer();

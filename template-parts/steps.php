@@ -37,6 +37,7 @@ $steps = array(
 			'title',
 			array(
 				'title' => '¿Cómo funciona?',
+				'lead'  => 'Pasos sencillos para tener una casa impecable.'
 			)
 		);
 		?>
@@ -46,7 +47,7 @@ $steps = array(
 				$number_step = $index + 1;
 				?>
 				<div class="col-md-4 mb-4 d-flex">
-					<div class="card px-2 pt-2 pb-0 border rounded h-100 w-100 text-center">
+					<div class="card border-0 rounded h-100 w-100 text-center">
 						<div class="card-body d-flex flex-column align-items-center">
 							<div class="mb-4 position-relative d-flex">
 								<?php
@@ -72,8 +73,9 @@ $steps = array(
 								<?php
 								if ( isset( $step['link'] ) ) {
 									printf(
-										'<a href="%s" class="btn btn-link text-decoration-none">Ver Más</a>',
+										'<a href="%s" class="btn btn-link text-decoration-none">Ver Más %s</a>',
 										esc_url( home_url( $step['link'] ) ),
+										cleanmax_icon_selector( 'arrow-right' )
 									);
 								}
 								?>

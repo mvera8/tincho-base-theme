@@ -26,7 +26,6 @@ defined( 'ABSPATH' ) || exit;
 				'post_type'              => 'servicios',
 				'post_status'            => 'publish',
 				'posts_per_page'         => 4,
-				'order'                  => 'ASC',
 				'no_found_rows'          => true,
 				'ignore_sticky_posts'    => true,
 				'update_post_term_cache' => false,
