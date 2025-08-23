@@ -33,16 +33,7 @@ defined( 'ABSPATH' ) || exit;
 				while ( $latest_posts->have_posts() ) :
 					$latest_posts->the_post();
 
-					get_template_part(
-						'template-parts/card',
-						'post',
-						[
-							'thumbnail_size'  => 'medium',
-							'show_excerpt'    => true,
-							'show_date'       => true,
-							'card_classes'    => 'h-100',
-						]
-					);
+					get_template_part( 'template-parts/card-post' );
 
 				endwhile;
 				wp_reset_postdata();

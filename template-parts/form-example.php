@@ -74,6 +74,6 @@ defined( 'ABSPATH' ) || exit;
 			<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 		</div>
 
-		<button type="submit" class="btn btn-primary btn-lg">Enviar Formulario</button>
+		<button type="submit" class="btn btn-primary btn-lg d-block w-100">Enviar Formulario</button>
 	</form>
 </div>

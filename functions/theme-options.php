@@ -18,6 +18,8 @@ function tincho_default_settings(): array {
 		'phone'     => '',
 		'facebook'  => '',
 		'instagram' => '',
+		'puntaje'   => '',
+		'reviews'   => '',
 	];
 }
 
@@ -73,6 +75,8 @@ add_action('admin_init', function () {
 	add_settings_field('phone', __('Teléfono', TINCHO_TEXTDOMAIN), 'tincho_field_phone',    TINCHO_SETTINGS_PAGE, 'tincho_main_section');
 	add_settings_field('facebook', __('Facebook URL', TINCHO_TEXTDOMAIN), 'tincho_field_facebook', TINCHO_SETTINGS_PAGE, 'tincho_main_section');
 	add_settings_field('instagram', __('Instagram URL', TINCHO_TEXTDOMAIN), 'tincho_field_instagram', TINCHO_SETTINGS_PAGE, 'tincho_main_section');
+	add_settings_field('puntaje', __('Puntaje', TINCHO_TEXTDOMAIN), 'tincho_field_puntaje', TINCHO_SETTINGS_PAGE, 'tincho_main_section');
+	add_settings_field('reviews', __('Reseñas', TINCHO_TEXTDOMAIN), 'tincho_field_reviews', TINCHO_SETTINGS_PAGE, 'tincho_main_section');
 });
 
 /**
@@ -87,6 +91,8 @@ function tincho_sanitize_settings($input): array {
 		$clean['phone']     = preg_replace('/[^0-9\+\s\-\(\)]/','', $input['phone'] ?? '');
 		$clean['facebook']  = esc_url_raw($input['facebook'] ?? '');
 		$clean['instagram'] = esc_url_raw($input['instagram'] ?? '');
+		$clean['puntaje']   = esc_html($input['puntaje'] ?? '');
+		$clean['reviews']   = esc_html($input['reviews'] ?? '');
 	}
 
 	return $clean;
@@ -139,6 +145,24 @@ function tincho_field_instagram() {
 		'<input type="url" class="regular-text" name="%1$s[instagram]" value="%2$s" placeholder="https://instagram.com/tu-cuenta" />',
 		esc_attr(TINCHO_SETTINGS_OPTION),
 		esc_attr($opts['instagram'])
+	);
+}
+
+function tincho_field_puntaje() {
+	$opts = tincho_get_settings();
+	printf(
+		'<input type="text" class="regular-text" name="%1$s[puntaje]" value="%2$s" />',
+		esc_attr(TINCHO_SETTINGS_OPTION),
+		esc_attr($opts['puntaje'])
+	);
+}
+
+function tincho_field_reviews() {
+	$opts = tincho_get_settings();
+	printf(
+		'<input type="number" class="regular-text" name="%1$s[reviews]" value="%2$s" min="1" />',
+		esc_attr(TINCHO_SETTINGS_OPTION),
+		esc_attr($opts['reviews'])
 	);
 }
 

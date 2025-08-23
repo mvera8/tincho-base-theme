@@ -30,14 +30,21 @@ $servicio_title = 'Limpieza de ' . get_the_title();
 
 <section class="py-5">
 	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-12 col-md-9">
-				<?php the_post_thumbnail('', array('class' => 'img-fluid mb-5 rounded')); ?>
-			</div>
-			<div class="col-12 col-md-8">
-				<?php
-				the_content();
-				?>
+	<div class="carousel hero">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="<?php the_cleanmax_image( 'productos' ); ?>" class="bg-img" alt="Hogares">
+				<div class="bg-overlay"></div>
+
+				<div class="slide-content py-5">
+					<div class="row">
+						<div class="col-md-6 px-5">
+							<?php
+							the_content();
+							?>
+						</div>
+					</div>
+				</div><!-- /.slide-content -->
 			</div>
 		</div>
 	</div>

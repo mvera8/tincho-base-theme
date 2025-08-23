@@ -17,7 +17,7 @@ get_template_part(
 );
 ?>
 
-<section class="pt-5">
+<section class="py-5">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-lg-8 mx-auto">
@@ -58,4 +58,6 @@ get_template_part(
 </section>
 
 <?php
+get_template_part( 'template-parts/faqs' );
+get_template_part( 'template-parts/last-cta' );
 get_footer();

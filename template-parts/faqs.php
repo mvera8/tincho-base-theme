@@ -88,7 +88,7 @@ $faqs = array(
 								'multiuso',
 								[
 									'text' => 'Contactanos',
-									'link' => esc_url( home_url( '/contacto/' ) ),
+									'link' => is_page_template( 'templates/contacto-page.php' ) ? '#formulario' : esc_url( home_url( '/contacto/' ) ),
 									'class' => 'btn-dark',
 								]
 							);

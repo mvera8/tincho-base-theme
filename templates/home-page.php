@@ -15,8 +15,7 @@ get_template_part( 'template-parts/steps' );
 get_template_part( 'template-parts/servicios' );
 ?>
 
-
-
+<section>
 <div class="carousel hero">
 	<div class="carousel-inner">
 		<div class="carousel-item active">
@@ -70,6 +69,7 @@ get_template_part( 'template-parts/servicios' );
 		</div>
 	</div>
 </div>
+</section>
 
 
 

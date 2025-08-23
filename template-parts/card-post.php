@@ -7,8 +7,6 @@
  * - thumbnail_size (string) por ej. 'medium'
  * - show_excerpt (bool)
  * - excerpt_length (int)
- * - show_date (bool)
- * - card_classes (string)
  */
 
 // Exit if accessed directly.
@@ -18,14 +16,13 @@ $defaults = [
   'thumbnail_size' => 'medium',
   'show_excerpt'   => true,
   'excerpt_length' => 20,
-  'show_date'      => true,
-  'card_classes'   => 'h-100',
+  'col_classes'    => 'col-lg-4 col-md-6',
 ];
 
 $args = isset($args) ? wp_parse_args($args, $defaults) : $defaults;
 ?>
 
-<div class="col-lg-4 col-md-6">
+<div class="<?php echo esc_attr( $args['col_classes'] ); ?>">
   <div class="card card-blog border-0">
     <div class="position-relative">
       <a class="d-block" href="<?php the_permalink(); ?>">

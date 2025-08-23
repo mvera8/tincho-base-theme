@@ -57,12 +57,13 @@
 .custom-logo {
   height: 40px;
 
-  @at-root .navbar.bg-primary & {
+  @at-root .bg-primary &,
+  .bg-primary-dark &{
     filter: brightness(0) invert(1);
   }
 
   @at-root footer & {
-    height: 30px;
+    height: 45px;
     margin-bottom: 30px;
   }
 }
@@ -75,12 +76,15 @@
 }
 
 // footer
-.footer-nav {
-  .nav-link {
-    color: $dark;
+.footer {
+  border-top: solid 5px $secondary;
+  &-nav {
+    .nav-link {
+      color: $secondary-light;
 
-    &:hover {
-      color: $primary;
+      &:hover {
+        color: $secondary;
+      }
     }
   }
 }
