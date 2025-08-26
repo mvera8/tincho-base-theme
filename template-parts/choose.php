@@ -26,7 +26,7 @@ $choose = array(
 );
 ?>
 
-<section class="py-5 bg-primary">
+<section class="py-5 bg-primary mb-5">
 	<div class="container">
 		<div class="row align-items-center">
 			<div class="col-md-5 text-white">

@@ -13,6 +13,7 @@ $includes = array(
   '/cleanmax-icon-selector.php',
   '/cleanmax-image.php',
   '/cleanmax-servicio-shortcode.php',
+  '/cleanmax-card-shortcode.php',
 );
 
 foreach ( $includes as $file ) {

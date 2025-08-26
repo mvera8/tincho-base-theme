@@ -1,15 +1,15 @@
-<footer class="footer bg-primary-dark py-5">
+<footer class="footer py-5 border-top">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-3">
+			<div class="col-md-5">
 				<?php
 				get_template_part( 'template-parts/logo' );
 				?>
-				<div class="mb-3 mb-md-0 text-light">© 2025 <?php echo esc_html( get_bloginfo( 'name' ) ); ?> - Todos los derechos reservados</div>
+				<div class="mb-3 mb-md-0 text-muted fs-sm fs-6">© 2025 <?php echo esc_html( get_bloginfo( 'name' ) ); ?> - Todos los derechos reservados</div>
 			</div>
 
 			<div class="col-md-3">
-				<h5 class="ps-3 text-light">Empresa</h5>
+				<h5 class="ps-3 text-muted">Empresa</h5>
 				<?php
 				wp_nav_menu(
 					array(
@@ -24,7 +24,7 @@
 			</div>
 
 			<div class="col-md-3">
-				<h5 class="ps-3 text-light">Servicios</h5>
+				<h5 class="ps-3 text-muted">Servicios</h5>
 				<ul class="nav footer-nav flex-column">
 				<?php
 					$args = [
@@ -62,7 +62,7 @@
 				</ul>
 			</div>
 
-			<div class="col-md-3">
+			<div class="col-md-1 text-end">
 				<?php get_template_part( 'template-parts/list-redes' ); ?>
 			</div>
 		</div>

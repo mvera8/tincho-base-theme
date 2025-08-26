@@ -59,5 +59,5 @@ get_template_part(
 
 <?php
 get_template_part( 'template-parts/faqs' );
-get_template_part( 'template-parts/last-cta' );
+// get_template_part( 'template-parts/last-cta' );
 get_footer();

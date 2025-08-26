@@ -16,16 +16,16 @@ get_template_part( 'template-parts/servicios' );
 ?>
 
 <section>
-<div class="carousel hero">
-	<div class="carousel-inner">
-		<div class="carousel-item active">
-			<img src="<?php the_cleanmax_image( 'productos' ); ?>" class="bg-img" alt="Hogares">
-      <div class="bg-overlay"></div>
+	<div class="carousel hero">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="<?php the_cleanmax_image( 'productos' ); ?>" class="bg-img" alt="Hogares">
+      	<div class="bg-overlay"></div>
 
-			<div class="slide-content py-5">
-			<div class="container">
-		<div class="row align-items-center h-100">
-			<div class="col-md-5 h-100">
+				<div class="slide-content py-5">
+					<div class="container">
+						<div class="row align-items-center h-100">
+						<div class="col-md-5 h-100">
 				
 				
 
@@ -130,7 +130,7 @@ get_template_part( 'template-parts/servicios' );
 
 <?php
 get_template_part( 'template-parts/choose' );
+get_template_part( 'template-parts/faqs' );
 get_template_part( 'template-parts/posts' );
-// get_template_part( 'template-parts/faqs' );
 // get_template_part( 'template-parts/trabaja-con-nosotros' );
 get_footer();

@@ -46,5 +46,4 @@ get_template_part(
 
 <?php
 get_template_part( 'template-parts/steps' );
-get_template_part( 'template-parts/trabaja-con-nosotros' );
 get_footer();

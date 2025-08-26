@@ -23,29 +23,13 @@ $steps = array(
 	),
 );
 
-$choose = array(
-	array(
-		'title' => 'Personal capacitado y verificado',
-		'text'  => 'Verificación de antecedentes y formación continua para asegurar un servicio profesional y de confianza.',
-	),
-	array(
-		'title' => 'Productos de limpieza incluidos',
-		'text'  => 'Usamos productos de alta calidad y seguros para el hogar, sin costo adicional.',
-	),
-	array(
-		'title' => 'Horarios flexibles',
-		'text'  => 'Nos adaptamos a tu disponibilidad, incluso fines de semana y feriados.',
-	),
-	array(
-		'title' => 'Presupuestos claros y sin sorpresas',
-		'text'  => 'Precio cerrado desde el inicio, sin cargos ocultos.',
-	),
-);
-
 get_header();
 get_template_part( 'template-parts/navbar' );
-get_template_part( 'template-parts/choose' );
 ?>
+
+
+
+<?php get_template_part( 'template-parts/faqs' ); ?>
 
 <section class="py-5">
 	<div class="container">

@@ -12,7 +12,7 @@ get_header();
 get_template_part( 'template-parts/navbar' );
 ?>
 
-<header class="py-4 bg-degradado-white-top">
+<header class="pt-5 pb-3 bg-degradado-white-top">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-12 col-md-8">
@@ -22,18 +22,13 @@ get_template_part( 'template-parts/navbar' );
 	</div>
 </header>
 
-<section class="pt-5">
+<section class="py-5">
 	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-12 col-md-8">
-				<?php the_content(); ?>
-			</div>
-		</div>
+		<?php the_content(); ?>
 	</div>
 </section>
 
 <?php
-get_template_part( 'template-parts/steps' );
-get_template_part( 'template-parts/trabaja-con-nosotros' );
-get_template_part( 'template-parts/last-cta' );
+// get_template_part( 'template-parts/trabaja-con-nosotros' );
+// get_template_part( 'template-parts/last-cta' );
 get_footer();

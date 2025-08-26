@@ -53,6 +53,10 @@
 @import "bootstrap/scss/helpers";
 @import "bootstrap/scss/utilities/api";
 
+strong {
+  font-family: "Poppins", sans-serif;
+}
+
 // navbar
 .custom-logo {
   height: 40px;
@@ -72,20 +76,6 @@
   .nav-link {
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
-  }
-}
-
-// footer
-.footer {
-  border-top: solid 5px $secondary;
-  &-nav {
-    .nav-link {
-      color: $secondary-light;
-
-      &:hover {
-        color: $secondary;
-      }
-    }
   }
 }
 
@@ -162,6 +152,12 @@
   background:
     linear-gradient(0deg, transparent 0%, rgba(255, 255, 255, .1) 50%),
     linear-gradient(310deg, transparent 0%, rgba(0, 0, 0, .3) 50%);
+
+  &--blue {
+    background:
+      linear-gradient(0deg, transparent 0%, rgba($primary, .3) 50%),
+      linear-gradient(310deg, transparent 0%, rgba($primary, .7) 50%);
+  }
 }
 
 /* Contenido en flujo normal, encima de la imagen */

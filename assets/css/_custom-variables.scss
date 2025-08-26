@@ -49,6 +49,7 @@ $btn-border-radius-sm: $btn-border-radius;
 
 // Cards
 $card-color: $gray-900;
+$card-border-color: $primary;
 
 // Carousel
 $carousel-caption-width: 100%;
@@ -65,6 +66,9 @@ $border-color: $gray-300;
 $navbar-light-color: $white;
 $navbar-light-hover-color: $secondary;
 $navbar-light-active-color: $secondary;
+
+// Typography
+$font-weight-bolder: 700;
 
 // $transition-duration: 0.15s !default;
 // $transition-timing-function: ease-in-out !default;

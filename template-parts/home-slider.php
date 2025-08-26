@@ -66,14 +66,7 @@ $carousel_id = 'carouselHomeFade';
                     ?>
                   </div>
 
-                  <div class="row text-center mt-5">
-                    <div class="col-5">
-                      <h2 class="h2 mb-0">⭐ 4.8</h2><small>Puntaje</small>
-                    </div>
-                    <div class="col-5">
-                      <h2 class="h2 mb-0">💬 185</h2><small>Reseñas</small>
-                    </div>
-                  </div>
+                  <?php  get_template_part( 'template-parts/list-raitings' ); ?>
                 </div>
               </div>
             </div>

@@ -8,21 +8,37 @@ defined( 'ABSPATH' ) || exit;
 
 $faqs = array(
 	array(
-		'question' => '¿Cómo hago un pedido?',
-		'answer'   => 'Para hacer un pedido, simplemente visita nuestra sección de reservas y elige el servicio que necesitas.',
+		'question' => '¿Qué servicios de limpieza ofrecen?',
+		'answer'   => 'Ofrecemos servicios de limpieza profesional para hogares, oficinas, edificios y locales comerciales. Cada servicio es personalizable para adaptarse a tus necesidades y horarios.',
 	),
 	array(
-		'question' => '¿Cómo puedo pagar?',
-		'answer'   => 'Aceptamos pagos con tarjeta de crédito, débito y PayPal. Puedes pagar al finalizar tu reserva.',
+		'question' => '¿Qué incluye un servicio de limpieza estándar?',
+		'answer'   => 'Una limpieza estándar incluye el desempolvado de superficies, aspirado y trapeado de pisos, limpieza de baños (inodoro, ducha, lavabo), limpieza de la cocina (encimeras, exterior de electrodomésticos, fregadero), limpieza de dormitorios y otros ambientes. Si necesitas una limpieza más profunda, podemos crear un plan a la medida.',
 	),
 	array(
-		'question' => '¿Cuánto tiempo tarda en llegar mi pedido?',
-		'answer'   => 'El tiempo de entrega varía según el servicio. Generalmente, los pedidos se procesan en un plazo de 24 horas.',
+		'question' => '¿Los productos y equipos de limpieza están incluidos?',
+		'answer'   => 'Nuestro equipo utiliza los productos y equipamiento disponible en tu hogar. En caso de preferir que nosotros los proveamos, podemos incluirlos en la cotización.',
 	),
 	array(
-		'question' => '¿Puedo revender los productos?',
-		'answer'   => 'No, los productos adquiridos en nuestra tienda son para uso personal y no están destinados a la reventa.',
+		'question' => '¿El personal de limpieza está capacitado?',
+		'answer'   => 'Si, hacemos foco en la capacitación y entrenamiento de nuestro equipo. Su trabajo está guiado por nuestros valores de calidad, responsabilidad e integridad. ',
 	),
+	array(
+		'question' => '¿Cómo puedo solicitar un servicio?',
+		'answer'   => 'Puedes contactarnos a través de nuestra página web, por mail o WhatsApp para solicitar una cotización. Juntos definiremos el plan de limpieza, el horario y la frecuencia que mejor se adapte a tus necesidades.',
+	),
+	array(
+		'question' => '¿Qué métodos de pago aceptan?',
+		'answer'   => 'Aceptamos pagos a través de transferencia bancaria. Los detalles de pago se te proporcionarán al confirmar la reserva de tu servicio.',
+	),
+	array(
+		'question' => '¿Qué sucede si necesito cancelar o reprogramar?',
+		'answer'   => 'Entendemos que pueden surgir imprevistos. Te pedimos que nos notifiques con al menos 24 horas de anticipación para cancelar o reprogramar tu servicio sin ningún cargo adicional.',
+	),
+	// array(
+	// 	'question' => '',
+	// 	'answer'   => '',
+	// ),
 );
 ?>
 
