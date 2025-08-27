@@ -57,6 +57,10 @@ strong {
   font-family: "Poppins", sans-serif;
 }
 
+.wp-block-columns .wp-block-column {
+  flex-basis: auto !important;
+}
+
 // navbar
 .custom-logo {
   height: 40px;

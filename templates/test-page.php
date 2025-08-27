@@ -27,10 +27,6 @@ get_header();
 get_template_part( 'template-parts/navbar' );
 ?>
 
-
-
-<?php get_template_part( 'template-parts/faqs' ); ?>
-
 <section class="py-5">
 	<div class="container">
 		<div class="row align-items-start">

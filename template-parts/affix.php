@@ -6,7 +6,12 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-if ( is_page_template( 'templates/solicita-presupuesto.php' ) || is_singular( 'servicios' ) ) {
+$exclude_templates = array(
+	'templates/solicita-presupuesto-page.php',
+	'templates/mantenimiento-page.php'
+);
+
+if ( is_page_template( $exclude_templates ) || is_singular( 'servicios' ) ) {
 	return;
 }
 

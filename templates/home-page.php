@@ -13,124 +13,54 @@ get_template_part( 'template-parts/navbar' );
 get_template_part( 'template-parts/home-slider' );
 get_template_part( 'template-parts/steps' );
 get_template_part( 'template-parts/servicios' );
+get_template_part( 'template-parts/posts' );
+
 ?>
 
-<section>
-	<div class="carousel hero">
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<img src="<?php the_cleanmax_image( 'productos' ); ?>" class="bg-img" alt="Hogares">
-      	<div class="bg-overlay"></div>
 
-				<div class="slide-content py-5">
-					<div class="container">
-						<div class="row align-items-center h-100">
-						<div class="col-md-5 h-100">
-				
-				
-
-
-			</div>
-			<div class="col-md-6 offset-md-1">
-				<?php
-				get_template_part(
-					'template-parts/section',
-					'title',
-					array(
-						'title' => 'Sobre Nosotros',
-						'align' => 'left',
-					)
-				);
-				?>
-
-				<p class="lead mb-2">Exceptional level of cleaning services.</p>
-				<p>Founded in 1995 Cleanmate quickly built a reputation as one of the leading providers of residential and commercial cleaning solutions. Our continuous pursuit for perfection has resulted in consistent growth each year. Our focus is to listen to our clients, understand their needs and provide the exceptional level of residential and commercial cleaning service.</p>
-
-				<p>Founded in 1995 Cleanmate quickly built a reputation as one of the leading providers of residential and commercial cleaning solutions. Our continuous pursuit for perfection has resulted in consistent growth each year. Our focus is to listen to our clients, understand their needs and provide the exceptional level of residential and commercial cleaning service.</p>
-
-				<p>Founded in 1995 Cleanmate quickly built a reputation as one of the leading providers of residential and commercial cleaning solutions. Our continuous pursuit for perfection has resulted in consistent growth each year. Our focus is to listen to our clients, understand their needs and provide the exceptional level of residential and commercial cleaning service.</p>
-
-				<?php
-				get_template_part(
-					'template-parts/btn',
-					'multiuso',
-					[
-						'text' => '¿Cómo funciona?',
-						'link' => '#section-steps',
-						'class' => 'btn-outline-primary'
-					]
-				);
-				?>
-
-			</div>
-		</div>
-	</div>
-      </div><!-- /.slide-content -->
-		</div>
-	</div>
-</div>
-</section>
-
-
-
-<section class="py-5 bg-primary-light">
+<section class="mb-5">
 	<div class="container">
-		<div class="row align-items-center h-100 bg-warning">
-			<div class="col-md-5 h-100 bg-secondary">
-				
-				<div class="row h-100 bg-success">
-					<div class="col-6">
-						<div class="mb-4">
-							<div class="bg-primary h-100 rounded"></div>
-						</div>
-						<div>
-							<div class="bg-primary h-100 rounded"></div>
-						</div>
-					</div>
-
-					<div class="col-6">
-						<div class="bg-primary h-100 rounded"></div>
-					</div>
+		<div class="row g-0 rounded overflow-hidden">
+			<div class="col-12 col-md-6 bg-primary-light">
+				<div class="p-5">
+					<h3 class="mb-2">Trabajá con nosotros</h3>
+					<p class="pe-5">Sumate a nuestro equipo! Nos proponemos satisfacer las necesidades de nuestros clientes, ayudándolos a estar más cerca!</p>
+					<?php
+					get_template_part(
+						'template-parts/btn',
+						'multiuso',
+						[
+							'text'  => 'Sumarme',
+							'link'  => '/trabaja-con-nosotros/',
+							'class' => 'btn-primary',
+						]
+					);
+					?>
 				</div>
-
-
 			</div>
-			<div class="col-md-6 offset-md-1">
-				<?php
-				get_template_part(
-					'template-parts/section',
-					'title',
-					array(
-						'title' => 'Sobre Nosotros',
-						'align' => 'left',
-					)
-				);
-				?>
-
-				<p class="lead mb-2">Exceptional level of cleaning services.</p>
-				<p>Founded in 1995 Cleanmate quickly built a reputation as one of the leading providers of residential and commercial cleaning solutions. Our continuous pursuit for perfection has resulted in consistent growth each year. Our focus is to listen to our clients, understand their needs and provide the exceptional level of residential and commercial cleaning service.</p>
-				
-				<?php
-				get_template_part(
-					'template-parts/btn',
-					'multiuso',
-					[
-						'text' => '¿Cómo funciona?',
-						'link' => '#section-steps',
-						'class' => 'btn-outline-primary'
-					]
-				);
-				?>
-
+			<div class="col-12 col-md-6 bg-secondary-light">
+				<div class="p-5">
+					<h3>Trabajá con nosotros</h3>
+					<p class="pe-5">Sumate a nuestro equipo! Nos proponemos satisfacer las necesidades de nuestros clientes, ayudándolos a estar más cerca!</p>
+					<?php
+					get_template_part(
+						'template-parts/btn',
+						'multiuso',
+						[
+							'text'  => 'Sumarme',
+							'link'  => '/trabaja-con-nosotros/',
+							'class' => 'btn-secondary',
+						]
+					);
+					?>
+				</div>
 			</div>
 		</div>
 	</div>
 </section>
+
 
 
 <?php
-get_template_part( 'template-parts/choose' );
-get_template_part( 'template-parts/faqs' );
-get_template_part( 'template-parts/posts' );
-// get_template_part( 'template-parts/trabaja-con-nosotros' );
+// get_template_part( 'template-parts/choose' );
 get_footer();

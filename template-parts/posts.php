@@ -14,7 +14,10 @@ defined( 'ABSPATH' ) || exit;
 			'template-parts/section',
 			'title',
 			array(
-				'title' => 'Novedades',
+				'title'    => 'Novedades',
+				'align'    => 'start col-md-6',
+				'btn_link' => '/blog/',
+				'btn_text' => 'Ver Blog',
 			)
 		);
 		?>
@@ -40,20 +43,6 @@ defined( 'ABSPATH' ) || exit;
 			else :
 				echo '<p>No hay publicaciones recientes.</p>';
 			endif;
-			?>
-		</div>
-
-		<div class="text-center pt-2">
-			<?php
-			get_template_part(
-				'template-parts/btn',
-				'multiuso',
-				[
-					'text'  => 'Ver Blog',
-					'link'  => '/blog/',
-					'class' => 'btn-outline-primary'
-				]
-			);
 			?>
 		</div>
 	</div>
