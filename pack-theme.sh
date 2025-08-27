@@ -26,7 +26,6 @@ EXCLUDE=(
   "vite.config.*"
   "package*.json"
   ".pack/*"
-  "build/*"
 )
 
 SKIP_INSTALL="${SKIP_INSTALL:-0}"   # export SKIP_INSTALL=1 para saltar npm ci
@@ -68,6 +67,14 @@ if [[ "$SKIP_INSTALL" -ne 1 ]]; then
   if [[ -f package-lock.json ]]; then npm ci; else npm install; fi
 fi
 npm run build
+
+# Mover el manifest y borrar la carpeta .vite
+if [ -f "build/.vite/manifest.json" ]; then
+  mv -f "build/.vite/manifest.json" "build/manifest.json"
+fi
+if [ -d "build/.vite" ]; then
+  rm -rf "build/.vite"
+fi
 
 # ——— Preparar lista a zippear (sin staging) ———
 # Expandimos patrones del array INCLUDE (directorios o archivos)
