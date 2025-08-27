@@ -1,4 +1,10 @@
 <?php
+/**
+ * Template Name: Solicita Presupuesto Page
+ *
+ * @package tincho-base-theme
+ */
+
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
@@ -11,11 +17,13 @@ get_template_part(
 );
 ?>
 
-<section class="pt-5">
+<section class="py-5">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-12 col-md-8">
-				<?php the_content(); ?>
+				<?php
+				get_template_part('template-parts/form-example');
+				?>
 			</div>
 		</div>
 	</div>

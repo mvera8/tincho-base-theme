@@ -1,0 +1,34 @@
+<?php
+/**
+ * Template Name: Sobre Nosotros Page
+ *
+ * @package tincho-base-theme
+ */
+
+// Exit if accessed directly.
+defined( 'ABSPATH' ) || exit;
+
+get_header();
+get_template_part( 'template-parts/navbar' );
+?>
+
+<header class="pt-5 pb-3 bg-degradado-white-top">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-8">
+				<h1 class="mb-0 display-3 text-capitalize text-center">Sobre <?php bloginfo('name'); ?></h1>
+			</div>
+		</div>
+	</div>
+</header>
+
+<section class="py-5">
+	<div class="container">
+		<?php the_content(); ?>
+	</div>
+</section>
+
+<?php
+// get_template_part( 'template-parts/trabaja-con-nosotros' );
+// get_template_part( 'template-parts/last-cta' );
+get_footer();

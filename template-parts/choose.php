@@ -26,14 +26,24 @@ $choose = array(
 );
 ?>
 
-<section class="py-5 bg-primary">
+<section class="py-5 bg-primary mb-5">
 	<div class="container">
 		<div class="row align-items-center">
 			<div class="col-md-5 text-white">
 				<img src="https://placehold.co/800x700" alt="Persona limpiando" class="img-fluid mb-4">
 			</div>
 			<div class="col-md-6 offset-md-1">
-				<h2 class="mb-4 text-white">Porqué Elegirnos</h2>
+				<?php
+				get_template_part(
+					'template-parts/section',
+					'title',
+					array(
+						'title' => 'Porqué Elegirnos',
+						'color' => 'white',
+						'align' => 'left',
+					)
+				);
+				?>
 
 				<div class="row align-items-stretch">
 					<?php foreach ( $choose as $index => $item ) : ?>
@@ -46,7 +56,8 @@ $choose = array(
 										'stack',
 										array(
 											'icon_stack' => 'check',
-											'icon_color' => 'text-success border-success',
+											'icon_color' => 'text-primary bg-secondary-light',
+											'icon_margin' => 'mb-4',
 										)
 									);
 									?>

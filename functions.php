@@ -4,12 +4,16 @@ $includes = array(
   '/cleanup.php',
   '/comments.php',
 	'/enqueue.php',
-  '/excerpt-length.php',
+  '/excerpt.php',
 	'/preload.php',
   '/svg.php',
+  '/theme-options.php',
   '/theme-setup.php',
   '/cleanmax-servicios.php',
   '/cleanmax-icon-selector.php',
+  '/cleanmax-image.php',
+  '/cleanmax-servicio-shortcode.php',
+  '/cleanmax-card-shortcode.php',
 );
 
 foreach ( $includes as $file ) {

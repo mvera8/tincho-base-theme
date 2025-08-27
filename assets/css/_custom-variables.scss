@@ -1,20 +1,43 @@
 $primary: #1c34ff;
-$secondary: #8ecef4;
-$success: #00fed3;
+$primary-light: #dee6ff;
+$primary-dark: #0a1283;
+$secondary: #00fed3;
+$secondary-light: #b4fff6;
+$accent: #0ba5fb;
 $info: #b4b4b4;
-$gray-900: #333;
+$gray-900: #202020;
+$gray-800: #5b5b5b;
+$gray-700: #939393;
+$gray-600: #b6b6b6;
+$gray-500: #d4d4d4;
+$gray-400: #e3e3e3;
+$gray-300: #f0f0f0;
+$dark: #333;
+$white: #fff;
+
+// Fonts
+$font-family-base: "Montserrat", sans-serif;
+$font-weight-base: 300;
+
+$headings-font-family: "Poppins", sans-serif;
+$headings-font-weight: 700;
 
 // Accordion
-$accordion-bg: transparent;
-$accordion-color: $gray-900;
+$accordion-bg: $gray-300;
 $accordion-border-width: 0;
 $accordion-border-radius: 0;
 
-$accordion-button-color: $gray-900;
-$accordion-button-active-bg: transparent;
+$accordion-button-active-bg: $gray-300;
 $accordion-button-active-color: $gray-900;
 
+$accordion-button-focus-box-shadow: none;
+
+// Badge
+$badge-color: $accent;
+
 // Buttons
+$btn-font-family: $headings-font-family;
+$btn-font-weight: $headings-font-weight;
 $btn-padding-x: 20px;
 $btn-border-radius: 100px;
 
@@ -24,18 +47,28 @@ $btn-border-radius-lg: $btn-border-radius;
 $btn-padding-x-sm: 20px;
 $btn-border-radius-sm: $btn-border-radius;
 
+// Cards
+$card-color: $gray-900;
+$card-border-color: $primary;
+
+// Carousel
+$carousel-caption-width: 100%;
+$carousel-caption-padding-y: 20px;
+$carousel-caption-spacer: 0;
+
 // Components
-// $border-color: $secondary;
-$box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -2px rgba(0, 0, 0, .1) !important;
+$box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -2px rgba(0, 0, 0, .1);
 $border-radius: 8px;
 $border-radius-lg: 12px;
+$border-color: $gray-300;
 
-// Fonts
-$font-family-base: "Montserrat", sans-serif;
-$font-weight-base: 300;
+// Navs
+$navbar-light-color: $white;
+$navbar-light-hover-color: $secondary;
+$navbar-light-active-color: $secondary;
 
-$headings-font-family: "Poppins", sans-serif;
-$headings-font-weight: 700;
+// Typography
+$font-weight-bolder: 700;
 
 // $transition-duration: 0.15s !default;
 // $transition-timing-function: ease-in-out !default;

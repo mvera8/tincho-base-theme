@@ -7,6 +7,8 @@ Preguntas:
 Referencias
 - https://block.codescandy.com/blocks/testimonails.html
 - https://exponent-webflow-ecommerce-template.webflow.io/ (ver)
+- https://preview.themeforest.net/item/qleenie-cleaning-service-company-fse-wordpress-theme/full_screen_preview/58606101 (ver)
+- https://struktura.framer.website/ (ver)
 
 Cleaning
 - https://preview.themeforest.net/item/clenix-cleaning-services-wordpress-theme/full_screen_preview/25009704
@@ -19,3 +21,22 @@ Empresas
 
 COlores
 - https://www.realtimecolors.com/?colors=08010f-ffffff-1c34ff-00fed3-0ba5fb&fonts=Poppins-Montserrat
+- https://www.realtimecolors.com/?colors=08010f-ffffff-1c34ff-00fed3-1c34ff&fonts=Poppins-Montserrat
+
+Uru
+- https://www.casalimpia.uy/index.php
+- https://serenia.uy/contacto/
+- https://www.opcionlimpieza.com/inicio
+
+
+-------
+- https://smartdata.tonytemplates.com/cleaning-service-v3/ele-demo2/ (ver orden)
+- https://preview.themeforest.net/item/cleanmate-cleaning-company-maid-gardening-wordpress-theme/full_screen_preview/20981913 (about our)
+- posts urltimo con boton
+- slider tamaño imagen (tamaño imagen 1920 x 620)
+- https://preview.themeforest.net/item/cleanora-cleaning-services-theme/full_screen_preview/21922714 (steps)
+
+Process Steps: “How it works” (1. Choose service, 2. Pick a time, 3. We clean, 4. Enjoy).
+https://uxpilot.ai/a/ui-design?page=ZjcuxndOTI8x15AFprxC
+
+https://shtheme.org/demosd/brushup/?service=sofa-cleaning-2

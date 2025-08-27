@@ -13,12 +13,11 @@
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
-
 ?>
 
-<div class="col-12 col-md-4">
+<div class="col-12 col-sm-6 col-lg-3">
   <a href="<?php the_permalink(); ?>">
-    <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+    <div class="card border-0 shadow-lg rounded-4 overflow-hidden mb-4">
       <div class="position-relative">
         <!-- Imagen -->
         <?php if ( has_post_thumbnail() ) : ?>
@@ -30,7 +29,7 @@ defined( 'ABSPATH' ) || exit;
         </a>
       <?php endif; ?>
         <img
-          src="https://images.unsplash.com/photo-1580137189272-c9379f8864fd?auto=format&fit=crop&w=800&q=80"
+          src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/card_servicio.webp' ); ?>"
           class="w-100"
           loading="lazy"
           alt="House in Lauterbrunnen" />
@@ -40,11 +39,21 @@ defined( 'ABSPATH' ) || exit;
             style="background: linear-gradient(90deg, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0) 100%);"></div>
 
         <!-- Texto sobre la imagen -->
-        <div class="position-absolute top-0 start-0 text-white p-3 h-100 d-flex flex-column justify-content-between w-100">
-          <h4 class="mb-1"><?php the_title(); ?></h4>
-          <button class="btn btn-light btn-sm mt-2 rounded-pill px-3">Ver Más</button>
+        <div class="position-absolute top-0 start-0 text-white p-3 h-100 d-flex flex-column justify-content-end align-items-start w-100">
+
+          <div class="">
+            <?php
+            the_title( '<h4 class="mb-1">Limpieza de ', '</h4>' );
+            the_excerpt();
+            ?>
+          </div>
+          <button class="ps-0 btn bg-transparent text-light border-0 mt-2 rounded-pill px-3 d-inline-flex align-items-center w-auto">
+            Qué incluye
+            <?php echo cleanmax_icon_selector('arrow-right'); ?>
+          </button>
+
         </div>
       </div> <!-- /.position-relative -->
     </div>
   </a>
-</div>     <!-- /.col -->
+</div>

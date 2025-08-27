@@ -11,6 +11,7 @@ services:
       WORDPRESS_DB_USER: wp
       WORDPRESS_DB_PASSWORD: wp
       WORDPRESS_CONFIG_EXTRA: |
+        define ('WPLANG', 'en_US');
         define ('WP_ENV', 'development');
     volumes:
       - ./wp:/var/www/html

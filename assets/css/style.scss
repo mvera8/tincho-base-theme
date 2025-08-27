@@ -53,74 +53,132 @@
 @import "bootstrap/scss/helpers";
 @import "bootstrap/scss/utilities/api";
 
-// 5. Tus estilos
+strong {
+  font-family: "Poppins", sans-serif;
+}
+
+// navbar
 .custom-logo {
   height: 40px;
 
-  @at-root .navbar.bg-primary & {
+  @at-root .bg-primary &,
+  .bg-primary-dark &{
     filter: brightness(0) invert(1);
   }
 
   @at-root footer & {
-    height: 30px;
+    height: 45px;
     margin-bottom: 30px;
   }
 }
 
 .navbar-nav {
   .nav-link {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
   }
 }
 
-.footer-nav {
-  .nav-link {
-    color: $dark;
+// affix
+.affix {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 99;
 
-    &:hover {
-      color: $primary;
+  &__content {
+    animation: slideInFromBottom 0.5s ease-out forwards;
+    box-shadow: 0 -3px 8px 0 #a9aee04d;
+
+    @include media-breakpoint-up(sm) {
+      animation: slideInFromBottom 0.5s ease-out forwards;
+      box-shadow: 0 0 40px 0 #a9aee04d;
+
+      @include media-breakpoint-up(sm) {
+        border-radius: 50rem;
+        animation: slideInFromRight 0.5s ease-out forwards;
+      }
     }
   }
 }
 
-.hero {
-  z-index: 1;
-
-  &-home {
-    background:
-      linear-gradient(0deg, transparent 0%, rgba(255, 255, 255, 1) 50%),
-      linear-gradient(50deg, rgba($secondary, 0.6) 0%, transparent 70%),
-      linear-gradient(310deg, rgba($primary, 0.3) 0%, rgba(255, 255, 255, 1) 40%);
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
   }
 
-  &-home-2 {
-    background: $primary;
-    background:
-      linear-gradient(0deg, transparent 0%, $primary 90%),
-      linear-gradient(50deg, rgba($primary, 1) 0%, transparent 30%),
-      linear-gradient(310deg, rgba($secondary, 1) 0%, $primary 70%);
-  }
-
-  &-test {
-    background:
-      linear-gradient(0deg, transparent 0%, rgba(255, 255, 255, 1) 50%),
-      linear-gradient(50deg, transparent 0%, transparent 70%),
-      linear-gradient(310deg, rgba($primary, 0.3) 0%, rgba($secondary, 0.3) 30%, rgba(255, 255, 255, 1) 60%);
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+// slider
+/* El slide se ajusta al contenido; opcional: darle altura mínima "hero" */
+.carousel.hero .carousel-item {
+  position: relative;
+}
+
+/* Imagen de fondo que rellena detrás del contenido */
+.carousel.hero .bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Capa de gradiente para legibilidad (opcional) */
+.carousel.hero .bg-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  // background: linear-gradient(to bottom, rgba(0, 0, 0, .35), rgba(0, 0, 0, .35));
+  background:
+    linear-gradient(0deg, transparent 0%, rgba(0, 0, 0, .2) 50%),
+    linear-gradient(310deg, rgba($primary, 0.3) 0%, rgba($secondary, 0.3) 20%, rgba(0, 0, 0, .2) 40%);
+  background:
+    linear-gradient(0deg, transparent 0%, rgba(255, 255, 255, .1) 50%),
+    linear-gradient(310deg, transparent 0%, rgba(0, 0, 0, .3) 50%);
+
+  &--blue {
+    background:
+      linear-gradient(0deg, transparent 0%, rgba($primary, .3) 50%),
+      linear-gradient(310deg, transparent 0%, rgba($primary, .7) 50%);
+  }
+}
+
+/* Contenido en flujo normal, encima de la imagen */
+.carousel.hero .slide-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+// componnts
 .icon-stack {
-  height: 3rem;
-  width: 3rem;
+  height: 1.8rem;
+  width: 1.8rem;
 
   justify-content: center;
   align-items: center;
   border-radius: 100%;
 
   svg {
-    height: 2rem;
-    width: 2rem;
+    height: 1.5rem;
+    width: 1.5rem;
   }
 
   &-lg {
@@ -138,39 +196,69 @@
   box-shadow: none;
 }
 
+// helpers
 .bg {
   &-primary {
     &-light {
-      background-color: rgba($primary, 0.1);
+      background-color: $primary-light;
+    }
+
+    &-dark {
+      background-color: $primary-dark;
     }
   }
 
   &-secondary {
     &-light {
-      background-color: rgba($secondary, 0.3);
-    }
-  }
-
-  &-success {
-    &-light {
-      background-color: rgba($success, 0.1);
-    }
-
-    &-btn {
-      background-color: rgba($success, 0.3);
+      background-color: $secondary-light;
     }
   }
 
   &-info {
     &-light {
-      background-color: rgba($info, 0.3);
+      background-color: $gray-300;
+    }
+  }
+
+  &-degradado {
+    background: linear-gradient(0deg, $primary 0%, $primary 90%);
+    z-index: 1;
+
+    &-blue {
+      background: $primary;
+      background:
+        linear-gradient(0deg, transparent 0%, $primary 90%),
+        linear-gradient(50deg, rgba($primary, 1) 0%, transparent 30%),
+        linear-gradient(310deg, rgba($secondary, 1) 0%, $primary 70%);
+    }
+
+    &-white-top {
+      background: linear-gradient(150deg, $secondary-light 0%, transparent 120px);
+    }
+
+    &-blue-bottom {
+      background: linear-gradient(15deg, $secondary-light 0%, transparent 15%), $primary;
+    }
+  }
+}
+
+.text {
+  &-primary {
+    &-light {
+      color: $primary-light;
+    }
+  }
+
+  &-secondary {
+    &-light {
+      color: $secondary-light;
     }
   }
 }
 
 .degradado {
   &-text {
-    background: linear-gradient(120deg,$primary, $secondary);
+    background-image: linear-gradient(145deg, $primary 0%, $secondary 30%, #fff 47%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
