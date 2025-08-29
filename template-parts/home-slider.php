@@ -1,41 +1,86 @@
 <?php
 /**
- * Template Part: Home Slider (Bootstrap 5)
+ * Template Part: Home Slider (Bootstrap 5) — desde CPT "servicios"
  */
 
- // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-$slider = [
-  [
-		'title'=>'Hogares',
-		'image'=>'front',
-	],
-  [
-		'title'=>'Oficinas',
-		'image'=>'slider_oficina',
-	],
-];
-
 $carousel_id = 'carouselHomeFade';
+
+// --- Query súper liviana: traemos solo IDs y luego resolvemos título/imagen ---
+$service_ids = get_posts( [
+  'post_type'              => 'servicios',
+  'post_status'            => 'publish',
+  'posts_per_page'         => 4,
+  'orderby'                => 'menu_order',
+  'order'                  => 'ASC',
+  'no_found_rows'          => true,
+  'update_post_term_cache' => false,
+  'suppress_filters'       => false,
+  'fields'                 => 'ids',
+] );
+
+// Fallback si no hay servicios
+if ( empty( $service_ids ) ) {
+  return;
+}
+
+// Pre-armamos un array con título e imagen (así simplificamos abajo)
+$slides = [];
+foreach ( $service_ids as $sid ) {
+  $title   = get_the_title( $sid );
+  $img_id  = get_post_thumbnail_id( $sid );
+  $img_url = '';
+
+  // si existe la función get_field (ACF activo)
+  if ( function_exists( 'get_field' ) ) {
+      $acf_img = get_field( 'servicios_cpt_slider_imagen', $sid ); // $sid es el ID del CPT "servicio"
+      if ( ! empty( $acf_img ) ) {
+          // si es un campo imagen de ACF, puede devolver array o string según configuración
+          $img_url = is_array( $acf_img ) ? $acf_img['url'] : $acf_img;
+      }
+  }
+
+  // si no hay imagen especial en ACF, usamos la destacada
+  if ( empty( $img_url ) ) {
+      $img_id  = get_post_thumbnail_id( $sid );
+      $img_url = $img_id ? wp_get_attachment_image_url( $img_id, 'full' ) : '';
+  }
+
+  if ( $img_url ) {
+    $slides[] = [
+      'title'   => $title,
+      'img_url' => $img_url,
+    ];
+  }
+}
+
+// Si por algún motivo ningún slide tiene imagen, no renderizamos
+if ( empty( $slides ) ) {
+  return;
+}
 ?>
+
 <section class="mb-5">
-  <div id="<?php echo esc_attr($carousel_id); ?>" class="carousel slide carousel-fade hero" data-bs-ride="carousel" aria-label="Slider principal">
+  <div id="<?php echo esc_attr( $carousel_id ); ?>" class="carousel slide carousel-fade hero" data-bs-ride="carousel" aria-label="Slider principal" >
 
     <div class="carousel-indicators">
-      <?php foreach ($slider as $i => $_): ?>
-        <button type="button" data-bs-target="#<?php echo esc_attr($carousel_id); ?>" data-bs-slide-to="<?php echo esc_attr($i); ?>" <?php if ($i===0): ?>class="active" aria-current="true"<?php endif; ?> aria-label="Slide <?php echo esc_attr($i+1); ?>"></button>
+      <?php foreach ( $slides as $i => $_ ): ?>
+        <button type="button"
+          data-bs-target="#<?php echo esc_attr( $carousel_id ); ?>"
+          data-bs-slide-to="<?php echo esc_attr( $i ); ?>"
+          <?php if ( $i === 0 ): ?>class="active" aria-current="true"<?php endif; ?>
+          aria-label="Slide <?php echo esc_attr( $i + 1 ); ?>"></button>
       <?php endforeach; ?>
     </div>
 
     <div class="carousel-inner">
-      <?php foreach ($slider as $i => $item):
-        $is_active = ($i===0) ? ' active' : '';
-        $img_url   = get_cleanmax_image( $item['image'] );
-        $loading   = ($i===0) ? '' : ' loading="lazy"';
+      <?php foreach ( $slides as $i => $item ):
+        $is_active = ( $i === 0 ) ? ' active' : '';
+        $loading   = ( $i === 0 ) ? '' : ' loading="lazy"';
       ?>
-        <div class="carousel-item<?php echo esc_attr($is_active); ?>">
-          <img src="<?php echo esc_url($img_url); ?>" class="bg-img" alt="<?php echo esc_attr( $item['title'] ); ?>"<?php echo $loading; ?>>
+        <div class="carousel-item<?php echo esc_attr( $is_active ); ?>">
+          <img src="<?php echo esc_url( $item['img_url'] ); ?>" class="bg-img" alt="<?php echo esc_attr( $item['title'] ); ?>"<?php echo $loading; ?>>
           <div class="bg-overlay"></div>
 
           <div class="slide-content py-5">
@@ -46,12 +91,11 @@ $carousel_id = 'carouselHomeFade';
                   get_template_part(
                     'template-parts/badge',
                     null,
-                    array( 'text' => get_bloginfo('description') )
+                    [ 'text' => get_bloginfo( 'name' ) . ' ' . $item['title'] ]
                   );
                   ?>
-                  <h1 class="display-1 mb-4">
-                    <?php bloginfo('name'); ?> <?php echo esc_html( $item['title'] ); ?>
-                  </h1>
+                  <h1 class="display-1 mb-2 text-primary">máxima <span class="text-secondary">LIMPIEZA</span></h1>
+                  <p class="mb-4 lead text-light">Limpieza profesional para cada espacio.</p>
                   <div class="d-flex gap-2 justify-content-center justify-content-lg-start">
                     <?php
                     get_template_part( 'template-parts/btn-solicita-presupuesto' );
@@ -60,13 +104,12 @@ $carousel_id = 'carouselHomeFade';
                       'multiuso',
                       [
                         'text' => '¿Cómo funciona?',
-                        'link' => '#section-steps'
+                        'link' => '#section-steps',
                       ]
                     );
                     ?>
                   </div>
-
-                  <?php  get_template_part( 'template-parts/list-raitings' ); ?>
+                  <?php get_template_part( 'template-parts/list-raitings' ); ?>
                 </div>
               </div>
             </div>
@@ -75,11 +118,11 @@ $carousel_id = 'carouselHomeFade';
       <?php endforeach; ?>
     </div>
 
-    <button class="carousel-control-prev" type="button" data-bs-target="#<?php echo esc_attr($carousel_id); ?>" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#<?php echo esc_attr( $carousel_id ); ?>" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Anterior</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#<?php echo esc_attr($carousel_id); ?>" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#<?php echo esc_attr( $carousel_id ); ?>" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Siguiente</span>
     </button>

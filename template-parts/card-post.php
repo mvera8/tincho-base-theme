@@ -13,7 +13,7 @@
 defined( 'ABSPATH' ) || exit;
 
 $defaults = [
-  'thumbnail_size' => 'medium',
+  'thumbnail_size' => 'large',
   'show_excerpt'   => true,
   'excerpt_length' => 20,
   'col_classes'    => 'col-lg-4 col-md-6',

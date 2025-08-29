@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Part: Form Example
+ * Template Part: Form Contacto
  */
 
  // Exit if accessed directly.

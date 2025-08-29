@@ -15,7 +15,7 @@ $badge_class = isset($args['class']) ? esc_html($args['class']) : '';
 
 if ( ! empty( $badge_text ) ) :
 	printf(
-		'<span class="badge fw-light rounded-pill bg-secondary-light text-uppercase mb-2 %s">%s</span>',
+		'<span class="badge fw-light rounded-pill bg-light text-uppercase mb-2 %s">%s</span>',
 		esc_html( $badge_class ),
 		esc_html( $badge_text )
 	);
