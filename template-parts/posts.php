@@ -15,7 +15,7 @@ defined( 'ABSPATH' ) || exit;
 			'title',
 			array(
 				'title'    => 'Novedades',
-				'align'    => 'start col-md-6',
+				'align'    => 'start col-6',
 				'btn_link' => '/blog/',
 				'btn_text' => 'Ver Blog',
 			)
@@ -26,7 +26,7 @@ defined( 'ABSPATH' ) || exit;
 			<?php
 			$args = [
 				'post_type'      => 'post',
-				'posts_per_page' => 3,
+				'posts_per_page' =>  wp_is_mobile() ? 2 : 3,
 				'post_status'    => 'publish',
 			];
 

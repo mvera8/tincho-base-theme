@@ -1,6 +1,6 @@
 {
     "key": "group_68b1fdf6afb2b",
-    "title": "Servicios",
+    "title": "Página Servicios",
     "fields": [
         {
             "key": "field_68b1fdf6fd70d",
@@ -73,5 +73,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1756495846
+    "modified": 1756744556
 }

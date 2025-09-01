@@ -8,22 +8,24 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
+$form_id = get_field( 'formulario_cleanmax' );
+
 get_header();
 get_template_part( 'template-parts/navbar' );
-get_template_part(
-  'template-parts/page',
-  'title',
-  ['page_title'  => get_the_title() ]
-);
 ?>
 
 <section class="py-5">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-lg-8 mx-auto">
-				<?php
-				get_template_part('template-parts/form-contacto');
-				?>
+				<div id="formulario" class="p-5 rounded border bg-white">
+					<?php
+					the_title( '<h1 class="mb-4">Formulario de ', '</h1>' );
+					if ( $form_id ) {
+							echo do_shortcode( '[contact-form-7 id="' . $form_id . '"]' );
+					}
+					?>
+				</div>
 			</div>
 			<div class="col-12 col-md-4">
 				<div class="bg-secondary px-4 pt-5 pb-1 rounded">
@@ -59,5 +61,4 @@ get_template_part(
 
 <?php
 get_template_part( 'template-parts/faqs' );
-// get_template_part( 'template-parts/last-cta' );
 get_footer();

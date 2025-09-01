@@ -38,7 +38,9 @@ get_template_part( 'template-parts/servicios' );
 	<div class="container">
 		<div class="row align-items-center">
 			<div class="col-md-5 text-white">
-				<img src="https://placehold.co/800x700" alt="¿Por qué elegirnos?" class="img-fluid mb-4 rounded">
+				<div class="position-relative">
+					<img src="<?php the_cleanmax_image( 'featuredCasa' ); ?>" alt="¿Por qué elegirnos?" class="img-fluid mb-4 rounded" loading="lazy" />
+				</div>
 			</div>
 			<div class="col-md-6 offset-md-1">
 				<?php
@@ -64,8 +66,8 @@ get_template_part( 'template-parts/servicios' );
 										'template-parts/icon',
 										'stack',
 										array(
-											'icon_stack' => 'check',
-											'icon_color' => 'text-primary bg-secondary-light',
+											'icon_stack'  => 'check',
+											'icon_color'  => 'text-primary bg-secondary-light',
 											'icon_margin' => 'mb-4',
 										)
 									);

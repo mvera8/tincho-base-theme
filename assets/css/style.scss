@@ -149,13 +149,9 @@ strong {
   position: absolute;
   inset: 0;
   z-index: 1;
-  // background: linear-gradient(to bottom, rgba(0, 0, 0, .35), rgba(0, 0, 0, .35));
-  background:
-    linear-gradient(0deg, transparent 0%, rgba(0, 0, 0, .2) 50%),
-    linear-gradient(310deg, rgba($primary, 0.3) 0%, rgba($secondary, 0.3) 20%, rgba(0, 0, 0, .2) 40%);
   background:
     linear-gradient(0deg, transparent 0%, rgba(255, 255, 255, .1) 50%),
-    linear-gradient(310deg, transparent 0%, rgba(0, 0, 0, .3) 50%);
+    linear-gradient(310deg, transparent 0%, rgba(0, 0, 0, .2) 50%);
 
   &--blue {
     background:
@@ -266,4 +262,9 @@ strong {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+}
+
+.form-label {
+  font-family: "Poppins";
+  font-weight: 700;
 }

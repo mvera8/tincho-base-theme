@@ -86,7 +86,7 @@ if ( empty( $slides ) ) {
           <div class="slide-content py-5">
             <div class="container py-5">
               <div class="row">
-                <div class="col-lg-6 text-center text-lg-start">
+                <div class="col-12 col-md-10 col-xl-6 text-center text-md-start">
                   <?php
                   get_template_part(
                     'template-parts/badge',
@@ -94,9 +94,9 @@ if ( empty( $slides ) ) {
                     [ 'text' => get_bloginfo( 'name' ) . ' ' . $item['title'] ]
                   );
                   ?>
-                  <h1 class="display-1 mb-2 text-primary">máxima <span class="text-secondary">LIMPIEZA</span></h1>
+                  <h1 class="display-1 mb-2 text-secondary">máxima <span class="text-primary text-uppercase">LIMPIEZA</span></h1>
                   <p class="mb-4 lead text-light">Limpieza profesional para cada espacio.</p>
-                  <div class="d-flex gap-2 justify-content-center justify-content-lg-start">
+                  <div class="d-block d-md-flex gap-2 justify-content-center justify-content-lg-start mb-4 mb-lg-0">
                     <?php
                     get_template_part( 'template-parts/btn-solicita-presupuesto' );
                     get_template_part(

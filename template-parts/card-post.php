@@ -16,14 +16,14 @@ $defaults = [
   'thumbnail_size' => 'large',
   'show_excerpt'   => true,
   'excerpt_length' => 20,
-  'col_classes'    => 'col-lg-4 col-md-6',
+  'col_classes'    => 'col-12 col-sm-6 col-lg-4',
 ];
 
 $args = isset($args) ? wp_parse_args($args, $defaults) : $defaults;
 ?>
 
 <div class="<?php echo esc_attr( $args['col_classes'] ); ?>">
-  <div class="card card-blog border-0">
+  <div class="card card-blog border-0 pb-5 pb-lg-0">
     <div class="position-relative">
       <a class="d-block" href="<?php the_permalink(); ?>">
       <?php if ( has_post_thumbnail() ) : ?>

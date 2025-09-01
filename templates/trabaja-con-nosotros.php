@@ -8,6 +8,8 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
+$form_id = get_field( 'formulario_cleanmax' );
+
 get_header();
 get_template_part( 'template-parts/navbar' );
 ?>
@@ -40,21 +42,25 @@ get_template_part( 'template-parts/navbar' );
 	</div>
 </section>
 
-
-<section class="py-5 bg-primary text-white">
+<section class="py-5 bg-primary">
 	<div class="container">
 		<div class="row">
-			<div class="col-12 col-md-6">
+			<div class="col-12 col-md-6 text-white">
 				<p>Para coordinar una entrevista, presione el botón y complete el formulario.</p>
 				<p>Una vez completo el formulario, le enviaremos la fecha y hora para asistir a la entrevista.</p>
 			</div>
 			<div class="col-12 col-md-6">
-				aaa
+				<div id="formulario" class="p-5 rounded border bg-white">
+					<?php
+					if ( $form_id ) {
+							echo do_shortcode( '[contact-form-7 id="' . $form_id . '"]' );
+					}
+					?>
+				</div>
 			</div>
 		</div>
 	</div>
 </section>
-
 
 <?php
 get_footer();
