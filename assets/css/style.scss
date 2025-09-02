@@ -96,12 +96,8 @@ strong {
 
     @include media-breakpoint-up(sm) {
       animation: slideInFromBottom 0.5s ease-out forwards;
+      border-radius: 50rem;
       box-shadow: 0 0 40px 0 #a9aee04d;
-
-      @include media-breakpoint-up(sm) {
-        border-radius: 50rem;
-        animation: slideInFromRight 0.5s ease-out forwards;
-      }
     }
   }
 }

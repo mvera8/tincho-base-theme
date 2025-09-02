@@ -13,7 +13,7 @@ $cfg = tincho_get_settings();
 <ul class="list-<?php echo esc_attr( $list_style ); ?> mb-0">
 	<?php
 	if (!empty($cfg['facebook'])) {
-		echo '<li class="list-' . esc_attr( $list_style ) . '-item me-3"><a href="' . esc_url($cfg['facebook']) . '" target="_blank" rel="noopener" class="d-inline-flex align-items-center text-decoration-none text-primary" aria-label="Facebook">';
+		echo '<li class="list-' . esc_attr( $list_style ) . '-item mx-3"><a href="' . esc_url($cfg['facebook']) . '" target="_blank" rel="noopener" class="d-inline-flex align-items-center text-decoration-none text-primary" aria-label="Facebook">';
 		get_template_part(
 			'template-parts/icon',
 			'stack',
@@ -25,7 +25,7 @@ $cfg = tincho_get_settings();
 	}
 	
 	if (!empty($cfg['instagram'])) {
-		echo '<li class="list-' . esc_attr( $list_style ) . '-item me-3"><a href="' . esc_url($cfg['instagram']) . '" target="_blank" rel="noopener" class="d-inline-flex align-items-center text-decoration-none text-primary" aria-label="Instagram">';
+		echo '<li class="list-' . esc_attr( $list_style ) . '-item mx-3"><a href="' . esc_url($cfg['instagram']) . '" target="_blank" rel="noopener" class="d-inline-flex align-items-center text-decoration-none text-primary" aria-label="Instagram">';
 		get_template_part(
 			'template-parts/icon',
 			'stack',

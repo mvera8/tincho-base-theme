@@ -45,8 +45,8 @@ get_template_part( 'template-parts/servicios' );
 			<div class="col-md-6 offset-md-1">
 				<?php
 				get_template_part(
-					'template-parts/section',
-					'title',
+					'template-parts/title',
+					'section',
 					array(
 						'title' => '¿Por qué elegirnos?',
 						'lead'  => strip_tags( get_the_content() ),

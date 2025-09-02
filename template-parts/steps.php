@@ -33,8 +33,8 @@ $steps = array(
 	<div class="container">
 		<?php
 		get_template_part(
-			'template-parts/section',
-			'title',
+			'template-parts/title',
+			'section',
 			array(
 				'title' => '¿Cómo funciona?',
 				'lead'  => 'Pasos sencillos para tener una casa impecable.'

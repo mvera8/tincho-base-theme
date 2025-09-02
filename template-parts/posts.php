@@ -11,8 +11,8 @@ defined( 'ABSPATH' ) || exit;
 	<div class="container">
 		<?php
 		get_template_part(
-			'template-parts/section',
-			'title',
+			'template-parts/title',
+			'section',
 			array(
 				'title'    => 'Novedades',
 				'align'    => 'start col-6',
