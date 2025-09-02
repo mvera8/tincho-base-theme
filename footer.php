@@ -1,8 +1,8 @@
 <?php
 if ( ! is_page_template( 'templates/mantenimiento-page.php' ) ) {
 	?>
-	<footer class="footer py-5 border-top">
-		<div class="container pb-5 pb-md-0">
+	<footer class="footer py-5 border-top mt-5">
+		<div class="container">
 			<div class="row">
 				<div class="col-md-5 text-center text-md-start">
 					<?php

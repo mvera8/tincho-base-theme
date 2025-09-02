@@ -50,13 +50,15 @@ get_template_part( 'template-parts/navbar' );
 				<p>Una vez completo el formulario, le enviaremos la fecha y hora para asistir a la entrevista.</p>
 			</div>
 			<div class="col-12 col-md-6">
-				<div id="formulario" class="p-5 rounded border bg-white">
-					<?php
-					if ( $form_id ) {
-							echo do_shortcode( '[contact-form-7 id="' . $form_id . '"]' );
-					}
-					?>
-				</div>
+				<?php
+				get_template_part(
+					'template-parts/contact',
+					'form',
+					array(
+						'form_id' => $form_id
+					)
+				);
+				?>
 			</div>
 		</div>
 	</div>

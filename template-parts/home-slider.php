@@ -83,7 +83,7 @@ if ( empty( $slides ) ) {
           <img src="<?php echo esc_url( $item['img_url'] ); ?>" class="bg-img" alt="<?php echo esc_attr( $item['title'] ); ?>"<?php echo $loading; ?>>
           <div class="bg-overlay"></div>
 
-          <div class="slide-content py-5">
+          <div class="slide-content py-0 py-md-5">
             <div class="container py-5">
               <div class="row">
                 <div class="col-12 col-md-10 col-xl-6 text-center text-md-start">

@@ -18,14 +18,16 @@ get_template_part( 'template-parts/navbar' );
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-lg-8 mx-auto">
-				<div id="formulario" class="p-5 rounded border bg-white">
-					<?php
-					the_title( '<h1 class="mb-4">Formulario de ', '</h1>' );
-					if ( $form_id ) {
-							echo do_shortcode( '[contact-form-7 id="' . $form_id . '"]' );
-					}
-					?>
-				</div>
+				<?php
+				the_title( '<h1 class="mb-4">Formulario de ', '</h1>' );
+				get_template_part(
+					'template-parts/contact',
+					'form',
+					array(
+						'form_id' => $form_id
+					)
+				);
+				?>
 			</div>
 			<div class="col-12 col-md-4">
 				<div class="bg-secondary px-4 pt-5 pb-1 rounded">

@@ -18,7 +18,7 @@ if ( is_page_template( $exclude_templates ) || is_singular( 'servicios' ) ) {
 $cfg = tincho_get_settings();
 ?>
 
-<div class="affix position-fixed w-auto p-0 p-sm-3">
+<div class="affix position-fixed w-auto p-0 p-sm-3 d-none d-sm-block">
 	<div class="affix__content bg-white py-2 px-3">
 		<?php
 		get_template_part(

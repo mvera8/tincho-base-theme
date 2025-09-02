@@ -38,8 +38,8 @@ get_template_part( 'template-parts/servicios' );
 	<div class="container">
 		<div class="row align-items-center">
 			<div class="col-md-5 text-white">
-				<div class="position-relative">
-					<img src="<?php the_cleanmax_image( 'featuredCasa' ); ?>" alt="¿Por qué elegirnos?" class="img-fluid mb-4 rounded" loading="lazy" />
+				<div class="position-relative cleanmax-squares">
+					<img src="<?php the_cleanmax_image( 'elegirnos2' ); ?>" alt="¿Por qué elegirnos?" class="img-fluid mb-4 mb-md-0 rounded" loading="lazy" />
 				</div>
 			</div>
 			<div class="col-md-6 offset-md-1">

@@ -22,7 +22,7 @@ get_template_part( 'template-parts/navbar' );
 				<?php endif; ?>
 				<div class="bg-overlay bg-overlay--blue"></div>
 
-				<div class="slide-content py-0 py-lg-5 container">
+				<div class="slide-content pt-0 pt-lg-5 pb-5 container">
 					<div class="row justify-content-center">
 						<div class="col-12 col-lg-5 col-xl-5 py-4 py-lg-5">
 							<?php
@@ -32,8 +32,8 @@ get_template_part( 'template-parts/navbar' );
 								array( 'text' => get_bloginfo('description') )
 							);
 							?>
-							<h1 class="display-2 mb-4"><?php echo esc_html( $cleanmax_title ); ?></h1>
-							<div class="lead pe-5">
+							<h1 class="display-2 mb-2 mb-md-4"><?php echo esc_html( $cleanmax_title ); ?></h1>
+							<div class="lead pe-0 pe-md-5">
 								<?php
 								the_content();
 								get_template_part( 'template-parts/list-raitings' );
@@ -41,13 +41,15 @@ get_template_part( 'template-parts/navbar' );
 							</div>
 						</div>
 						<div class="col-12 col-lg-7 col-xl-6 offset-xl-1 text-dark">
-							<div id="formulario" class="p-5 rounded border bg-white">
-								<?php
-								if ( $form_id ) {
-										echo do_shortcode( '[contact-form-7 id="' . $form_id . '"]' );
-								}
-								?>
-							</div>
+							<?php
+							get_template_part(
+								'template-parts/contact',
+								'form',
+								array(
+									'form_id' => $form_id
+								)
+							);
+							?>
 						</div>
 					</div>
 				</div><!-- /.slide-content -->

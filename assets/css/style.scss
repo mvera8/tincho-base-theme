@@ -264,3 +264,40 @@ strong {
   font-family: "Poppins";
   font-weight: 700;
 }
+
+.cleanmax {
+  &-squares {
+    &:before,
+    &:after {
+      border: solid 7px $secondary;
+      content: '';
+      display: block;
+      height: 3rem;
+      left: 1rem;
+      position: absolute;
+      width: 3rem;
+      top: -1rem;
+      z-index: 5;
+    }
+
+    &:after {
+      left: 5rem;
+    }
+  }
+
+  &-steps {
+    &__icon {
+      aspect-ratio: 1 / 1;
+      display: grid;
+      min-height: 120px;
+      place-items: center;
+      width: 100px;
+
+      >img {
+        height: 100%;
+        object-fit: contain;
+        width: 100%;
+      }
+    }
+  }
+}

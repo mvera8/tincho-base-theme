@@ -42,7 +42,7 @@ $faqs = array(
 );
 ?>
 
-<section class="py-5">
+<section class="py-0 py-md-5">
 	<div class="container">
 		<?php
 		get_template_part(
@@ -90,14 +90,14 @@ $faqs = array(
 
 				<div class="card bg-secondary-light border-0 rounded my-5 overflow-hidden">
 					<div class="row align-items-center justify-content-center">
-						<div class="col-md-8">
+						<div class="col-lg-7">
 							<div class="card-body py-4">
 								<h5 class="card-title mb-0">
 									Todavia Tenes Preguntas?
 								</h5>
 							</div>
 						</div>
-						<div class="col-md-4 text-end pe-4">
+						<div class="col-lg-5 text-center text-lg-end pb-4 pb-lg-0 pe-lg-4">
 							<?php
 							get_template_part(
 								'template-parts/btn',

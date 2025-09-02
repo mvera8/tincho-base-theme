@@ -5,9 +5,17 @@
 
  // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
+
+$args = [
+	'post_type'      => 'post',
+	'posts_per_page' =>  wp_is_mobile() ? 2 : 3,
+	'post_status'    => 'publish',
+];
+
+$latest_posts = new WP_Query($args);
 ?>
 
-<section class="py-5">
+<section class="py-0 py-md-5">
 	<div class="container">
 		<?php
 		get_template_part(
@@ -22,22 +30,12 @@ defined( 'ABSPATH' ) || exit;
 		);
 		?>
 
-		<div class="row mb-5">
+		<div class="row">
 			<?php
-			$args = [
-				'post_type'      => 'post',
-				'posts_per_page' =>  wp_is_mobile() ? 2 : 3,
-				'post_status'    => 'publish',
-			];
-
-			$latest_posts = new WP_Query($args);
-
 			if ( $latest_posts->have_posts() ) :
 				while ( $latest_posts->have_posts() ) :
 					$latest_posts->the_post();
-
 					get_template_part( 'template-parts/card-post' );
-
 				endwhile;
 				wp_reset_postdata();
 			else :

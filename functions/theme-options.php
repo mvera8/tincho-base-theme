@@ -173,7 +173,7 @@ function tincho_render_settings_page() {
 	if ( ! current_user_can('manage_options') ) return; ?>
 	<div class="wrap">
 		<h1><?php esc_html_e('Theme Settings', TINCHO_TEXTDOMAIN); ?></h1>
-
+		<?php settings_errors(); ?>
 		<form method="post" action="options.php">
 			<?php
 				settings_fields('tincho_settings_group');
