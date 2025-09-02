@@ -14,8 +14,12 @@ defined( 'ABSPATH' ) || exit;
 		<div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
 			<?php
 			get_template_part( 'template-parts/list-contact' );
-			get_template_part( 'template-parts/list-redes' );
 			?>
+			<div class="d-none d-md-inline-block">
+				<?php
+				get_template_part( 'template-parts/list-redes' );
+				?>
+			</div>
 		</div>
 	</div>
 </section>

@@ -39,7 +39,7 @@ $border = $is_home ? 'border-bottom border-white' : '';
 			);
 			?>
 
-			<a class="btn btn-primary bg-primary-dark px-4 text-decoration-none" href="#!">Solicitá Presupuesto</a>
+			<a class="btn btn-primary bg-primary-dark px-4 text-decoration-none d-none d-xl-block" href="<?php echo esc_url( home_url( '/solicita-tu-presupuesto/') ); ?>">Solicitá Presupuesto</a>
 		</div>
 	</nav>
 </header>

@@ -22,8 +22,8 @@ defined( 'ABSPATH' ) || exit;
 				<div class="py-5 ps-5">
 					<?php
 					get_template_part(
-						'template-parts/section',
-						'title',
+						'template-parts/title',
+						'section',
 						array(
 							'title' => 'Servicios',
 							'lead'  => 'Limpieza profesional para cada espacio',

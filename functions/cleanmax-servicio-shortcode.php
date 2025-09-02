@@ -38,10 +38,10 @@ add_shortcode('cleanmax_servicio', function($atts) {
 
     $title   = get_the_title($post_obj);
     $perma   = get_permalink($post_obj);
-		$image   = get_the_post_thumbnail_url($post_obj, 'large');
-		if ( ! $image ) {
-				$image = get_cleanmax_image( 'slider_hogares' );
-		}
+    $image   = get_the_post_thumbnail_url($post_obj, 'large');
+    if ( ! $image ) {
+            $image = get_cleanmax_image( 'slider_hogares' );
+    }
     $excerpt = has_excerpt($post_obj)
         ? get_the_excerpt($post_obj)
         : wp_trim_words(wp_strip_all_tags($post_obj->post_content), 26);
@@ -50,10 +50,10 @@ add_shortcode('cleanmax_servicio', function($atts) {
 		?>
 		<div class="card bg-primary border-0 rounded my-5 overflow-hidden">
 			<div class="row align-items-center justify-content-center g-0">
-				<div class="col-md-4">
+				<div class="col-md-5 col-lg-7 col-xl-4">
 					<img src="<?php echo esc_url( $image ); ?>" class="img-fluid rounded-start" alt="<?php echo esc_html($title); ?>" loading="lazy" />
 				</div>
-				<div class="col-md-8">
+				<div class="col-md-7 col-lg-5 col-xl-8">
 					<div class="card-body">
 						<h4 class="card-title mb-2">
 							<a href="<?php echo esc_url($perma); ?>" class="text-decoration-none text-white">

@@ -26,10 +26,8 @@ $headings-font-weight: 700;
 $accordion-bg: $gray-300;
 $accordion-border-width: 0;
 $accordion-border-radius: 0;
-
 $accordion-button-active-bg: $gray-300;
 $accordion-button-active-color: $gray-900;
-
 $accordion-button-focus-box-shadow: none;
 
 // Badge
@@ -61,6 +59,20 @@ $box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -2px rgba(0, 0, 0, .1);
 $border-radius: 8px;
 $border-radius-lg: 12px;
 $border-color: $gray-300;
+
+// Forms
+$form-label-margin-bottom: 3px;
+$input-bg: $gray-300;
+$input-border-radius: 0;
+
+// Navbar
+$navbar-toggler-padding-y: 0.5rem;
+$navbar-toggler-padding-x: 0.5rem;
+$navbar-toggler-font-size: 1rem;
+$navbar-toggler-border-radius: 0.4rem;
+$navbar-toggler-focus-width: 1px;
+$navbar-light-toggler-border-color: $white;
+$navbar-light-icon-color: $white;
 
 // Navs
 $navbar-light-color: $white;

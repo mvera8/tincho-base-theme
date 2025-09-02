@@ -57,6 +57,10 @@ strong {
   font-family: "Poppins", sans-serif;
 }
 
+.wp-block-columns .wp-block-column {
+  flex-basis: auto !important;
+}
+
 // navbar
 .custom-logo {
   height: 40px;
@@ -92,12 +96,8 @@ strong {
 
     @include media-breakpoint-up(sm) {
       animation: slideInFromBottom 0.5s ease-out forwards;
+      border-radius: 50rem;
       box-shadow: 0 0 40px 0 #a9aee04d;
-
-      @include media-breakpoint-up(sm) {
-        border-radius: 50rem;
-        animation: slideInFromRight 0.5s ease-out forwards;
-      }
     }
   }
 }
@@ -145,13 +145,9 @@ strong {
   position: absolute;
   inset: 0;
   z-index: 1;
-  // background: linear-gradient(to bottom, rgba(0, 0, 0, .35), rgba(0, 0, 0, .35));
-  background:
-    linear-gradient(0deg, transparent 0%, rgba(0, 0, 0, .2) 50%),
-    linear-gradient(310deg, rgba($primary, 0.3) 0%, rgba($secondary, 0.3) 20%, rgba(0, 0, 0, .2) 40%);
   background:
     linear-gradient(0deg, transparent 0%, rgba(255, 255, 255, .1) 50%),
-    linear-gradient(310deg, transparent 0%, rgba(0, 0, 0, .3) 50%);
+    linear-gradient(310deg, transparent 0%, rgba(0, 0, 0, .2) 50%);
 
   &--blue {
     background:
@@ -261,5 +257,47 @@ strong {
     background-image: linear-gradient(145deg, $primary 0%, $secondary 30%, #fff 47%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+}
+
+.form-label {
+  font-family: "Poppins";
+  font-weight: 700;
+}
+
+.cleanmax {
+  &-squares {
+    &:before,
+    &:after {
+      border: solid 7px $secondary;
+      content: '';
+      display: block;
+      height: 3rem;
+      left: 1rem;
+      position: absolute;
+      width: 3rem;
+      top: -1rem;
+      z-index: 5;
+    }
+
+    &:after {
+      left: 5rem;
+    }
+  }
+
+  &-steps {
+    &__icon {
+      aspect-ratio: 1 / 1;
+      display: grid;
+      min-height: 120px;
+      place-items: center;
+      width: 100px;
+
+      >img {
+        height: 100%;
+        object-fit: contain;
+        width: 100%;
+      }
+    }
   }
 }

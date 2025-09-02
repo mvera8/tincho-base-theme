@@ -22,7 +22,7 @@ get_template_part(
 		<div class="row justify-content-center">
 			<div class="col-12 col-md-8">
 				<?php
-				get_template_part('template-parts/form-example');
+				get_template_part('template-parts/form-servicios');
 				?>
 			</div>
 		</div>

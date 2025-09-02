@@ -7,34 +7,31 @@
 defined( 'ABSPATH' ) || exit;
 
 $steps = array(
-	'Elegí día y hora del servicio',
-	'Te asignamos un/a profesional verificado/a',
-	'Disfrutá tu casa super limpia',
-);
-
-$steps = array(
 	array(
 		'title' => 'Solicitá un presupuesto',
 		'text'  => 'Ya sea por Whatsapp o por nuestro formulario online.',
+		'icon'  => 'tel',
 		'link'  => '/solicita-tu-presupuesto/',
 	),
 	array(
 		'title' => 'La Limpieza',
 		'text'  => 'Te asignamos un/a profesional verificado/a con productos de alta calidad.',
+		'icon'  => 'escoba',
 	),
 	array(
 		'title' => 'Disfrutá tu casa super limpia',
 		'text'  => 'Nos adaptamos a tu disponibilidad, incluso fines de semana y feriados.',
+		'icon'  => 'casa',
 	),
 );
 ?>
 
-<section id="section-steps" class="py-5">
+<section id="section-steps" class="py-0 py-md-5">
 	<div class="container">
 		<?php
 		get_template_part(
-			'template-parts/section',
-			'title',
+			'template-parts/title',
+			'section',
 			array(
 				'title' => '¿Cómo funciona?',
 				'lead'  => 'Pasos sencillos para tener una casa impecable.'
@@ -47,21 +44,11 @@ $steps = array(
 				$number_step = $index + 1;
 				?>
 				<div class="col-md-4 mb-4 d-flex">
-					<div class="card border-0 rounded h-100 w-100 text-center">
+					<div class="card cleanmax-steps border-0 rounded h-100 w-100 text-center">
 						<div class="card-body d-flex flex-column align-items-center">
-							<div class="mb-4 position-relative d-flex">
-								<?php
-								get_template_part(
-									'template-parts/badge',
-									null,
-									array(
-										'text'  => 'Paso ' . $number_step,
-										'class' => 'position-absolute top-0 start-0 translate-middle'
-									)
-								);
-								?>
+							<div class="mb-4 position-relative d-flex cleanmax-steps__icon">
 								<img
-									src="<?php the_cleanmax_image( 'clean' ); ?>"
+									src="<?php the_cleanmax_image( $step['icon'], 'svg' ); ?>"
 									alt="<?php echo esc_attr( $step['title'] ); ?>"
 									class="img-fluid"
 									loading="lazy"

@@ -9,6 +9,7 @@ $includes = array(
   '/svg.php',
   '/theme-options.php',
   '/theme-setup.php',
+  '/title-tag.php',
   '/cleanmax-servicios.php',
   '/cleanmax-icon-selector.php',
   '/cleanmax-image.php',

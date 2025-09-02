@@ -6,14 +6,19 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-if ( is_page_template( 'templates/solicita-presupuesto.php' ) || is_singular( 'servicios' ) ) {
+$exclude_templates = array(
+	'templates/solicita-presupuesto-page.php',
+	'templates/mantenimiento-page.php'
+);
+
+if ( is_page_template( $exclude_templates ) || is_singular( 'servicios' ) ) {
 	return;
 }
 
 $cfg = tincho_get_settings();
 ?>
 
-<div class="affix position-fixed w-auto p-0 p-sm-3">
+<div class="affix position-fixed w-auto p-0 p-sm-3 d-none d-sm-block">
 	<div class="affix__content bg-white py-2 px-3">
 		<?php
 		get_template_part(

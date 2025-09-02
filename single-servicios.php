@@ -1,23 +1,30 @@
 <?php
 defined( 'ABSPATH' ) || exit;
 
-get_header();
-get_template_part( 'template-parts/navbar' );
-
 $servicio_title = 'Limpieza de ' . get_the_title();
 $cleanmax_title = get_bloginfo('name') . ' ' . get_the_title();
+$form_id = get_field( 'formulario_cleanmax' );
+
+get_header();
+get_template_part( 'template-parts/navbar' );
 ?>
 
 <section>
-	<div class="carousel hero">
+	<div class="carousel hero bg-secondary">
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="<?php the_cleanmax_image( 'productos' ); ?>" class="bg-img" alt="Hogares">
+				<?php if ( has_post_thumbnail() ) : ?>
+					<img
+						src="<?php the_post_thumbnail_url( 'full' ); ?>"
+						class="bg-img"
+						loading="lazy"
+						alt="<?php the_title(); ?>" />
+				<?php endif; ?>
 				<div class="bg-overlay bg-overlay--blue"></div>
 
-				<div class="slide-content py-5 container">
+				<div class="slide-content pt-0 pt-lg-5 pb-5 container">
 					<div class="row justify-content-center">
-						<div class="col-12 col-md-5 py-5">
+						<div class="col-12 col-lg-5 col-xl-5 py-4 py-lg-5">
 							<?php
 							get_template_part(
 								'template-parts/badge',
@@ -25,17 +32,23 @@ $cleanmax_title = get_bloginfo('name') . ' ' . get_the_title();
 								array( 'text' => get_bloginfo('description') )
 							);
 							?>
-							<h1 class="display-2 mb-4"><?php echo esc_html( $cleanmax_title ); ?></h1>
-							<div class="lead pe-5">
+							<h1 class="display-2 mb-2 mb-md-4"><?php echo esc_html( $cleanmax_title ); ?></h1>
+							<div class="lead pe-0 pe-md-5">
 								<?php
 								the_content();
 								get_template_part( 'template-parts/list-raitings' );
 								?>
 							</div>
 						</div>
-						<div class="col-12 col-md-6 offset-md-1 text-dark">
+						<div class="col-12 col-lg-7 col-xl-6 offset-xl-1 text-dark">
 							<?php
-							get_template_part('template-parts/form-example');
+							get_template_part(
+								'template-parts/contact',
+								'form',
+								array(
+									'form_id' => $form_id
+								)
+							);
 							?>
 						</div>
 					</div>

@@ -8,13 +8,10 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
+$form_id = get_field( 'formulario_cleanmax' );
+
 get_header();
 get_template_part( 'template-parts/navbar' );
-get_template_part(
-  'template-parts/page',
-  'title',
-  ['page_title'  => get_the_title() ]
-);
 ?>
 
 <section class="py-5">
@@ -22,7 +19,14 @@ get_template_part(
 		<div class="row justify-content-center">
 			<div class="col-lg-8 mx-auto">
 				<?php
-				get_template_part('template-parts/form-example');
+				the_title( '<h1 class="mb-4">Formulario de ', '</h1>' );
+				get_template_part(
+					'template-parts/contact',
+					'form',
+					array(
+						'form_id' => $form_id
+					)
+				);
 				?>
 			</div>
 			<div class="col-12 col-md-4">
@@ -59,5 +63,4 @@ get_template_part(
 
 <?php
 get_template_part( 'template-parts/faqs' );
-// get_template_part( 'template-parts/last-cta' );
 get_footer();

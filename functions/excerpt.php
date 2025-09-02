@@ -9,7 +9,7 @@
 defined( 'ABSPATH' ) || exit;
 
 function tincho_excerpt_length( $length ) {
-	return 8;
+	return 7;
 }
 
 add_filter( 'excerpt_length', 'tincho_excerpt_length', 999 );
