@@ -125,42 +125,55 @@ strong {
 }
 
 // slider
-/* El slide se ajusta al contenido; opcional: darle altura mínima "hero" */
-.carousel.hero .carousel-item {
-  position: relative;
-}
-
-/* Imagen de fondo que rellena detrás del contenido */
-.carousel.hero .bg-img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-}
-
-/* Capa de gradiente para legibilidad (opcional) */
-.carousel.hero .bg-overlay {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background:
-    linear-gradient(0deg, transparent 0%, rgba(255, 255, 255, .1) 50%),
-    linear-gradient(310deg, transparent 0%, rgba(0, 0, 0, .2) 50%);
-
-  &--blue {
-    background:
-      linear-gradient(0deg, transparent 0%, rgba($primary, .3) 50%),
-      linear-gradient(310deg, transparent 0%, rgba($primary, .7) 50%);
+.carousel.hero {
+  /* El slide se ajusta al contenido; opcional: darle altura mínima "hero" */
+  .carousel-item {
+    position: relative;
   }
-}
 
-/* Contenido en flujo normal, encima de la imagen */
-.carousel.hero .slide-content {
-  position: relative;
-  z-index: 2;
-  color: #fff;
+  /* Imagen de fondo que rellena detrás del contenido */
+  .bg-img {
+    inset: 0;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+
+    @include media-breakpoint-up(md) {
+      height: 100%;
+      mask-image: none;
+      object-fit: cover;
+    }
+  }
+
+    /* Capa de gradiente para legibilidad (opcional) */
+  .bg-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background:
+      linear-gradient(0deg, transparent 0%, rgba(255, 255, 255, .1) 50%),
+      linear-gradient(310deg, transparent 0%, rgba(0, 0, 0, .2) 50%);
+
+    &--blue {
+      background:
+        linear-gradient(0deg, transparent 0%, rgba($primary, .3) 50%),
+        linear-gradient(310deg, transparent 0%, rgba($primary, .5) 50%);
+    }
+  }
+
+  /* Contenido en flujo normal, encima de la imagen */
+  .slide-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+
+    h1 {
+      @include media-breakpoint-up(md) {
+        max-width: 40rem;
+      }
+    }
+  }
 }
 
 // componnts
@@ -265,6 +278,7 @@ strong {
   font-weight: 700;
 }
 
+// Cleanmax
 .cleanmax {
   &-squares {
     &:before,

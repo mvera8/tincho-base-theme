@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-	<!-- generator="WordPress/6.8.2" created="2025-09-01 18:23" -->
+	<!-- generator="WordPress/6.8.2" created="2025-09-04 17:57" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>Cleanmax</title>
 	<link>http://localhost:8000</link>
 	<description>Máxima Limpieza</description>
-	<pubDate>Mon, 01 Sep 2025 18:23:51 +0000</pubDate>
+	<pubDate>Thu, 04 Sep 2025 17:57:53 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>http://localhost:8000</wp:base_site_url>
@@ -56,11 +56,11 @@
 		<guid isPermaLink="false">http://localhost:8000/?post_type=wpcf7_contact_form&#038;p=177</guid>
 		<description></description>
 		<content:encoded><![CDATA[<div class="row mb-3">
-    <div class="col">
+    <div class="col-12 col-md-6">
       <label for="nombre" class="form-label">Nombre*</label>
       [text* nombre id:nombre class:form-control aria-label:nombre placeholder "Nombre"]
     </div>
-    <div class="col">
+    <div class="col-12 col-md-6">
       <label for="apellido" class="form-label">Apellido*</label>
       [text* apellido id:apellido class:form-control aria-label:apellido placeholder "Apellido"]
     </div>
@@ -71,7 +71,7 @@
       <label for="email" class="form-label">Email*</label>
 [email* email autocomplete:email class:form-control minlength:3 placeholder "email@example.com"]
     </div>
-    <div class="col">
+    <div class="col-12 col-md-6">
       <label for="phone" class="form-label">Celular</label>
 [tel tel autocomplete:tel class:form-control minlength:3 placeholder "+598 9xx xxx xx"]
     </div>
@@ -138,8 +138,8 @@ Please enter a telephone number.]]></content:encoded>
 		<wp:post_id>177</wp:post_id>
 		<wp:post_date><![CDATA[2025-09-01 17:15:50]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2025-09-01 17:15:50]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2025-09-01 18:01:53]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2025-09-01 18:01:53]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2025-09-04 17:49:57]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2025-09-04 17:49:57]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[formulario-de-contacto]]></wp:post_name>
@@ -152,11 +152,11 @@ Please enter a telephone number.]]></content:encoded>
 														<wp:postmeta>
 		<wp:meta_key><![CDATA[_form]]></wp:meta_key>
 		<wp:meta_value><![CDATA[<div class="row mb-3">
-    <div class="col">
+    <div class="col-12 col-md-6">
       <label for="nombre" class="form-label">Nombre*</label>
       [text* nombre id:nombre class:form-control aria-label:nombre placeholder "Nombre"]
     </div>
-    <div class="col">
+    <div class="col-12 col-md-6">
       <label for="apellido" class="form-label">Apellido*</label>
       [text* apellido id:apellido class:form-control aria-label:apellido placeholder "Apellido"]
     </div>
@@ -167,7 +167,7 @@ Please enter a telephone number.]]></content:encoded>
       <label for="email" class="form-label">Email*</label>
 [email* email autocomplete:email class:form-control minlength:3 placeholder "email@example.com"]
     </div>
-    <div class="col">
+    <div class="col-12 col-md-6">
       <label for="phone" class="form-label">Celular</label>
 [tel tel autocomplete:tel class:form-control minlength:3 placeholder "+598 9xx xxx xx"]
     </div>
@@ -224,22 +224,22 @@ This email is a receipt for your contact form submission on our website ([_site_
 		<guid isPermaLink="false">http://localhost:8000/?post_type=wpcf7_contact_form&#038;p=179</guid>
 		<description></description>
 		<content:encoded><![CDATA[<div class="row mb-3">
-    <div class="col">
+    <div class="col-12 col-md-6">
       <label for="nombre_apellido" class="form-label">Nombre y Apellido*</label>
       [text* nombre_apellido id:nombre_apellido class:form-control aria-label:nombre_apellido placeholder "Nombre y Apellido"]
     </div>
-    <div class="col">
+    <div class="col-12 col-md-6">
       <label for="email" class="form-label">Email*</label>
 [email* email autocomplete:email class:form-control minlength:3 placeholder "email@example.com"]
     </div>
   </div>
 
   <div class="row mb-2">
-    <div class="col">
+    <div class="col-12 col-md-6">
       <label for="phone" class="form-label">Celular*</label>
 [tel* celular autocomplete:tel class:form-control minlength:3 placeholder "+598 9xx xxx xx"]
     </div>
-    <div class="col">
+    <div class="col-12 col-md-6">
       <label for="empresa" class="form-label">Empresa o razón social</label>
       [text empresa id:empresa class:form-control aria-label:empresa placeholder "Empresa o razón social"]
     </div>
@@ -256,12 +256,12 @@ This email is a receipt for your contact form submission on our website ([_site_
   </div>
 
   <div class="row mb-3">
-    <div class="col">
+    <div class="col-12 col-md-6">
       <label class="form-label d-block">Frecuencia del servicio</label>
       [checkbox* frecuencia class:form-check-label use_label_element "Lunes a viernes" "3 veces por semana" "2 veces por semana" "1 vez por semana" "Quincenal" "Única vez"]
     </div>
 
-    <div class="col">
+    <div class="col-12 col-md-6">
       <label class="form-label d-block">Horario de preferencia</label>
       [checkbox horarios class:form-check-label use_label_element "9 a 13" "14 a 18" "18 a 22" "9 a 18"]
     </div>
@@ -333,8 +333,8 @@ Please enter a telephone number.]]></content:encoded>
 		<wp:post_id>179</wp:post_id>
 		<wp:post_date><![CDATA[2025-09-01 17:24:59]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2025-09-01 17:24:59]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2025-09-01 18:23:23]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2025-09-01 18:23:23]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2025-09-04 17:33:45]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2025-09-04 17:33:45]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[formulario-de-servicio]]></wp:post_name>
@@ -347,22 +347,22 @@ Please enter a telephone number.]]></content:encoded>
 														<wp:postmeta>
 		<wp:meta_key><![CDATA[_form]]></wp:meta_key>
 		<wp:meta_value><![CDATA[<div class="row mb-3">
-    <div class="col">
+    <div class="col-12 col-md-6">
       <label for="nombre_apellido" class="form-label">Nombre y Apellido*</label>
       [text* nombre_apellido id:nombre_apellido class:form-control aria-label:nombre_apellido placeholder "Nombre y Apellido"]
     </div>
-    <div class="col">
+    <div class="col-12 col-md-6">
       <label for="email" class="form-label">Email*</label>
 [email* email autocomplete:email class:form-control minlength:3 placeholder "email@example.com"]
     </div>
   </div>
 
   <div class="row mb-2">
-    <div class="col">
+    <div class="col-12 col-md-6">
       <label for="phone" class="form-label">Celular*</label>
 [tel* celular autocomplete:tel class:form-control minlength:3 placeholder "+598 9xx xxx xx"]
     </div>
-    <div class="col">
+    <div class="col-12 col-md-6">
       <label for="empresa" class="form-label">Empresa o razón social</label>
       [text empresa id:empresa class:form-control aria-label:empresa placeholder "Empresa o razón social"]
     </div>
@@ -379,12 +379,12 @@ Please enter a telephone number.]]></content:encoded>
   </div>
 
   <div class="row mb-3">
-    <div class="col">
+    <div class="col-12 col-md-6">
       <label class="form-label d-block">Frecuencia del servicio</label>
       [checkbox* frecuencia class:form-check-label use_label_element "Lunes a viernes" "3 veces por semana" "2 veces por semana" "1 vez por semana" "Quincenal" "Única vez"]
     </div>
 
-    <div class="col">
+    <div class="col-12 col-md-6">
       <label class="form-label d-block">Horario de preferencia</label>
       [checkbox horarios class:form-check-label use_label_element "9 a 13" "14 a 18" "18 a 22" "9 a 18"]
     </div>
@@ -446,33 +446,33 @@ This email is a receipt for your contact form submission on our website ([_site_
 		<guid isPermaLink="false">http://localhost:8000/?post_type=wpcf7_contact_form&#038;p=183</guid>
 		<description></description>
 		<content:encoded><![CDATA[<div class="row mb-3">
-    <div class="col">
+    <div class="col-12 col-md-6">
       <label for="nombre_completo" class="form-label">Nombre completo*</label>
       [text* nombre_completo id:nombre_completo class:form-control placeholder "Nombre y Apellido"]
     </div>
-    <div class="col">
+    <div class="col-12 col-md-6">
       <label for="ci" class="form-label">CI* (sin puntos ni guiones)</label>
       [text* ci id:ci class:form-control placeholder "12345678"]
     </div>
   </div>
 
   <div class="row mb-3">
-    <div class="col">
+    <div class="col-12 col-md-6">
       <label for="fecha_nac" class="form-label">Fecha de nacimiento*</label>
       [date* fecha_nac id:fecha_nac class:form-control min:1900-01-01]
     </div>
-    <div class="col">
+    <div class="col-12 col-md-6">
       <label for="email" class="form-label">Mail*</label>
       [email* email autocomplete:email class:form-control minlength:3 placeholder "email@example.com"]
     </div>
   </div>
 
   <div class="row mb-3">
-    <div class="col">
+    <div class="col-12 col-md-6">
       <label for="celular" class="form-label">Celular*</label>
 [tel* celular autocomplete:tel class:form-control minlength:3 placeholder "+598 9xx xxx xx"]
     </div>
-    <div class="col">
+    <div class="col-12 col-md-6">
       <label for="direccion" class="form-label">Dirección*</label>
       [text* direccion id:direccion class:form-control placeholder "Calle y número"]
     </div>
@@ -489,12 +489,12 @@ This email is a receipt for your contact form submission on our website ([_site_
   </div>
 
   <div class="row mb-3">
-    <div class="col">
+    <div class="col-12 col-md-6">
       <label class="form-label d-block">Experiencia laboral</label>
 [checkbox experiencia_laboral class:form-check-label use_label_element "casas de familia" "oficinas -empresas" "industrias" "locales comerciales" "edificios" "finales de obra"]
     </div>
 
-    <div class="col">
+    <div class="col-12 col-md-6">
       <label class="form-label d-block">Tareas con experiencia</label>
 [checkbox tareas_con_experiencia class:form-check-label use_label_element "Limpiador/a" "limpia vidrios" "limpieza profunda" "supervisión" "servicio doméstico" "tapizados/telas"]
     </div>
@@ -582,8 +582,8 @@ Please enter a telephone number.]]></content:encoded>
 		<wp:post_id>183</wp:post_id>
 		<wp:post_date><![CDATA[2025-09-01 18:08:56]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2025-09-01 18:08:56]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2025-09-01 18:23:21]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2025-09-01 18:23:21]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2025-09-04 17:50:20]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2025-09-04 17:50:20]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[formulario-de-solicitud-de-empleo]]></wp:post_name>
@@ -596,33 +596,33 @@ Please enter a telephone number.]]></content:encoded>
 														<wp:postmeta>
 		<wp:meta_key><![CDATA[_form]]></wp:meta_key>
 		<wp:meta_value><![CDATA[<div class="row mb-3">
-    <div class="col">
+    <div class="col-12 col-md-6">
       <label for="nombre_completo" class="form-label">Nombre completo*</label>
       [text* nombre_completo id:nombre_completo class:form-control placeholder "Nombre y Apellido"]
     </div>
-    <div class="col">
+    <div class="col-12 col-md-6">
       <label for="ci" class="form-label">CI* (sin puntos ni guiones)</label>
       [text* ci id:ci class:form-control placeholder "12345678"]
     </div>
   </div>
 
   <div class="row mb-3">
-    <div class="col">
+    <div class="col-12 col-md-6">
       <label for="fecha_nac" class="form-label">Fecha de nacimiento*</label>
       [date* fecha_nac id:fecha_nac class:form-control min:1900-01-01]
     </div>
-    <div class="col">
+    <div class="col-12 col-md-6">
       <label for="email" class="form-label">Mail*</label>
       [email* email autocomplete:email class:form-control minlength:3 placeholder "email@example.com"]
     </div>
   </div>
 
   <div class="row mb-3">
-    <div class="col">
+    <div class="col-12 col-md-6">
       <label for="celular" class="form-label">Celular*</label>
 [tel* celular autocomplete:tel class:form-control minlength:3 placeholder "+598 9xx xxx xx"]
     </div>
-    <div class="col">
+    <div class="col-12 col-md-6">
       <label for="direccion" class="form-label">Dirección*</label>
       [text* direccion id:direccion class:form-control placeholder "Calle y número"]
     </div>
@@ -639,12 +639,12 @@ Please enter a telephone number.]]></content:encoded>
   </div>
 
   <div class="row mb-3">
-    <div class="col">
+    <div class="col-12 col-md-6">
       <label class="form-label d-block">Experiencia laboral</label>
 [checkbox experiencia_laboral class:form-check-label use_label_element "casas de familia" "oficinas -empresas" "industrias" "locales comerciales" "edificios" "finales de obra"]
     </div>
 
-    <div class="col">
+    <div class="col-12 col-md-6">
       <label class="form-label d-block">Tareas con experiencia</label>
 [checkbox tareas_con_experiencia class:form-check-label use_label_element "Limpiador/a" "limpia vidrios" "limpieza profunda" "supervisión" "servicio doméstico" "tapizados/telas"]
     </div>

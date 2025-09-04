@@ -51,6 +51,13 @@
                 "operator": "==",
                 "value": "servicios"
             }
+        ],
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "templates\/solicita-presupuesto-page.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -62,5 +69,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1756747258
+    "modified": 1757006444
 }

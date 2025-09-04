@@ -9,7 +9,7 @@ get_header();
 get_template_part( 'template-parts/navbar' );
 ?>
 
-<section>
+<section class="mb-5">
 	<div class="carousel hero bg-secondary">
 		<div class="carousel-inner">
 			<div class="carousel-item active">
