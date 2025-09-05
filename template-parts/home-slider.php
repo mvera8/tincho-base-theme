@@ -62,7 +62,7 @@ if ( empty( $slides ) ) {
 ?>
 
 <section class="mb-5">
-  <div id="<?php echo esc_attr( $carousel_id ); ?>" class="carousel slide carousel-fade hero" data-bs-ride="carousel" aria-label="Slider principal" >
+  <div id="<?php echo esc_attr( $carousel_id ); ?>" class="carousel slide carousel-fade hero bg-dark" data-bs-ride="carousel" aria-label="Slider principal" >
 
     <div class="carousel-indicators">
       <?php foreach ( $slides as $i => $_ ): ?>
@@ -86,14 +86,8 @@ if ( empty( $slides ) ) {
           <div class="slide-content py-0 py-md-5">
             <div class="container py-5">
               <div class="row">
-                <div class="col-12 col-md-10 col-xl-6 text-center text-md-start">
-                  <?php
-                  get_template_part(
-                    'template-parts/badge',
-                    null,
-                    [ 'text' => get_bloginfo( 'name' ) . ' ' . $item['title'] ]
-                  );
-                  ?>
+                <div class="col-12 col-md-10 col-xl-7 text-center text-md-start">
+                  <p class="text-white mb-2"><?php echo get_bloginfo( 'name' ) . ' ' . $item['title']?></p>
                   <h1 class="display-1 mb-2 text-secondary">máxima <span class="text-primary text-uppercase">LIMPIEZA</span></h1>
                   <p class="mb-4 lead text-light">Limpieza profesional para cada espacio.</p>
                   <div class="d-block d-md-flex gap-2 justify-content-center justify-content-lg-start mb-4 mb-lg-0">
@@ -117,14 +111,5 @@ if ( empty( $slides ) ) {
         </div>
       <?php endforeach; ?>
     </div>
-
-    <button class="carousel-control-prev" type="button" data-bs-target="#<?php echo esc_attr( $carousel_id ); ?>" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Anterior</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#<?php echo esc_attr( $carousel_id ); ?>" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Siguiente</span>
-    </button>
   </div>
 </section>

@@ -35,6 +35,28 @@ ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$ROOT_DIR"
 THEME_SLUG="${THEME_SLUG:-$(basename "$ROOT_DIR")}"
 
+# ——— Limpieza previa ———
+# (evita sustos si por error el ROOT_DIR fuera "/")
+if [[ "$ROOT_DIR" == "/" ]]; then
+  echo "❌ ROOT_DIR apunta a /. Aborto por seguridad."
+  exit 1
+fi
+
+echo "🧹 Limpiando build/ y .zip previos..."
+
+# Borrar build/ si existe
+if [[ -d "build" ]]; then
+  rm -rf "build"
+fi
+
+# Borrar zips en el root (solo si hay match; nullglob evita rm de patrón literal)
+shopt -s nullglob
+zips=( *.zip )
+if ((${#zips[@]})); then
+  rm -f "${zips[@]}"
+fi
+shopt -u nullglob
+
 # ——— nvm use ———
 if [ -s "$HOME/.nvm/nvm.sh" ]; then
   export NVM_DIR="$HOME/.nvm"

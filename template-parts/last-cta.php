@@ -7,7 +7,7 @@
 defined( 'ABSPATH' ) || exit;
 ?>
 
-<section class="py-5">
+<section class="py-4 py-md-5">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-5 mx-auto text-center">

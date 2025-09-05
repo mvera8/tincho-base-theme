@@ -66,7 +66,16 @@ if ( ! is_page_template( 'templates/mantenimiento-page.php' ) ) {
 				</div>
 
 				<div class="col-md-1 text-center text-md-end order-1 order-md-3 pb-3 pb-md-0">
-					<?php get_template_part( 'template-parts/list-redes' ); ?>
+					<?php
+					get_template_part(
+						'template-parts/list',
+						'redes',
+						array(
+							'style' => 'unstyled',
+							'name'  => true
+						)
+					);
+					?>
 				</div>
 			</div>
 		</div>

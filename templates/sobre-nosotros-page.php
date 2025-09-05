@@ -22,7 +22,7 @@ get_template_part( 'template-parts/navbar' );
 	</div>
 </header>
 
-<section class="py-5">
+<section class="py-4 py-md-5">
 	<div class="container">
 		<?php the_content(); ?>
 	</div>
