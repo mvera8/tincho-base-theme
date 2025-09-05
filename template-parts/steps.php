@@ -43,7 +43,7 @@ $steps = array(
 			<?php foreach ( $steps as $index => $step ) :
 				$number_step = $index + 1;
 				?>
-				<div class="col-md-4 mb-4 d-flex">
+				<div class="col-md-4 mb-0 mb-md-4 d-flex">
 					<div class="card cleanmax-steps border-0 rounded h-100 w-100 text-center">
 						<div class="card-body d-flex flex-column align-items-center">
 							<div class="mb-4 position-relative d-flex cleanmax-steps__icon">
@@ -54,7 +54,7 @@ $steps = array(
 									loading="lazy"
 								/>
 							</div>
-							<div class="px-4">
+							<div class="px-0 px-lg-4">
 								<h5 class="mb-2"><?php echo esc_html( $step['title'] ); ?></h5>
 								<p class="mb-0"><?php echo esc_html( $step['text'] ); ?></p>
 								<?php
