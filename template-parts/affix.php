@@ -7,11 +7,11 @@
 defined( 'ABSPATH' ) || exit;
 
 $exclude_templates = array(
-	'templates/solicita-presupuesto-page.php',
-	'templates/mantenimiento-page.php'
+	'templates/mantenimiento-page.php',
+	'templates/formulario-page.php'
 );
 
-if ( is_page_template( $exclude_templates ) || is_singular( 'servicios' ) ) {
+if ( is_page_template( $exclude_templates ) ) {
 	return;
 }
 

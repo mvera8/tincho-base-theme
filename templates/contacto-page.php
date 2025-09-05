@@ -14,7 +14,7 @@ get_header();
 get_template_part( 'template-parts/navbar' );
 ?>
 
-<section class="py-5">
+<section class="py-4 py-md-5">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-lg-8 mx-auto">
@@ -50,7 +50,8 @@ get_template_part( 'template-parts/navbar' );
 							'template-parts/list',
 							'redes',
 							array(
-								'style' => 'unstyled'
+								'style' => 'unstyled',
+								'name'  => true
 							)
 						);
 						?>

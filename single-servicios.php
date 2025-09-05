@@ -1,8 +1,8 @@
 <?php
 defined( 'ABSPATH' ) || exit;
 
-$servicio_title = 'Limpieza de ' . get_the_title();
-$cleanmax_title = get_bloginfo('name') . ' ' . get_the_title();
+$servicio_title = get_the_title();
+$cleanmax_title = get_bloginfo('name') . ' ' . $servicio_title;
 $form_id = get_field( 'formulario_cleanmax' );
 
 get_header();

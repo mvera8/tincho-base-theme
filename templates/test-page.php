@@ -27,7 +27,7 @@ get_header();
 get_template_part( 'template-parts/navbar' );
 ?>
 
-<section class="py-5">
+<section class="py-4 py-md-5">
 	<div class="container">
 		<div class="row align-items-start">
 			<?php foreach ( $steps as $index => $step ) : ?>
@@ -55,7 +55,7 @@ get_template_part( 'template-parts/navbar' );
 	</div>
 </section>
 
-<section class="py-5">
+<section class="py-4 py-md-5">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4 mx-auto text-center">
@@ -86,7 +86,7 @@ get_template_part( 'template-parts/navbar' );
 
 
 
-<section class="py-5">
+<section class="py-4 py-md-5">
 	<div class="container">
 		<div class="row mb-4">
 			<div class="col-lg-8">
@@ -118,7 +118,7 @@ get_template_part( 'template-parts/navbar' );
 	</div>
 </section>
 
-<section class="py-5">
+<section class="py-4 py-md-5">
 	<div class="container">
 		<div class="bg-success-light p-5 rounded">
 			<div class="row">
@@ -180,7 +180,7 @@ get_template_part( 'template-parts/navbar' );
 
 
 
-<section class="py-5">
+<section class="py-4 py-md-5">
 	<div class="container">
 		<?php
 		get_template_part('template-parts/form-servicios');

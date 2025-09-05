@@ -42,7 +42,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "templates\/trabaja-con-nosotros.php"
+                "value": "templates\/formulario-page.php"
             }
         ],
         [
@@ -50,13 +50,6 @@
                 "param": "post_type",
                 "operator": "==",
                 "value": "servicios"
-            }
-        ],
-        [
-            {
-                "param": "post_template",
-                "operator": "==",
-                "value": "templates\/solicita-presupuesto-page.php"
             }
         ]
     ],
@@ -69,5 +62,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1757006444
+    "modified": 1757093537
 }

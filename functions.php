@@ -15,6 +15,7 @@ $includes = array(
   '/cleanmax-image.php',
   '/cleanmax-servicio-shortcode.php',
   '/cleanmax-card-shortcode.php',
+  '/cleanmax-cf7-shortcode.php',
 );
 
 foreach ( $includes as $file ) {
