@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-	<!-- generator="WordPress/6.8.2" created="2025-09-04 17:57" -->
+	<!-- generator="WordPress/6.8.2" created="2025-09-05 18:15" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>Cleanmax</title>
 	<link>http://localhost:8000</link>
 	<description>Máxima Limpieza</description>
-	<pubDate>Thu, 04 Sep 2025 17:57:53 +0000</pubDate>
+	<pubDate>Fri, 05 Sep 2025 18:15:47 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>http://localhost:8000</wp:base_site_url>
@@ -252,7 +252,15 @@ This email is a receipt for your contact form submission on our website ([_site_
 
   <div class="mb-4">
     <label for="servicio" class="form-label">Seleccione el servicio que requiere*</label>
-[select* servicios class:form-control first_as_label "" "Limpieza de hogares" "Limpieza de oficinas / empresas" "Limpieza de edificios / condominios" "Limpieza de locales comerciales" "Limpieza profunda (única vez)" "Limpieza de ventanales / vidrios grandes"]
+[select* servicios class:form-control first_as_label default:shortcode_attr
+  ""
+  "Limpieza de hogares"
+  "Limpieza de oficinas / empresas"
+  "Limpieza de edificios / condominios"
+  "Limpieza de locales comerciales"
+  "Limpieza profunda (única vez)"
+  "Limpieza de ventanales / vidrios grandes"]
+
   </div>
 
   <div class="row mb-3">
@@ -333,8 +341,8 @@ Please enter a telephone number.]]></content:encoded>
 		<wp:post_id>179</wp:post_id>
 		<wp:post_date><![CDATA[2025-09-01 17:24:59]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2025-09-01 17:24:59]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2025-09-04 17:33:45]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2025-09-04 17:33:45]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2025-09-05 17:58:34]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2025-09-05 17:58:34]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[formulario-de-servicio]]></wp:post_name>
@@ -375,7 +383,15 @@ Please enter a telephone number.]]></content:encoded>
 
   <div class="mb-4">
     <label for="servicio" class="form-label">Seleccione el servicio que requiere*</label>
-[select* servicios class:form-control first_as_label "" "Limpieza de hogares" "Limpieza de oficinas / empresas" "Limpieza de edificios / condominios" "Limpieza de locales comerciales" "Limpieza profunda (única vez)" "Limpieza de ventanales / vidrios grandes"]
+[select* servicios class:form-control first_as_label default:shortcode_attr
+  ""
+  "Limpieza de hogares"
+  "Limpieza de oficinas / empresas"
+  "Limpieza de edificios / condominios"
+  "Limpieza de locales comerciales"
+  "Limpieza profunda (única vez)"
+  "Limpieza de ventanales / vidrios grandes"]
+
   </div>
 
   <div class="row mb-3">
