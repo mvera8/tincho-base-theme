@@ -57,8 +57,16 @@ strong {
   font-family: "Poppins", sans-serif;
 }
 
-.wp-block-columns .wp-block-column {
-  flex-basis: auto !important;
+.wp-block-columns,
+.wp-block-group {
+  margin-bottom: 2rem;
+}
+
+.wp-block-image {
+  img {
+    height: auto;
+    max-width: 100%;
+  }
 }
 
 // home
@@ -116,10 +124,10 @@ strong {
     }
 
     @at-root .has-scrolled-50 & {
-      animation: slideInFromBottom 0.5s ease-out forwards;
+      animation: slideInFromBottom 0.5s ease-in-out forwards;
     
       @include media-breakpoint-up(sm) {
-        animation: slideInFromBottom 0.5s ease-out forwards;
+        animation: slideInFromRight 0.5s ease-in-out forwards;
       }
     }
   }
