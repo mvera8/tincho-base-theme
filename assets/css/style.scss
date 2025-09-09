@@ -61,6 +61,16 @@ strong {
   flex-basis: auto !important;
 }
 
+// home
+#section-sticky {
+  position: sticky;
+    top: 0;
+    /* Sticks to the top of the viewport when scrolled to */
+    background-color: lightblue;
+    padding: 10px;
+    display: block;
+}
+
 // navbar
 .custom-logo {
   height: 40px;
@@ -89,6 +99,10 @@ strong {
   right: 0;
   width: 100%;
   z-index: 99;
+
+  @include media-breakpoint-up(sm) {
+    width: auto;
+  }
 
   &__content {
     animation: slideInFromBottom 0.5s ease-out forwards;
@@ -172,6 +186,89 @@ strong {
       @include media-breakpoint-up(md) {
         max-width: 40rem;
       }
+    }
+  }
+}
+
+// card servicio
+// Scope para las cards de servicios
+.servicio-card {
+
+  // Suavidad general
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: transform .4s ease;
+  }
+
+  .overlay-gradient {
+    // mismo gradiente que tenías, sin inline style
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.45) 40%, rgba(0, 0, 0, 0) 100%);
+    transition: opacity .3s ease;
+  }
+
+  .servicio-overlay {
+    // que los elementos internos puedan recibir eventos aunque haya <a> externo
+    pointer-events: none;
+
+    // habilitar eventos en CTA si querés capturar focus/hover
+    .servicio-cta {
+      pointer-events: auto;
+    }
+  }
+
+  // Estado inicial oculto para excerpt + CTA (complementa la utility .opacity-0)
+  .servicio-excerpt,
+  .servicio-cta {
+    transform: translateY(8px);
+    transition: opacity .28s ease, transform .28s ease;
+    will-change: opacity, transform;
+  }
+
+  // Pequeño "stagger"
+  .servicio-excerpt {
+    transition-delay: .05s;
+  }
+
+  .servicio-cta {
+    transition-delay: .12s;
+  }
+
+  // Hover / focus-within para accesibilidad teclado
+  &:hover,
+  &:focus-within {
+    img {
+      transform: scale(1.03);
+    }
+
+    .overlay-gradient {
+      opacity: 1;
+    }
+
+    .servicio-excerpt,
+    .servicio-cta {
+      opacity: 1 !important; // sobreescribe la utility .opacity-0
+      transform: translateY(0);
+    }
+  }
+}
+
+// Respeta preferencias de usuario (reduce motion)
+@media (prefers-reduced-motion: reduce) {
+  .servicio-card {
+
+    img,
+    .overlay-gradient,
+    .servicio-excerpt,
+    .servicio-cta {
+      transition: none !important;
+    }
+
+    .servicio-excerpt,
+    .servicio-cta {
+      transform: none;
+      opacity: 1; // si preferís que igual aparezcan, podés dejar 0 aquí
     }
   }
 }
@@ -273,7 +370,8 @@ strong {
   }
 }
 
-.form-label {
+.form-label,
+.text-poppins {
   font-family: "Poppins";
   font-weight: 700;
 }

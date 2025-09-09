@@ -4,7 +4,7 @@ if ( ! is_page_template( 'templates/mantenimiento-page.php' ) ) {
 	<footer class="footer py-5 border-top mt-5">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-5 text-center text-md-start">
+				<div class="col-md-3 text-center text-md-start">
 					<?php
 					get_template_part( 'template-parts/logo' );
 					?>
@@ -65,14 +65,13 @@ if ( ! is_page_template( 'templates/mantenimiento-page.php' ) ) {
 					</ul>
 				</div>
 
-				<div class="col-md-1 text-center text-md-end order-1 order-md-3 pb-3 pb-md-0">
+				<div class="col-md-3 text-center text-md-start order-1 order-md-3 pb-3 pb-md-0">
 					<?php
 					get_template_part(
 						'template-parts/list',
-						'redes',
+						'contact',
 						array(
-							'style' => 'unstyled',
-							'name'  => true
+							'style' => 'unstyled'
 						)
 					);
 					?>

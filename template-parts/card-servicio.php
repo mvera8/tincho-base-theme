@@ -21,7 +21,7 @@ $servicio_card_image = $servicio_card_image_field ? $servicio_card_image_field :
 
 <div class="col-12 col-sm-6 col-lg-3">
   <a href="<?php the_permalink(); ?>" class="text-decoration-none text-light">
-    <div class="card border-0 shadow-lg rounded-4 overflow-hidden mb-4">
+    <div class="card servicio-card border-0 shadow-lg rounded-4 overflow-hidden mb-4">
       <div class="position-relative">
         <!-- Imagen -->
         <?php if ( isset( $servicio_card_image ) ) : ?>
@@ -29,26 +29,28 @@ $servicio_card_image = $servicio_card_image_field ? $servicio_card_image_field :
             src="<?php echo esc_url( $servicio_card_image ); ?>"
             class="w-100"
             loading="lazy"
-            alt="<?php the_title(); ?>" />
+            alt="<?php echo esc_attr( get_the_title() ); ?>" />
         <?php endif; ?>
 
         <!-- Overlay gradiente -->
-        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(0, rgba(0,0,0,0.4) 40%, rgba(0,0,0,0) 100%);"></div>
+        <div class="overlay-gradient position-absolute top-0 start-0 w-100 h-100"></div>
 
         <!-- Texto sobre la imagen -->
-        <div class="position-absolute top-0 start-0 text-white p-3 h-100 d-flex flex-column justify-content-end align-items-start w-100">
-          
-            <?php
-            the_title( '<h4 class="mb-1">Limpieza de ', '</h4>' );
-            the_excerpt();
-            ?>
-            <button class="ps-0 btn bg-transparent text-light border-0 mt-2 rounded-pill px-3 d-inline-flex align-items-center w-auto">
-              Qué incluye
-              <?php echo cleanmax_icon_selector('arrow-right'); ?>
-            </button>
-        
+        <div class="servicio-overlay position-absolute top-0 start-0 text-white p-3 h-100 d-flex flex-column justify-content-end align-items-start w-100">
+          <?php the_title( '<h4 class="mb-1 lh-sm">Limpieza de ', '</h4>' ); ?>
+
+            <p class="servicio-excerpt small mb-2 opacity-0">
+              <?php esc_html( the_excerpt() ); ?>
+            </p>
+
+            
+          <span role="button" tabindex="0" class="servicio-cta btn btn-sm d-inline-flex align-items-center opacity-0 ps-0 bg-transparent text-light">
+            Qué incluye
+            <?php echo cleanmax_icon_selector('arrow-right'); ?>
+          </span>
         </div>
-      </div> <!-- /.position-relative -->
+      </div>
     </div>
   </a>
 </div>
+

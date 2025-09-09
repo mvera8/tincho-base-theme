@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-	<!-- generator="WordPress/6.8.2" created="2025-09-05 18:15" -->
+	<!-- generator="WordPress/6.8.2" created="2025-09-08 17:54" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -27,30 +27,30 @@
 
 <channel>
 	<title>Cleanmax</title>
-	<link>http://localhost:8000</link>
+	<link>https://staging.cleanmax.uy</link>
 	<description>Máxima Limpieza</description>
-	<pubDate>Fri, 05 Sep 2025 18:15:47 +0000</pubDate>
+	<pubDate>Mon, 08 Sep 2025 17:54:53 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
-	<wp:base_site_url>http://localhost:8000</wp:base_site_url>
-	<wp:base_blog_url>http://localhost:8000</wp:base_blog_url>
+	<wp:base_site_url>https://staging.cleanmax.uy</wp:base_site_url>
+	<wp:base_blog_url>https://staging.cleanmax.uy</wp:base_blog_url>
 
-		<wp:author><wp:author_id>1</wp:author_id><wp:author_login><![CDATA[tincho8]]></wp:author_login><wp:author_email><![CDATA[tinchovera8@hotmail.com]]></wp:author_email><wp:author_display_name><![CDATA[tincho8]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
+		<wp:author><wp:author_id>1</wp:author_id><wp:author_login><![CDATA[tincho8]]></wp:author_login><wp:author_email><![CDATA[tinchobolso8@gmail.com]]></wp:author_email><wp:author_display_name><![CDATA[tincho8]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
 
 				
 	<generator>https://wordpress.org/?v=6.8.2</generator>
 
 <image>
-	<url>http://localhost:8000/wp-content/uploads/2025/09/favicon.png</url>
+	<url>https://staging.cleanmax.uy/wp-content/uploads/2025/08/favicon.png</url>
 	<title>Cleanmax</title>
-	<link>http://localhost:8000</link>
+	<link>https://staging.cleanmax.uy</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 
 		<item>
 		<title><![CDATA[Formulario de Contacto]]></title>
-		<link>http://localhost:8000/?post_type=wpcf7_contact_form&#038;p=177</link>
+		<link>https://staging.cleanmax.uy/?post_type=wpcf7_contact_form&#038;p=177</link>
 		<pubDate>Mon, 01 Sep 2025 17:15:50 +0000</pubDate>
 		<dc:creator><![CDATA[tincho8]]></dc:creator>
 		<guid isPermaLink="false">http://localhost:8000/?post_type=wpcf7_contact_form&#038;p=177</guid>
@@ -67,7 +67,7 @@
   </div>
 
   <div class="row mb-3">
-    <div class="col">
+    <div class="col-12 col-md-6">
       <label for="email" class="form-label">Email*</label>
 [email* email autocomplete:email class:form-control minlength:3 placeholder "email@example.com"]
     </div>
@@ -85,7 +85,7 @@
   [submit class:btn class:btn-primary class:btn-lg class:d-block class:w-100 "Enviar Formulario"]
 1
 [_site_title] "Formulario de Contacto"
-[_site_title] <[email]>
+[_site_title] <wordpress@staging.cleanmax.uy>
 contacto@cleanmax.uy
 From: [nombre] [apellido]
 Tel: [tel]
@@ -138,8 +138,8 @@ Please enter a telephone number.]]></content:encoded>
 		<wp:post_id>177</wp:post_id>
 		<wp:post_date><![CDATA[2025-09-01 17:15:50]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2025-09-01 17:15:50]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2025-09-04 17:49:57]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2025-09-04 17:49:57]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2025-09-04 18:08:18]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2025-09-04 18:08:18]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[formulario-de-contacto]]></wp:post_name>
@@ -150,6 +150,72 @@ Please enter a telephone number.]]></content:encoded>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
 														<wp:postmeta>
+		<wp:meta_key><![CDATA[_form]]></wp:meta_key>
+		<wp:meta_value><![CDATA[<div class="row mb-3">
+    <div class="col-12 col-md-6">
+      <label for="nombre" class="form-label">Nombre*</label>
+      [text* nombre id:nombre class:form-control aria-label:nombre placeholder "Nombre"]
+    </div>
+    <div class="col-12 col-md-6">
+      <label for="apellido" class="form-label">Apellido*</label>
+      [text* apellido id:apellido class:form-control aria-label:apellido placeholder "Apellido"]
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <div class="col-12 col-md-6">
+      <label for="email" class="form-label">Email*</label>
+[email* email autocomplete:email class:form-control minlength:3 placeholder "email@example.com"]
+    </div>
+    <div class="col-12 col-md-6">
+      <label for="phone" class="form-label">Celular</label>
+[tel tel autocomplete:tel class:form-control minlength:3 placeholder "+598 9xx xxx xx"]
+    </div>
+  </div>
+
+  <div class="mb-5">
+    <label for="mensaje" class="form-label">Mensaje*</label>
+    [textarea* mensaje id:mensaje class:form-control class:mb-0 rows:3 placeholder "Contanos brevemente cómo podemos ayudarte"]
+  </div>
+
+  [submit class:btn class:btn-primary class:btn-lg class:d-block class:w-100 "Enviar Formulario"]]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_mail]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:9:{s:6:"active";b:1;s:7:"subject";s:38:"[_site_title] "Formulario de Contacto"";s:6:"sender";s:45:"[_site_title] <wordpress@staging.cleanmax.uy>";s:9:"recipient";s:20:"contacto@cleanmax.uy";s:4:"body";s:168:"From: [nombre] [apellido]
+Tel: [tel]
+
+Message Body:
+[mensaje]
+
+-- 
+This is a notification that a contact form was submitted on your website ([_site_title] [_site_url]).";s:18:"additional_headers";s:17:"Reply-To: [email]";s:11:"attachments";s:0:"";s:8:"use_html";b:1;s:13:"exclude_blank";b:1;}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_mail_2]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:9:{s:6:"active";b:0;s:7:"subject";s:30:"[_site_title] "[your-subject]"";s:6:"sender";s:39:"[_site_title] <tinchovera8@hotmail.com>";s:9:"recipient";s:12:"[your-email]";s:4:"body";s:220:"Message Body:
+[your-message]
+
+-- 
+This email is a receipt for your contact form submission on our website ([_site_title] [_site_url]) in which your email address was used. If that was not you, please ignore this message.";s:18:"additional_headers";s:29:"Reply-To: [_site_admin_email]";s:11:"attachments";s:0:"";s:8:"use_html";b:1;s:13:"exclude_blank";b:1;}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_messages]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:22:{s:12:"mail_sent_ok";s:111:"Mensaje enviado exitosamente! Nos pondremos en contacto contigo a la brevedad! Cleanmax soluciones de limpieza.";s:12:"mail_sent_ng";s:87:"Se ha producido un error al intentar enviar tu mensaje. Vuelve a intentarlo más tarde.";s:16:"validation_error";s:74:"Uno o más campos contienen un error. Compruébelos y vuelva a intentarlo.";s:4:"spam";s:87:"Se ha producido un error al intentar enviar tu mensaje. Vuelve a intentarlo más tarde.";s:12:"accept_terms";s:69:"You must accept the terms and conditions before sending your message.";s:16:"invalid_required";s:30:"Por favor, rellene este campo.";s:16:"invalid_too_long";s:32:"This field has a too long input.";s:17:"invalid_too_short";s:33:"This field has a too short input.";s:13:"upload_failed";s:46:"There was an unknown error uploading the file.";s:24:"upload_file_type_invalid";s:49:"You are not allowed to upload files of this type.";s:21:"upload_file_too_large";s:31:"The uploaded file is too large.";s:23:"upload_failed_php_error";s:38:"There was an error uploading the file.";s:12:"invalid_date";s:41:"Please enter a date in YYYY-MM-DD format.";s:14:"date_too_early";s:32:"This field has a too early date.";s:13:"date_too_late";s:31:"This field has a too late date.";s:14:"invalid_number";s:22:"Please enter a number.";s:16:"number_too_small";s:34:"This field has a too small number.";s:16:"number_too_large";s:34:"This field has a too large number.";s:23:"quiz_answer_not_correct";s:36:"The answer to the quiz is incorrect.";s:13:"invalid_email";s:30:"Please enter an email address.";s:11:"invalid_url";s:19:"Please enter a URL.";s:11:"invalid_tel";s:32:"Please enter a telephone number.";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_additional_settings]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_locale]]></wp:meta_key>
+		<wp:meta_value><![CDATA[en_US]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_hash]]></wp:meta_key>
+		<wp:meta_value><![CDATA[b368c0764d4041c8570e4e255077d71e55b20abd3d70eb7c8117801f31abae3e]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
 		<wp:meta_key><![CDATA[_form]]></wp:meta_key>
 		<wp:meta_value><![CDATA[<div class="row mb-3">
     <div class="col-12 col-md-6">
@@ -218,7 +284,7 @@ This email is a receipt for your contact form submission on our website ([_site_
 							</item>
 					<item>
 		<title><![CDATA[Formulario de Cotización de Servicios]]></title>
-		<link>http://localhost:8000/?post_type=wpcf7_contact_form&#038;p=179</link>
+		<link>https://staging.cleanmax.uy/?post_type=wpcf7_contact_form&#038;p=179</link>
 		<pubDate>Mon, 01 Sep 2025 17:24:59 +0000</pubDate>
 		<dc:creator><![CDATA[tincho8]]></dc:creator>
 		<guid isPermaLink="false">http://localhost:8000/?post_type=wpcf7_contact_form&#038;p=179</guid>
@@ -260,7 +326,6 @@ This email is a receipt for your contact form submission on our website ([_site_
   "Limpieza de locales comerciales"
   "Limpieza profunda (única vez)"
   "Limpieza de ventanales / vidrios grandes"]
-
   </div>
 
   <div class="row mb-3">
@@ -283,7 +348,7 @@ This email is a receipt for your contact form submission on our website ([_site_
   [submit class:btn class:btn-primary class:btn-lg class:d-block class:w-100 "Enviar Formulario"]
 1
 [_site_title] "Formulario de Cotización de Servicios"
-[_site_title] <[email]>
+[_site_title] <wordpress@staging.cleanmax.uy>
 contacto@cleanmax.uy
 De: [nombre_apellido] <[email]>
 Tel: [celular]
@@ -302,16 +367,21 @@ Reply-To: [email]
 
 1
 1
+1
+Cleanmax - Confirmación de recepción de tu solicitud de presupuesto
+[_site_title] <no-reply@staging.cleanmax.uy>
+[email]
+¡Hola  [nombre_apellido]!
+Queremos confirmarte que hemos recibido correctamente tu solicitud de presupuesto.
 
-[_site_title] "[your-subject]"
-[_site_title] <tinchovera8@hotmail.com>
-[your-email]
-Message Body:
-[your-message]
+Muchas gracias por contactarnos. Valoramos tu interés en nuestros servicios y te agradecemos la confianza que depositas en nosotros.
+Nuestro equipo está revisando tu solicitud y nos pondremos en contacto contigo lo antes posible para ofrecerte una propuesta personalizada que se ajuste a tus necesidades.
 
--- 
-This email is a receipt for your contact form submission on our website ([_site_title] [_site_url]) in which your email address was used. If that was not you, please ignore this message.
-Reply-To: [_site_admin_email]
+Te invitamos a visitar nuestra página web para conocer más sobre nuestros servicios y a seguirnos en Instagram para mantenerte al tanto de todas nuestras novedades.
+
+¡Saludos cordiales!
+<b>El equipo de Cleanmax</b>
+Reply-To: contacto@cleanmax.uy
 
 1
 1
@@ -341,8 +411,8 @@ Please enter a telephone number.]]></content:encoded>
 		<wp:post_id>179</wp:post_id>
 		<wp:post_date><![CDATA[2025-09-01 17:24:59]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2025-09-01 17:24:59]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2025-09-05 17:58:34]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2025-09-05 17:58:34]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2025-09-08 17:53:35]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2025-09-08 17:53:35]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[formulario-de-servicio]]></wp:post_name>
@@ -391,7 +461,6 @@ Please enter a telephone number.]]></content:encoded>
   "Limpieza de locales comerciales"
   "Limpieza profunda (única vez)"
   "Limpieza de ventanales / vidrios grandes"]
-
   </div>
 
   <div class="row mb-3">
@@ -415,7 +484,7 @@ Please enter a telephone number.]]></content:encoded>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_mail]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:9:{s:6:"active";b:1;s:7:"subject";s:54:"[_site_title] "Formulario de Cotización de Servicios"";s:6:"sender";s:23:"[_site_title] <[email]>";s:9:"recipient";s:20:"contacto@cleanmax.uy";s:4:"body";s:292:"De: [nombre_apellido] <[email]>
+		<wp:meta_value><![CDATA[a:9:{s:6:"active";b:1;s:7:"subject";s:54:"[_site_title] "Formulario de Cotización de Servicios"";s:6:"sender";s:45:"[_site_title] <wordpress@staging.cleanmax.uy>";s:9:"recipient";s:20:"contacto@cleanmax.uy";s:4:"body";s:292:"De: [nombre_apellido] <[email]>
 Tel: [celular]
 Empresa: [empresa]
 Dirección: [direccion]
@@ -431,11 +500,16 @@ This is a notification that a contact form was submitted on your website ([_site
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_mail_2]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:9:{s:6:"active";b:0;s:7:"subject";s:30:"[_site_title] "[your-subject]"";s:6:"sender";s:39:"[_site_title] <tinchovera8@hotmail.com>";s:9:"recipient";s:12:"[your-email]";s:4:"body";s:220:"Message Body:
-[your-message]
+		<wp:meta_value><![CDATA[a:9:{s:6:"active";b:1;s:7:"subject";s:69:"Cleanmax - Confirmación de recepción de tu solicitud de presupuesto";s:6:"sender";s:44:"[_site_title] <no-reply@staging.cleanmax.uy>";s:9:"recipient";s:7:"[email]";s:4:"body";s:636:"¡Hola  [nombre_apellido]!
+Queremos confirmarte que hemos recibido correctamente tu solicitud de presupuesto.
 
--- 
-This email is a receipt for your contact form submission on our website ([_site_title] [_site_url]) in which your email address was used. If that was not you, please ignore this message.";s:18:"additional_headers";s:29:"Reply-To: [_site_admin_email]";s:11:"attachments";s:0:"";s:8:"use_html";b:1;s:13:"exclude_blank";b:1;}]]></wp:meta_value>
+Muchas gracias por contactarnos. Valoramos tu interés en nuestros servicios y te agradecemos la confianza que depositas en nosotros.
+Nuestro equipo está revisando tu solicitud y nos pondremos en contacto contigo lo antes posible para ofrecerte una propuesta personalizada que se ajuste a tus necesidades.
+
+Te invitamos a visitar nuestra página web para conocer más sobre nuestros servicios y a seguirnos en Instagram para mantenerte al tanto de todas nuestras novedades.
+
+¡Saludos cordiales!
+<b>El equipo de Cleanmax</b>";s:18:"additional_headers";s:30:"Reply-To: contacto@cleanmax.uy";s:11:"attachments";s:0:"";s:8:"use_html";b:1;s:13:"exclude_blank";b:1;}]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_messages]]></wp:meta_key>
@@ -453,10 +527,119 @@ This email is a receipt for your contact form submission on our website ([_site_
 		<wp:meta_key><![CDATA[_hash]]></wp:meta_key>
 		<wp:meta_value><![CDATA[96e3c14edaba5fa2bcabd8796b3369b02c440c77aec30059d711b67ddb3c5ca5]]></wp:meta_value>
 		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_form]]></wp:meta_key>
+		<wp:meta_value><![CDATA[<div class="row mb-3">
+    <div class="col-12 col-md-6">
+      <label for="nombre_apellido" class="form-label">Nombre y Apellido*</label>
+      [text* nombre_apellido id:nombre_apellido class:form-control aria-label:nombre_apellido placeholder "Nombre y Apellido"]
+    </div>
+    <div class="col-12 col-md-6">
+      <label for="email" class="form-label">Email*</label>
+[email* email autocomplete:email class:form-control minlength:3 placeholder "email@example.com"]
+    </div>
+  </div>
+
+  <div class="row mb-2">
+    <div class="col-12 col-md-6">
+      <label for="phone" class="form-label">Celular*</label>
+[tel* celular autocomplete:tel class:form-control minlength:3 placeholder "+598 9xx xxx xx"]
+    </div>
+    <div class="col-12 col-md-6">
+      <label for="empresa" class="form-label">Empresa o razón social</label>
+      [text empresa id:empresa class:form-control aria-label:empresa placeholder "Empresa o razón social"]
+    </div>
+  </div>
+
+  <div class="mb-4">
+    <label for="direccion" class="form-label">Dirección</label>
+    [text direccion id:direccion class:form-control aria-label:direccion placeholder "Calle y número"]
+  </div>
+
+  <div class="mb-4">
+    <label for="servicio" class="form-label">Seleccione el servicio que requiere*</label>
+[select* servicios class:form-control first_as_label default:shortcode_attr
+  ""
+  "Limpieza de hogares"
+  "Limpieza de oficinas / empresas"
+  "Limpieza de edificios / condominios"
+  "Limpieza de locales comerciales"
+  "Limpieza profunda (única vez)"
+  "Limpieza de ventanales / vidrios grandes"]
+  </div>
+
+  <div class="row mb-3">
+    <div class="col-12 col-md-6">
+      <label class="form-label d-block">Frecuencia del servicio</label>
+      [checkbox* frecuencia class:form-check-label use_label_element "Lunes a viernes" "3 veces por semana" "2 veces por semana" "1 vez por semana" "Quincenal" "Única vez"]
+    </div>
+
+    <div class="col-12 col-md-6">
+      <label class="form-label d-block">Horario de preferencia</label>
+      [checkbox horarios class:form-check-label use_label_element "9 a 13" "14 a 18" "18 a 22" "9 a 18"]
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <label for="comentarios" class="form-label">Queremos conocerte! Comentanos brevemente cómo podemos ayudarte.</label>
+    [textarea comentarios id:comentarios class:form-control rows:3 placeholder "Mensaje"]
+  </div>
+
+  [submit class:btn class:btn-primary class:btn-lg class:d-block class:w-100 "Enviar Formulario"]]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_mail]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:9:{s:6:"active";b:1;s:7:"subject";s:54:"[_site_title] "Formulario de Cotización de Servicios"";s:6:"sender";s:45:"[_site_title] <wordpress@staging.cleanmax.uy>";s:9:"recipient";s:20:"contacto@cleanmax.uy";s:4:"body";s:292:"De: [nombre_apellido] <[email]>
+Tel: [celular]
+Empresa: [empresa]
+Dirección: [direccion]
+Servicio: [servicios]
+Frecuencia: [frecuencia]
+Horarios: [horarios]
+
+Comentarios:
+[comentarios]
+
+-- 
+This is a notification that a contact form was submitted on your website ([_site_title] [_site_url]).";s:18:"additional_headers";s:17:"Reply-To: [email]";s:11:"attachments";s:0:"";s:8:"use_html";b:1;s:13:"exclude_blank";b:1;}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_mail_2]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:9:{s:6:"active";b:1;s:7:"subject";s:69:"Cleanmax - Confirmación de recepción de tu solicitud de presupuesto";s:6:"sender";s:44:"[_site_title] <no-reply@staging.cleanmax.uy>";s:9:"recipient";s:7:"[email]";s:4:"body";s:636:"¡Hola  [nombre_apellido]!
+Queremos confirmarte que hemos recibido correctamente tu solicitud de presupuesto.
+
+Muchas gracias por contactarnos. Valoramos tu interés en nuestros servicios y te agradecemos la confianza que depositas en nosotros.
+Nuestro equipo está revisando tu solicitud y nos pondremos en contacto contigo lo antes posible para ofrecerte una propuesta personalizada que se ajuste a tus necesidades.
+
+Te invitamos a visitar nuestra página web para conocer más sobre nuestros servicios y a seguirnos en Instagram para mantenerte al tanto de todas nuestras novedades.
+
+¡Saludos cordiales!
+<b>El equipo de Cleanmax</b>";s:18:"additional_headers";s:30:"Reply-To: contacto@cleanmax.uy";s:11:"attachments";s:0:"";s:8:"use_html";b:1;s:13:"exclude_blank";b:1;}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_messages]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:22:{s:12:"mail_sent_ok";s:111:"Mensaje enviado exitosamente! Nos pondremos en contacto contigo a la brevedad! Cleanmax soluciones de limpieza.";s:12:"mail_sent_ng";s:87:"Se ha producido un error al intentar enviar tu mensaje. Vuelve a intentarlo más tarde.";s:16:"validation_error";s:74:"Uno o más campos contienen un error. Compruébelos y vuelva a intentarlo.";s:4:"spam";s:87:"Se ha producido un error al intentar enviar tu mensaje. Vuelve a intentarlo más tarde.";s:12:"accept_terms";s:69:"You must accept the terms and conditions before sending your message.";s:16:"invalid_required";s:30:"Por favor, rellene este campo.";s:16:"invalid_too_long";s:32:"This field has a too long input.";s:17:"invalid_too_short";s:33:"This field has a too short input.";s:13:"upload_failed";s:46:"There was an unknown error uploading the file.";s:24:"upload_file_type_invalid";s:49:"You are not allowed to upload files of this type.";s:21:"upload_file_too_large";s:31:"The uploaded file is too large.";s:23:"upload_failed_php_error";s:38:"There was an error uploading the file.";s:12:"invalid_date";s:41:"Please enter a date in YYYY-MM-DD format.";s:14:"date_too_early";s:32:"This field has a too early date.";s:13:"date_too_late";s:31:"This field has a too late date.";s:14:"invalid_number";s:22:"Please enter a number.";s:16:"number_too_small";s:34:"This field has a too small number.";s:16:"number_too_large";s:34:"This field has a too large number.";s:23:"quiz_answer_not_correct";s:36:"The answer to the quiz is incorrect.";s:13:"invalid_email";s:30:"Please enter an email address.";s:11:"invalid_url";s:19:"Please enter a URL.";s:11:"invalid_tel";s:32:"Please enter a telephone number.";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_additional_settings]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_locale]]></wp:meta_key>
+		<wp:meta_value><![CDATA[en_US]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_hash]]></wp:meta_key>
+		<wp:meta_value><![CDATA[96e3c14edaba5fa2bcabd8796b3369b02c440c77aec30059d711b67ddb3c5ca5]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_config_validation]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:1:{s:16:"mail_2.recipient";a:1:{i:0;a:2:{s:4:"code";s:31:"unsafe_email_without_protection";s:4:"args";a:3:{s:7:"message";s:58:"Unsafe email config is used without sufficient protection.";s:6:"params";a:0:{}s:4:"link";s:77:"https://contactform7.com/configuration-errors/unsafe-email-without-protection";}}}}]]></wp:meta_value>
+		</wp:postmeta>
 							</item>
 					<item>
 		<title><![CDATA[Formulario de Solicitud de Empleo]]></title>
-		<link>http://localhost:8000/?post_type=wpcf7_contact_form&#038;p=183</link>
+		<link>https://staging.cleanmax.uy/?post_type=wpcf7_contact_form&#038;p=183</link>
 		<pubDate>Mon, 01 Sep 2025 18:08:56 +0000</pubDate>
 		<dc:creator><![CDATA[tincho8]]></dc:creator>
 		<guid isPermaLink="false">http://localhost:8000/?post_type=wpcf7_contact_form&#038;p=183</guid>
@@ -534,7 +717,7 @@ This email is a receipt for your contact form submission on our website ([_site_
   [submit class:btn class:btn-primary class:btn-lg class:d-block class:w-100 "Enviar"]
 1
 [_site_title] "Formulario de Solicitud de Empleo"
-[_site_title] <[email]>
+[_site_title] <no-reply@staging.cleanmax.uy>
 contacto@cleanmax.uy
 Nombre: [nombre_completo]
 CI: [ci]
@@ -556,19 +739,25 @@ Adjunto: [cv]
 -- 
 This is a notification that a contact form was submitted on your website ([_site_title] [_site_url]).
 Reply-To: [email]
-
+[cv]
 1
 1
+1
+Confirmación de recepción de tu solicitud de empleo en Cleanmax
+[_site_title] <no-reply@staging.cleanmax.uy>
+[email]
+¡Hola [nombre_completo]!
+Te escribimos para confirmar que hemos recibido tu solicitud de empleo.
 
-[_site_title] "[your-subject]"
-[_site_title] <tinchovera8@hotmail.com>
-[your-email]
-Message Body:
-[your-message]
+Agradecemos mucho tu interés en formar parte de nuestro equipo. Tu perfil es importante para nosotros y lo revisaremos con atención.
+Nos pondremos en contacto contigo en los próximos días si tu perfil se ajusta a las necesidades del puesto.
 
--- 
-This email is a receipt for your contact form submission on our website ([_site_title] [_site_url]) in which your email address was used. If that was not you, please ignore this message.
-Reply-To: [_site_admin_email]
+Mientras tanto, te invitamos a seguirnos en nuestras redes sociales para estar al tanto de las últimas novedades de Cleanmax.
+
+¡Gracias de nuevo por tu tiempo y dedicación!
+Saludos,
+<b>El equipo de Recursos Humanos de Cleanmax</b>
+Reply-To: contacto@cleanmax.uy
 
 1
 1
@@ -598,8 +787,8 @@ Please enter a telephone number.]]></content:encoded>
 		<wp:post_id>183</wp:post_id>
 		<wp:post_date><![CDATA[2025-09-01 18:08:56]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2025-09-01 18:08:56]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2025-09-04 17:50:20]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2025-09-04 17:50:20]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2025-09-08 17:50:24]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2025-09-08 17:50:24]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[formulario-de-solicitud-de-empleo]]></wp:post_name>
@@ -685,7 +874,7 @@ Please enter a telephone number.]]></content:encoded>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_mail]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:9:{s:6:"active";b:1;s:7:"subject";s:49:"[_site_title] "Formulario de Solicitud de Empleo"";s:6:"sender";s:23:"[_site_title] <[email]>";s:9:"recipient";s:20:"contacto@cleanmax.uy";s:4:"body";s:423:"Nombre: [nombre_completo]
+		<wp:meta_value><![CDATA[a:9:{s:6:"active";b:1;s:7:"subject";s:49:"[_site_title] "Formulario de Solicitud de Empleo"";s:6:"sender";s:44:"[_site_title] <no-reply@staging.cleanmax.uy>";s:9:"recipient";s:20:"contacto@cleanmax.uy";s:4:"body";s:423:"Nombre: [nombre_completo]
 CI: [ci]
 Fecha de nacimiento: [fecha_nac]
 Email: [email]
@@ -703,15 +892,21 @@ Mensaje:
 Adjunto: [cv]
 
 -- 
-This is a notification that a contact form was submitted on your website ([_site_title] [_site_url]).";s:18:"additional_headers";s:17:"Reply-To: [email]";s:11:"attachments";s:0:"";s:8:"use_html";b:1;s:13:"exclude_blank";b:1;}]]></wp:meta_value>
+This is a notification that a contact form was submitted on your website ([_site_title] [_site_url]).";s:18:"additional_headers";s:17:"Reply-To: [email]";s:11:"attachments";s:4:"[cv]";s:8:"use_html";b:1;s:13:"exclude_blank";b:1;}]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_mail_2]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:9:{s:6:"active";b:0;s:7:"subject";s:30:"[_site_title] "[your-subject]"";s:6:"sender";s:39:"[_site_title] <tinchovera8@hotmail.com>";s:9:"recipient";s:12:"[your-email]";s:4:"body";s:220:"Message Body:
-[your-message]
+		<wp:meta_value><![CDATA[a:9:{s:6:"active";b:1;s:7:"subject";s:65:"Confirmación de recepción de tu solicitud de empleo en Cleanmax";s:6:"sender";s:44:"[_site_title] <no-reply@staging.cleanmax.uy>";s:9:"recipient";s:7:"[email]";s:4:"body";s:578:"¡Hola [nombre_completo]!
+Te escribimos para confirmar que hemos recibido tu solicitud de empleo.
 
--- 
-This email is a receipt for your contact form submission on our website ([_site_title] [_site_url]) in which your email address was used. If that was not you, please ignore this message.";s:18:"additional_headers";s:29:"Reply-To: [_site_admin_email]";s:11:"attachments";s:0:"";s:8:"use_html";b:1;s:13:"exclude_blank";b:1;}]]></wp:meta_value>
+Agradecemos mucho tu interés en formar parte de nuestro equipo. Tu perfil es importante para nosotros y lo revisaremos con atención.
+Nos pondremos en contacto contigo en los próximos días si tu perfil se ajusta a las necesidades del puesto.
+
+Mientras tanto, te invitamos a seguirnos en nuestras redes sociales para estar al tanto de las últimas novedades de Cleanmax.
+
+¡Gracias de nuevo por tu tiempo y dedicación!
+Saludos,
+<b>El equipo de Recursos Humanos de Cleanmax</b>";s:18:"additional_headers";s:30:"Reply-To: contacto@cleanmax.uy";s:11:"attachments";s:0:"";s:8:"use_html";b:1;s:13:"exclude_blank";b:1;}]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_messages]]></wp:meta_key>
@@ -728,6 +923,136 @@ This email is a receipt for your contact form submission on our website ([_site_
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_hash]]></wp:meta_key>
 		<wp:meta_value><![CDATA[6b69fca4833020536cd0f8e2e0daafe200be78f4bc575563fe70fa2932b3eec9]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_form]]></wp:meta_key>
+		<wp:meta_value><![CDATA[<div class="row mb-3">
+    <div class="col-12 col-md-6">
+      <label for="nombre_completo" class="form-label">Nombre completo*</label>
+      [text* nombre_completo id:nombre_completo class:form-control placeholder "Nombre y Apellido"]
+    </div>
+    <div class="col-12 col-md-6">
+      <label for="ci" class="form-label">CI* (sin puntos ni guiones)</label>
+      [text* ci id:ci class:form-control placeholder "12345678"]
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <div class="col-12 col-md-6">
+      <label for="fecha_nac" class="form-label">Fecha de nacimiento*</label>
+      [date* fecha_nac id:fecha_nac class:form-control min:1900-01-01]
+    </div>
+    <div class="col-12 col-md-6">
+      <label for="email" class="form-label">Mail*</label>
+      [email* email autocomplete:email class:form-control minlength:3 placeholder "email@example.com"]
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <div class="col-12 col-md-6">
+      <label for="celular" class="form-label">Celular*</label>
+[tel* celular autocomplete:tel class:form-control minlength:3 placeholder "+598 9xx xxx xx"]
+    </div>
+    <div class="col-12 col-md-6">
+      <label for="direccion" class="form-label">Dirección*</label>
+      [text* direccion id:direccion class:form-control placeholder "Calle y número"]
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <label for="barrio" class="form-label">Barrio*</label>
+    [text* barrio id:barrio class:form-control placeholder "Barrio"]
+  </div>
+
+  <div class="mb-3">
+    <label for="disponibilidad" class="form-label">Disponibilidad horaria (podés seleccionar varias)</label>
+[checkbox* disponibilidad class:form-check-label use_label_element "tiempo completo" "mañana" "tarde" "noche" "fines de semana"]
+  </div>
+
+  <div class="row mb-3">
+    <div class="col-12 col-md-6">
+      <label class="form-label d-block">Experiencia laboral</label>
+[checkbox experiencia_laboral class:form-check-label use_label_element "casas de familia" "oficinas -empresas" "industrias" "locales comerciales" "edificios" "finales de obra"]
+    </div>
+
+    <div class="col-12 col-md-6">
+      <label class="form-label d-block">Tareas con experiencia</label>
+[checkbox tareas_con_experiencia class:form-check-label use_label_element "Limpiador/a" "limpia vidrios" "limpieza profunda" "supervisión" "servicio doméstico" "tapizados/telas"]
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label d-block">Equipamiento con experiencia</label>
+[checkbox equipamientos class:form-check-label use_label_element "Aspiradora industrial" "lustradoras" "enceradoras" "hidrolavadoras" "barredoras a bordo" "lava-aspiradoradoras de tapizados" "limpiadoras a vapor"]
+  </div>
+
+  <div class="mb-3">
+    <label for="cv" class="form-label">Subir CV</label>
+    [file cv id:cv class:form-control filetypes:pdf|doc|docx limit:2mb]
+  </div>
+
+  <div class="mb-3">
+    <label for="mensaje" class="form-label">Mensaje</label>
+    [textarea mensaje id:mensaje class:form-control rows:3 placeholder "Escribí tu mensaje"]
+  </div>
+
+  [submit class:btn class:btn-primary class:btn-lg class:d-block class:w-100 "Enviar"]]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_mail]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:9:{s:6:"active";b:1;s:7:"subject";s:49:"[_site_title] "Formulario de Solicitud de Empleo"";s:6:"sender";s:44:"[_site_title] <no-reply@staging.cleanmax.uy>";s:9:"recipient";s:20:"contacto@cleanmax.uy";s:4:"body";s:423:"Nombre: [nombre_completo]
+CI: [ci]
+Fecha de nacimiento: [fecha_nac]
+Email: [email]
+Celular: [celular]
+Dirección: [direccion]
+Barrio: [barrio]
+Disponibilidad: [disponibilidad]
+Experiencia laboral: [experiencia_laboral]
+Tareas: [tareas_con_experiencia]
+Equipamiento: [equipamientos]
+
+Mensaje:
+[mensaje]
+
+Adjunto: [cv]
+
+-- 
+This is a notification that a contact form was submitted on your website ([_site_title] [_site_url]).";s:18:"additional_headers";s:17:"Reply-To: [email]";s:11:"attachments";s:4:"[cv]";s:8:"use_html";b:1;s:13:"exclude_blank";b:1;}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_mail_2]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:9:{s:6:"active";b:1;s:7:"subject";s:65:"Confirmación de recepción de tu solicitud de empleo en Cleanmax";s:6:"sender";s:44:"[_site_title] <no-reply@staging.cleanmax.uy>";s:9:"recipient";s:7:"[email]";s:4:"body";s:578:"¡Hola [nombre_completo]!
+Te escribimos para confirmar que hemos recibido tu solicitud de empleo.
+
+Agradecemos mucho tu interés en formar parte de nuestro equipo. Tu perfil es importante para nosotros y lo revisaremos con atención.
+Nos pondremos en contacto contigo en los próximos días si tu perfil se ajusta a las necesidades del puesto.
+
+Mientras tanto, te invitamos a seguirnos en nuestras redes sociales para estar al tanto de las últimas novedades de Cleanmax.
+
+¡Gracias de nuevo por tu tiempo y dedicación!
+Saludos,
+<b>El equipo de Recursos Humanos de Cleanmax</b>";s:18:"additional_headers";s:30:"Reply-To: contacto@cleanmax.uy";s:11:"attachments";s:0:"";s:8:"use_html";b:1;s:13:"exclude_blank";b:1;}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_messages]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:22:{s:12:"mail_sent_ok";s:111:"Mensaje enviado exitosamente! Nos pondremos en contacto contigo a la brevedad! Cleanmax soluciones de limpieza.";s:12:"mail_sent_ng";s:87:"Se ha producido un error al intentar enviar tu mensaje. Vuelve a intentarlo más tarde.";s:16:"validation_error";s:74:"Uno o más campos contienen un error. Compruébelos y vuelva a intentarlo.";s:4:"spam";s:87:"Se ha producido un error al intentar enviar tu mensaje. Vuelve a intentarlo más tarde.";s:12:"accept_terms";s:69:"You must accept the terms and conditions before sending your message.";s:16:"invalid_required";s:30:"Por favor, rellene este campo.";s:16:"invalid_too_long";s:32:"This field has a too long input.";s:17:"invalid_too_short";s:33:"This field has a too short input.";s:13:"upload_failed";s:46:"There was an unknown error uploading the file.";s:24:"upload_file_type_invalid";s:49:"You are not allowed to upload files of this type.";s:21:"upload_file_too_large";s:31:"The uploaded file is too large.";s:23:"upload_failed_php_error";s:38:"There was an error uploading the file.";s:12:"invalid_date";s:41:"Please enter a date in YYYY-MM-DD format.";s:14:"date_too_early";s:32:"This field has a too early date.";s:13:"date_too_late";s:31:"This field has a too late date.";s:14:"invalid_number";s:22:"Please enter a number.";s:16:"number_too_small";s:34:"This field has a too small number.";s:16:"number_too_large";s:34:"This field has a too large number.";s:23:"quiz_answer_not_correct";s:36:"The answer to the quiz is incorrect.";s:13:"invalid_email";s:30:"Please enter an email address.";s:11:"invalid_url";s:19:"Please enter a URL.";s:11:"invalid_tel";s:32:"Please enter a telephone number.";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_additional_settings]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_locale]]></wp:meta_key>
+		<wp:meta_value><![CDATA[en_US]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_hash]]></wp:meta_key>
+		<wp:meta_value><![CDATA[6b69fca4833020536cd0f8e2e0daafe200be78f4bc575563fe70fa2932b3eec9]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_config_validation]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:1:{s:16:"mail_2.recipient";a:1:{i:0;a:2:{s:4:"code";s:31:"unsafe_email_without_protection";s:4:"args";a:3:{s:7:"message";s:58:"Unsafe email config is used without sufficient protection.";s:6:"params";a:0:{}s:4:"link";s:77:"https://contactform7.com/configuration-errors/unsafe-email-without-protection";}}}}]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 				</channel>
