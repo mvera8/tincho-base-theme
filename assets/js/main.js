@@ -1,6 +1,7 @@
 // main.js
 // import 'bootstrap';
-import 'bootstrap/js/dist/collapse'; // si usás el Data API de collapse
+import 'bootstrap/js/dist/collapse';
+import 'bootstrap/js/dist/carousel';
 import '../css/style.scss';
 
 console.log('con bootstrap');
