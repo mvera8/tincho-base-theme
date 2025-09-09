@@ -95,8 +95,6 @@ strong {
 
 // affix
 .affix {
-  bottom: 0;
-  right: 0;
   width: 100%;
   z-index: 99;
 
@@ -104,14 +102,25 @@ strong {
     width: auto;
   }
 
+  @at-root .has-scrolled-50 & {
+    bottom: 0;
+    right: 0;
+  }
+
   &__content {
-    animation: slideInFromBottom 0.5s ease-out forwards;
     box-shadow: 0 -3px 8px 0 #a9aee04d;
 
     @include media-breakpoint-up(sm) {
-      animation: slideInFromBottom 0.5s ease-out forwards;
       border-radius: 50rem;
       box-shadow: 0 0 40px 0 #a9aee04d;
+    }
+
+    @at-root .has-scrolled-50 & {
+      animation: slideInFromBottom 0.5s ease-out forwards;
+    
+      @include media-breakpoint-up(sm) {
+        animation: slideInFromBottom 0.5s ease-out forwards;
+      }
     }
   }
 }

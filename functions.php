@@ -10,6 +10,7 @@ $includes = array(
   '/theme-options.php',
   '/theme-setup.php',
   '/title-tag.php',
+  '/custom-logo.php',
   '/cleanmax-servicios.php',
   '/cleanmax-icon-selector.php',
   '/cleanmax-image.php',

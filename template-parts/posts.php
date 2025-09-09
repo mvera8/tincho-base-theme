@@ -23,7 +23,7 @@ $latest_posts = new WP_Query($args);
 			'section',
 			array(
 				'title'    => 'Novedades',
-				'align'    => 'start col-6',
+				'align'    => 'center text-md-start col-12 col-md-6',
 				'btn_link' => '/blog/',
 				'btn_text' => 'Ver Blog',
 			)

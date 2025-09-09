@@ -76,15 +76,17 @@ $steps = array(
 
 	<div class="text-center pt-2">
 		<?php
-		get_template_part(
-			'template-parts/btn',
-			'multiuso',
-			[
-				'text'  => 'Ver Servicios',
-				'link'  => '#section-servicios',
-				'class' => 'btn-outline-primary'
-			]
-		);
+		if ( is_home() || is_front_page() ) {
+			get_template_part(
+				'template-parts/btn',
+				'multiuso',
+				[
+					'text'  => 'Ver Servicios',
+					'link'  => '#section-servicios',
+					'class' => 'btn-outline-primary'
+				]
+			);
+		}
 		?>
 	</div>
 </section>

@@ -29,8 +29,8 @@ get_template_part( 'template-parts/navbar' );
 				);
 				?>
 			</div>
-			<div class="col-12 col-md-4">
-				<div class="bg-secondary px-4 pt-5 pb-1 rounded">
+			<div class="col-12 col-lg-4">
+				<div class="bg-secondary px-4 pt-5 pb-1 rounded mt-4 mt-lg-0">
 					<div class="widget mb-4">
 						<h4 class="mb-2 text-primary">Redes</h4>
 						<?php
