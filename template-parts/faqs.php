@@ -55,7 +55,7 @@ $faqs = array(
 		?>
 
 		<div class="row justify-content-center">
-			<div class="col-12 col-md-8">
+			<div class="col-12 col-lg-8">
 				<div class="accordion" id="accordionRental">
 					<?php
 					foreach ( $faqs as $index => $faq ) : 

@@ -15,11 +15,6 @@ add_action('init', function () {
   remove_action('wp_head', 'wp_oembed_add_host_js');
   remove_action('wp_head', 'wp_shortlink_wp_head');
 
-  // 🔹 Elimina el script para embebidos externos (tweets, YouTube, etc.)
-  if (!is_admin() && !is_user_logged_in()) {
-    remove_action('wp_footer', 'wp_print_footer_scripts', 20);
-  }
-
   add_action('wp_footer', function () {
     remove_action('wp_footer', 'wp_embed_footer_scripts');
   }, 1);

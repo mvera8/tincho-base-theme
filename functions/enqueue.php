@@ -1,50 +1,49 @@
 <?php
 add_action('wp_enqueue_scripts', function () {
+  // Dev con Vite server
   if (defined('WP_ENV') && WP_ENV === 'development') {
     add_action('wp_print_scripts', function () {
-      // echo '<script type="module" src="http://localhost:5173/js/@vite/client"></script>';
-      echo '<script type="module" src="http://localhost:5173/js/main.js"></script>';
+      echo '<script type="module" src="http://localhost:5173/js/main.js" id="tincho-dev-js"></script>';
     });
-  } else {
-    $manifest_path = get_template_directory() . '/build/manifest.json';
+    return;
+  }
 
-    if (!file_exists($manifest_path)) {
-      error_log('[enqueue] No se encontró manifest.json');
-      return;
+  $manifest_path = get_template_directory() . '/build/manifest.json';
+  if (!file_exists($manifest_path)) {
+    error_log('[enqueue] manifest.json no encontrado'); 
+    return;
+  }
+  $manifest = json_decode(file_get_contents($manifest_path), true);
+
+  // ⇩ Claves candidatas: con y sin .js (según cómo nombró Vite)
+  $candidates = ['js/main', 'js/main.js', '/js/main', '/js/main.js'];
+  $entryKey = null;
+  foreach ($candidates as $key) {
+    if (!empty($manifest[$key]['file'])) { $entryKey = $key; break; }
+  }
+  if (!$entryKey) {
+    error_log('[enqueue] no encontré la entrada js/main en el manifest. Keys: ' . implode(', ', array_keys($manifest)));
+    return;
+  }
+
+  $base_uri = trailingslashit(get_template_directory_uri()) . 'build/';
+  $entry    = $manifest[$entryKey];
+
+  // CSS generado por esa entrada (si importás SCSS en main.js)
+  if (!empty($entry['css']) && is_array($entry['css'])) {
+    foreach ($entry['css'] as $cssRelPath) {
+      wp_enqueue_style('tincho-style', $base_uri . $cssRelPath, [], null);
     }
+  }
 
-    $manifest = json_decode(file_get_contents($manifest_path), true);
+  // Script ESM principal
+  wp_enqueue_script('tincho-script', $base_uri . $entry['file'], [], null, true);
+}, 10);
 
-    // Buscar las claves correctas sin importar el prefijo
-    $css_key = array_filter(array_keys($manifest), fn($k) => str_ends_with($k, 'css/style.scss'));
-    $js_key  = array_filter(array_keys($manifest), fn($k) => str_ends_with($k, 'js/main.js'));
-
-    if (!$css_key || !$js_key) {
-      error_log('[enqueue] No se encontraron entradas js/main.js o css/style.scss en el manifest');
-      return;
-    }
-
-    $css_key = array_shift($css_key);
-    $js_key  = array_shift($js_key);
-
-    $css_file = $manifest[$css_key]['file'] ?? null;
-    $js_file  = $manifest[$js_key]['file'] ?? null;
-
-    if (!$css_file || !$js_file) {
-      error_log('[enqueue] Faltan archivos en el manifest');
-      return;
-    }
-
-    $base_uri = get_template_directory_uri() . '/build';
-
-    wp_enqueue_style('tincho-style', "$base_uri/$css_file", [], null);
-    wp_enqueue_script('tincho-script', "$base_uri/$js_file", [], null, true);
-  }  
-});
-
+// Fuerza type="module" y crossorigin
 add_filter('script_loader_tag', function($tag, $handle, $src) {
   if ($handle === 'tincho-script' || $handle === 'tincho-dev') {
-    return sprintf('<script type="module" src="%s" id="%s-js"></script>', esc_url($src), esc_attr($handle));
+    return sprintf('<script type="module" crossorigin src="%s" id="%s-js"></script>', esc_url($src), esc_attr($handle));
   }
   return $tag;
 }, 10, 3);
