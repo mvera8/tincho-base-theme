@@ -24,7 +24,7 @@ $button_text   = $args['btn_text']  ?? '';
   </div>
 
   <?php if ( $button_link !== '' && $button_text !== '' ) : ?>
-    <div class="col-6 text-end">
+    <div class="col-12 col-sm-6 text-center text-sm-end pt-4 pt-sm-0">
       <?php
 			get_template_part(
 				'template-parts/btn',

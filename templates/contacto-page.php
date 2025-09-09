@@ -32,26 +32,13 @@ get_template_part( 'template-parts/navbar' );
 			<div class="col-12 col-md-4">
 				<div class="bg-secondary px-4 pt-5 pb-1 rounded">
 					<div class="widget mb-4">
-						<h4 class="mb-2 text-primary">Otros Medios</h4>
+						<h4 class="mb-2 text-primary">Redes</h4>
 						<?php
 						get_template_part(
 							'template-parts/list',
 							'contact',
 							array(
 								'style' => 'unstyled'
-							)
-						);
-						?>
-					</div>
-					<div class="widget mb-4">
-						<h4 class="mb-2 text-primary">Redes</h4>
-						<?php
-						get_template_part(
-							'template-parts/list',
-							'redes',
-							array(
-								'style' => 'unstyled',
-								'name'  => true
 							)
 						);
 						?>

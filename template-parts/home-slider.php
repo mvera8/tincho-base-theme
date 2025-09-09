@@ -87,7 +87,12 @@ if ( empty( $slides ) ) {
             <div class="container py-5">
               <div class="row">
                 <div class="col-12 col-md-10 col-xl-7 text-center text-md-start">
-                  <p class="text-white mb-2"><?php echo get_bloginfo( 'name' ) . ' ' . $item['title']?></p>
+                  <p class="text-white mb-2 text-poppins">
+                    <?php echo cleanmax_icon_selector( 'star' ); ?>
+                    <span class="align-bottom ps-1">
+                      <?php echo get_bloginfo( 'name' ) . ' ' . $item['title']; ?>
+                    </span>
+                  </p>
                   <h1 class="display-1 mb-2 text-secondary">máxima <span class="text-primary text-uppercase">LIMPIEZA</span></h1>
                   <p class="mb-4 lead text-light">Limpieza profesional para cada espacio.</p>
                   <div class="d-block d-md-flex gap-2 justify-content-center justify-content-lg-start mb-4 mb-lg-0">
