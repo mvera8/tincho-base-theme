@@ -11,7 +11,7 @@ $exclude_templates = array(
 	'templates/formulario-page.php'
 );
 
-if ( is_page_template( $exclude_templates ) ) {
+if ( is_page_template( $exclude_templates ) || is_singular( 'servicios' ) ) {
 	return;
 }
 
